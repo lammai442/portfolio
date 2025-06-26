@@ -1,0 +1,17 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.pages {
+	max-width: 1100px;
+}
+
+.links {
+	text-decoration: none;
+}
+
+body {
+	background-color: #f8f4ed;
+}
