@@ -1,0 +1,46 @@
+.info__box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+
+	.info__left-img {
+		width: 40%;
+	}
+
+	.info__right-box {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+
+		.info__right-top-txt {
+			font-size: 1.5rem;
+		}
+
+		.info__right-middle-txt {
+			font-size: 2.5rem;
+		}
+
+		.info__right-bottom-txt {
+			font-size: 2rem;
+		}
+
+		.info__right-links-box {
+			display: flex;
+			justify-content: center;
+			gap: 1rem;
+
+			.info__right-links {
+				font-size: 3rem;
+				color: #0077b5;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.info__box {
+		flex-direction: column;
+		gap: -1rem;
+	}
+}

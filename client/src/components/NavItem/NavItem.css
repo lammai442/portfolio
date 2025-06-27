@@ -1,13 +1,10 @@
-.nav__icon {
-	color: red;
-}
-
 .nav__title {
-	color: red;
+	color: var(--primary-txt-color);
 }
 
 .nav__item {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	font-size: 2rem;
 }
