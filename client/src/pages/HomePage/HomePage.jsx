@@ -1,5 +1,5 @@
 import Header from '../../components/Header/Header';
-import profileimg from '../../assets/croped-profile.png';
+import profileimg from '../../assets/cv-img-round.png';
 import './HomePage.css';
 import { FaLinkedin, FaGithubSquare } from 'react-icons/fa';
 
