@@ -1,8 +1,8 @@
 import './NavItem.css';
 
-function NavItem({ text }) {
+function NavItem({ onClick, text }) {
 	return (
-		<li className='nav__item'>
+		<li onClick={onClick} className='nav__item'>
 			<p className='nav__title'>{text}</p>
 		</li>
 	);

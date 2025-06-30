@@ -2,8 +2,21 @@ import Header from '../../components/Header/Header';
 import profileimg from '../../assets/cv-img-round.png';
 import './HomePage.css';
 import { FaLinkedin, FaGithubSquare } from 'react-icons/fa';
-
+import { useLocation } from 'react-router-dom';
+import { useEffect, useRef } from 'react';
 function HomePage() {
+	const location = useLocation();
+	const projectRef = useRef(null);
+
+	useEffect(() => {
+		if (location.hash === '#project' && projectRef.current) {
+			// Fördröjningen säkerställer att DOM är redo
+			setTimeout(() => {
+				projectRef.current.scrollIntoView({ behavior: 'smooth' });
+			}, 100); // 100 ms brukar räcka
+		}
+	}, [location]);
+
 	return (
 		<div className='pages'>
 			<Header />
@@ -28,8 +41,9 @@ function HomePage() {
 						</section>
 					</section>
 				</section>
-				<section className='info__portfolio'>
-					<h2>PORTFOLIO</h2>
+				<hr />
+				<section ref={projectRef} id='project' className='project__box'>
+					<h2 className='project__title'>PROJEKT</h2>
 				</section>
 			</main>
 		</div>
