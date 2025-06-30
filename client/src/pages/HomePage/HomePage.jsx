@@ -7,7 +7,7 @@ function HomePage() {
 	return (
 		<div className='pages'>
 			<Header />
-			<main>
+			<main className='main__homepage'>
 				<section className='info__box'>
 					<img
 						src={profileimg}
@@ -27,6 +27,9 @@ function HomePage() {
 							</a>
 						</section>
 					</section>
+				</section>
+				<section className='info__portfolio'>
+					<h2>PORTFOLIO</h2>
 				</section>
 			</main>
 		</div>
