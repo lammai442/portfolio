@@ -2,21 +2,12 @@ import Header from '../../components/Header/Header';
 import profileimg from '../../assets/cv-img-round.png';
 import './HomePage.css';
 import { FaLinkedin, FaGithubSquare } from 'react-icons/fa';
-import { useLocation } from 'react-router-dom';
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
+import Contact from '../../components/Contact/Contact';
 function HomePage() {
-	const location = useLocation();
 	const projectRef = useRef(null);
 	const aboutRef = useRef(null);
 	const contactRef = useRef(null);
-
-	useEffect(() => {
-		if (location.hash === '#project' && projectRef.current) {
-			projectRef.current.scrollIntoView({ behavior: 'smooth' });
-		} else if (location.hash === '#about' && aboutRef.current) {
-			aboutRef.current.scrollIntoView({ behavior: 'smooth' });
-		}
-	}, [location]);
 
 	const scrollToSection = (section) => {
 		if (section === 'about') {
@@ -30,7 +21,7 @@ function HomePage() {
 
 	return (
 		<div className='pages'>
-			<Header />
+			<Header scrollToSection={scrollToSection} />
 			<main className='main__homepage'>
 				<section className='info__box'>
 					<img
@@ -53,16 +44,17 @@ function HomePage() {
 					</section>
 				</section>
 				<hr />
-				<section ref={projectRef} id='project' className='project__box'>
-					<h2 className='project__title'>PROJEKT</h2>
+				<section ref={projectRef} id='project' className='section__box'>
+					<h2 className='section__title'>PROJEKT</h2>
 				</section>
 				<hr />
-				<section ref={aboutRef} id='about' className='project__box'>
-					<h2 className='about__title'>OM MIG</h2>
+				<section ref={aboutRef} id='about' className='section__box'>
+					<h2 className='section__title'>OM MIG</h2>
 				</section>
 				<hr />
-				<section ref={contactRef} id='contact' className='project__box'>
-					<h2 className='about__title'>KONTAKT</h2>
+				<section ref={contactRef} id='contact' className='section__box'>
+					<h2 className='section__title'>KONTAKT</h2>
+					<Contact />
 				</section>
 			</main>
 		</div>

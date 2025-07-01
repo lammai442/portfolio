@@ -2,19 +2,19 @@ import { NavLink } from 'react-router-dom';
 import NavItem from '../NavItem/NavItem';
 import './Header.css';
 import { useNavigate, useLocation } from 'react-router-dom';
-function Header() {
+function Header({ scrollToSection }) {
 	const navigate = useNavigate();
 	const location = useLocation();
 
-	const handleClick = (text) => {
-		if (location.pathname === '/') {
-			// Om vi redan är på startsidan, byt bara hash
-			window.location.hash = `#${text.toLowerCase()}`;
-		} else {
-			// Navigera till startsidan med hash
-			navigate(`#${text.toLowerCase()}`);
-		}
-	};
+	// const handleClick = (text) => {
+	// 	if (location.pathname === '/') {
+	// 		// Om vi redan är på startsidan, byt bara hash
+	// 		window.location.hash = `#${text.toLowerCase()}`;
+	// 	} else {
+	// 		// Navigera till startsidan med hash
+	// 		navigate(`#${text.toLowerCase()}`);
+	// 	}
+	// };
 
 	return (
 		<header className='header'>
@@ -22,17 +22,17 @@ function Header() {
 			<nav className='nav'>
 				<ul className='nav__list'>
 					<NavItem
-						onClick={handleClick}
+						onClick={scrollToSection}
 						text={'Om mig'}
 						ref={'about'}
 					/>
 					<NavItem
-						onClick={handleClick}
+						onClick={scrollToSection}
 						text={'Projekt'}
 						ref={'project'}
 					/>
 					<NavItem
-						onClick={handleClick}
+						onClick={scrollToSection}
 						text={'Kontakt'}
 						ref={'contact'}
 					/>
