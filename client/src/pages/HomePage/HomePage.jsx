@@ -8,20 +8,25 @@ function HomePage() {
 	const location = useLocation();
 	const projectRef = useRef(null);
 	const aboutRef = useRef(null);
+	const contactRef = useRef(null);
 
 	useEffect(() => {
 		if (location.hash === '#project' && projectRef.current) {
-			// Fördröjningen säkerställer att DOM är redo
-			setTimeout(() => {
-				projectRef.current.scrollIntoView({ behavior: 'smooth' });
-			}, 100); // 100 ms brukar räcka
-		} else if (location.hash === '#about' && projectRef.current) {
-			// Fördröjningen säkerställer att DOM är redo
-			setTimeout(() => {
-				projectRef.current.scrollIntoView({ behavior: 'smooth' });
-			}, 100); // 100 ms brukar räcka
+			projectRef.current.scrollIntoView({ behavior: 'smooth' });
+		} else if (location.hash === '#about' && aboutRef.current) {
+			aboutRef.current.scrollIntoView({ behavior: 'smooth' });
 		}
 	}, [location]);
+
+	const scrollToSection = (section) => {
+		if (section === 'about') {
+			aboutRef.current.scrollIntoView({ behavior: 'smooth' });
+		} else if (section === 'project') {
+			projectRef.current.scrollIntoView({ behavior: 'smooth' });
+		} else if (section === 'contact') {
+			contactRef.current.scrollIntoView({ behavior: 'smooth' });
+		}
+	};
 
 	return (
 		<div className='pages'>
@@ -52,8 +57,12 @@ function HomePage() {
 					<h2 className='project__title'>PROJEKT</h2>
 				</section>
 				<hr />
-				<section ref={aboutRef} id='about' className='about__box'>
+				<section ref={aboutRef} id='about' className='project__box'>
 					<h2 className='about__title'>OM MIG</h2>
+				</section>
+				<hr />
+				<section ref={contactRef} id='contact' className='project__box'>
+					<h2 className='about__title'>KONTAKT</h2>
 				</section>
 			</main>
 		</div>

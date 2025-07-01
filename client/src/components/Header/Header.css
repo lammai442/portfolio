@@ -5,6 +5,8 @@
 	padding: 2rem;
 
 	.header__name {
+		font-family: var(--secondary-font);
+		font-style: italic;
 		font-weight: 300;
 	}
 

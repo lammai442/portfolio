@@ -6,13 +6,13 @@ function Header() {
 	const navigate = useNavigate();
 	const location = useLocation();
 
-	const handleClick = () => {
+	const handleClick = (text) => {
 		if (location.pathname === '/') {
 			// Om vi redan är på startsidan, byt bara hash
-			window.location.hash = '#project';
+			window.location.hash = `#${text.toLowerCase()}`;
 		} else {
 			// Navigera till startsidan med hash
-			navigate('/#project');
+			navigate(`#${text.toLowerCase()}`);
 		}
 	};
 
@@ -21,9 +21,21 @@ function Header() {
 			<h1 className='header__name'>Lam Mai</h1>
 			<nav className='nav'>
 				<ul className='nav__list'>
-					<NavItem onClick={handleClick} text={'Om mig'} />
-					<NavItem onClick={handleClick} text={'Projekt'} />
-					<NavItem onClick={handleClick} text={'Kontakt'} />
+					<NavItem
+						onClick={handleClick}
+						text={'Om mig'}
+						ref={'about'}
+					/>
+					<NavItem
+						onClick={handleClick}
+						text={'Projekt'}
+						ref={'project'}
+					/>
+					<NavItem
+						onClick={handleClick}
+						text={'Kontakt'}
+						ref={'contact'}
+					/>
 				</ul>
 			</nav>
 		</header>

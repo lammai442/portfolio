@@ -1,6 +1,7 @@
 .nav__title {
 	color: var(--primary-txt-color);
 	position: relative;
+	font-family: var(--secondary-font);
 }
 
 .nav__title:hover {
