@@ -31,7 +31,23 @@ body {
 	display: grid;
 	place-content: center;
 	background-color: var(--primary-bg-color);
+	/* background: linear-gradient(135deg, #ff6ec4, #7873f5, #42e695);
+	background-size: 200% 200%;
+	animation: gradientShift 10s ease infinite; */
 }
+
+/* @keyframes gradientShift {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+*/
 
 html {
 	scroll-behavior: smooth;
