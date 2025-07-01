@@ -21,17 +21,9 @@ function Header() {
 			<h1 className='header__name'>Lam Mai</h1>
 			<nav className='nav'>
 				<ul className='nav__list'>
-					<NavLink to='/' className='links'>
-						<NavItem text={'Om mig'} />
-					</NavLink>
-					<NavItem
-						onClick={handleClick}
-						className='links'
-						text={'Projekt'}
-					/>
-					<NavLink to='/exercises' className='links'>
-						<NavItem text={'Kontakt'} />
-					</NavLink>
+					<NavItem onClick={handleClick} text={'Om mig'} />
+					<NavItem onClick={handleClick} text={'Projekt'} />
+					<NavItem onClick={handleClick} text={'Kontakt'} />
 				</ul>
 			</nav>
 		</header>

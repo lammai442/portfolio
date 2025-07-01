@@ -3,15 +3,15 @@
 	display: flex;
 	justify-content: space-between;
 	padding: 2rem;
-}
 
-.header__name {
-	font-weight: 300;
-}
+	.header__name {
+		font-weight: 300;
+	}
 
-.nav__list {
-	display: flex;
-	gap: 1rem;
+	.nav__list {
+		display: flex;
+		gap: 1rem;
+	}
 }
 
 @media screen and (max-width: 600px) {

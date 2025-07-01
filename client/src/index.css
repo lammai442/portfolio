@@ -30,3 +30,7 @@ body {
 	place-content: center;
 	background-color: var(--primary-bg-color);
 }
+
+html {
+	scroll-behavior: smooth;
+}

@@ -1,5 +1,25 @@
 .nav__title {
 	color: var(--primary-txt-color);
+	position: relative;
+}
+
+.nav__title:hover {
+	color: grey;
+}
+
+.nav__title::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0rem;
+	width: 0;
+	height: 0.125rem;
+	background-color: grey;
+	transition: width 500ms ease-in-out;
+}
+
+.nav__title:hover::after {
+	width: 100%;
 }
 
 .nav__item {
@@ -7,4 +27,5 @@
 	flex-direction: column;
 	align-items: center;
 	font-size: 2rem;
+	cursor: pointer;
 }

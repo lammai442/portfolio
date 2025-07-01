@@ -7,9 +7,15 @@ import { useEffect, useRef } from 'react';
 function HomePage() {
 	const location = useLocation();
 	const projectRef = useRef(null);
+	const aboutRef = useRef(null);
 
 	useEffect(() => {
 		if (location.hash === '#project' && projectRef.current) {
+			// Fördröjningen säkerställer att DOM är redo
+			setTimeout(() => {
+				projectRef.current.scrollIntoView({ behavior: 'smooth' });
+			}, 100); // 100 ms brukar räcka
+		} else if (location.hash === '#about' && projectRef.current) {
 			// Fördröjningen säkerställer att DOM är redo
 			setTimeout(() => {
 				projectRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -44,6 +50,10 @@ function HomePage() {
 				<hr />
 				<section ref={projectRef} id='project' className='project__box'>
 					<h2 className='project__title'>PROJEKT</h2>
+				</section>
+				<hr />
+				<section ref={aboutRef} id='about' className='about__box'>
+					<h2 className='about__title'>OM MIG</h2>
 				</section>
 			</main>
 		</div>
