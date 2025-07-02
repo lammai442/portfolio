@@ -1,10 +1,12 @@
 import './Contact.css';
 function Contact() {
 	return (
-		<form action=''>
+		<form className='form__box'>
 			<label className='contact__box'>
-				If you'd like to get in touch, send me a message using the form
-				below and we'll take it from there!
+				<p className='contact__paragraph'>
+					If you'd like to get in touch, send me a message using the
+					form below and we'll take it from there!
+				</p>
 				<input
 					type='text'
 					className='contact__input'
@@ -15,10 +17,12 @@ function Contact() {
 					placeholder='Mail'></input>
 				<textarea
 					type='text'
-					className='contact__input'
+					className='contact__text-area'
 					placeholder='Meddelande'></textarea>
+				<button type='submit' className='contact__btn'>
+					Skicka
+				</button>
 			</label>
-			<button type='submit'>Skicka</button>
 		</form>
 	);
 }
