@@ -4,6 +4,7 @@ import './HomePage.css';
 import { FaLinkedin, FaGithubSquare } from 'react-icons/fa';
 import { useRef } from 'react';
 import Contact from '../../components/Contact/Contact';
+import MobileProject from '../../components/MobileProject/MobileProject';
 function HomePage() {
 	const projectRef = useRef(null);
 	const aboutRef = useRef(null);
@@ -18,6 +19,8 @@ function HomePage() {
 			contactRef.current.scrollIntoView({ behavior: 'smooth' });
 		}
 	};
+
+	const url = 'https://lammai442.github.io/yumyum-gimme-sum/';
 
 	return (
 		<div className='pages'>
@@ -48,6 +51,8 @@ function HomePage() {
 				<hr />
 				<section ref={projectRef} id='project' className='section__box'>
 					<h2 className='section__title'>PROJEKT</h2>
+					<p>hej</p>
+					<MobileProject url={url} />
 				</section>
 				<hr />
 				<section ref={aboutRef} id='about' className='section__box'>

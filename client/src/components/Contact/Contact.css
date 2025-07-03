@@ -5,9 +5,6 @@
 	box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.15);
 }
 
-.contact__paragraph {
-}
-
 .contact__box {
 	display: flex;
 	flex-direction: column;
