@@ -30,7 +30,9 @@ function HomePage() {
 						className='info__left-img'
 					/>
 					<section className='info__right-box'>
-						<p className='info__right-top-txt'>Hej, jag är</p>
+						<p className='info__right-top-txt'>
+							Hej, kul att du ville kika in på mig!
+						</p>
 						<h2 className='info__right-middle-txt'>Lam Mai</h2>
 						<p className='info__right-bottom-txt'>Webbutvecklare</p>
 						<section className='info__right-links-box'>

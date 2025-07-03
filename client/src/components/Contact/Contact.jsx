@@ -1,7 +1,14 @@
 import './Contact.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 function Contact() {
+	useEffect(() => {
+		AOS.init({ duration: 1000 });
+	}, []);
+
 	return (
-		<form className='form__box'>
+		<form className='form__box' data-aos='fade-up'>
 			<label className='contact__box'>
 				<p className='contact__paragraph'>
 					If you'd like to get in touch, send me a message using the

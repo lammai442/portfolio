@@ -1,7 +1,7 @@
 .main__homepage {
 	display: flex;
 	flex-direction: column;
-	gap: 10rem;
+	gap: 3rem;
 }
 
 .info__box {
@@ -51,6 +51,10 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	gap: 1.5rem;
+}
+
+.section__box:last-child {
 	margin-bottom: 3rem;
 }
 
