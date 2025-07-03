@@ -1,10 +1,15 @@
 import './Contact.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 function Contact() {
 	useEffect(() => {
-		AOS.init({ duration: 1000 });
+		AOS.init({
+			duration: 1500,
+			easing: 'ease-in-out-sine',
+			once: false,
+		});
 	}, []);
 
 	return (
