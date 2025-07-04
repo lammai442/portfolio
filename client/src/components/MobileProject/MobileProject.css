@@ -1,5 +1,8 @@
-/* Ny wrapper som klipper av tomrummet */
-.mobile-box {
+.mobile__box {
+	display: flex;
+}
+
+.mobile__frame-box {
 	height: 520px; /* 640 * 0.5 */
 	transform: scale(0.6);
 	display: grid;
@@ -7,7 +10,7 @@
 }
 
 /* Mobilens skal */
-.mobile-frame {
+.mobile__frame {
 	width: 460px;
 	height: 845px;
 	border: 1rem solid #333;
@@ -17,8 +20,14 @@
 }
 
 /* iframe-innehåll */
-.mobile-iframe {
+.mobile__iframe {
 	width: 100%;
 	height: 100%;
 	border: none;
+}
+
+.icon__box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }

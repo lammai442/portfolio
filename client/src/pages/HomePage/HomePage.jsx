@@ -20,6 +20,13 @@ function HomePage() {
 		}
 	};
 
+	const mobil = [
+		{
+			url: 'https://lammai442.github.io/yumyum-gimme-sum/',
+			title: 'Yum Yum Gimmie Sum',
+			tech: ['JavaScript', 'html', 'css'],
+		},
+	];
 	const url = 'https://lammai442.github.io/yumyum-gimme-sum/';
 
 	return (
@@ -51,7 +58,11 @@ function HomePage() {
 				<hr />
 				<section ref={projectRef} id='project' className='section__box'>
 					<h2 className='section__title'>PROJEKT</h2>
-					<MobileProject url={url} />
+					<MobileProject
+						url={mobil[0].url}
+						title={mobil[0].title}
+						tech={mobil[0].tech}
+					/>
 				</section>
 				<hr />
 				<section ref={aboutRef} id='about' className='section__box'>
