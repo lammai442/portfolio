@@ -8,7 +8,7 @@ function Contact() {
 		AOS.init({
 			duration: 1500,
 			easing: 'ease-in-out-sine',
-			once: false,
+			once: true,
 		});
 	}, []);
 
@@ -16,8 +16,9 @@ function Contact() {
 		<form className='form__box' data-aos='fade-up'>
 			<label className='contact__box'>
 				<p className='contact__paragraph'>
-					If you'd like to get in touch, send me a message using the
-					form below and we'll take it from there!
+					Är du nyfiken på vad jag kan bidra med i ert team? Skicka
+					gärna ett meddelande via formuläret nedan – jag ser fram
+					emot att höra mer om er!
 				</p>
 				<input
 					type='text'

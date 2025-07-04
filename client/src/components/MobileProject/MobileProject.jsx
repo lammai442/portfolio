@@ -1,12 +1,17 @@
 import './MobileProject.css';
 import { TbBrandJavascript } from 'react-icons/tb';
-import { FaHtml5, FaCss3Alt } from 'react-icons/fa';
-import { section } from 'framer-motion/client';
-function MobileProject({ url, title, tech }) {
+import { FaHtml5, FaCss3Alt, FaFigma, FaGithub } from 'react-icons/fa';
+import { FaPeopleLine } from 'react-icons/fa6';
+import { BiLogoVisualStudio } from 'react-icons/bi';
+function MobileProject({ url, title, tech, desc, additionalDesc }) {
 	const iconMap = {
 		JavaScript: TbBrandJavascript,
-		html: FaHtml5,
-		css: FaCss3Alt,
+		HTML: FaHtml5,
+		CSS: FaCss3Alt,
+		Figma: FaFigma,
+		Git: FaGithub,
+		Agilt: FaPeopleLine,
+		VScode: BiLogoVisualStudio,
 	};
 
 	return (
@@ -19,27 +24,31 @@ function MobileProject({ url, title, tech }) {
 						className='mobile__iframe'></iframe>
 				</div>
 			</div>
-			<section>
+			<section className='mobile__info-box'>
 				<h2>Mobilapp - {title}</h2>
-				<p>
-					En interaktiv app där användaren kan beställa mat och med
-					adminsida även kunna redigera menyn.
-				</p>
+				<p className='mobile__info-paragraph'>{desc}</p>
+				<p className='mobile__info-paragraph'>{additionalDesc}</p>
 				<h3>Tekniker som används</h3>
-				{tech.map((techName, index) => {
-					const IconComponent = iconMap[techName];
-					return (
-						IconComponent && (
-							<section className='icon__box'>
-								<IconComponent
-									key={index}
-									size={32}
-									title={techName}></IconComponent>
-								<p>{techName}</p>
-							</section>
-						)
-					);
-				})}
+				<section className='icon__tech-box'>
+					{tech.map((techName, index) => {
+						const IconComponent = iconMap[techName];
+						return (
+							IconComponent && (
+								<section className='icon__item-box'>
+									<IconComponent
+										key={index}
+										size={32}
+										title={techName}></IconComponent>
+									<p>
+										{techName === 'VScode'
+											? 'VS code'
+											: techName}
+									</p>
+								</section>
+							)
+						);
+					})}
+				</section>
 			</section>
 		</section>
 	);

@@ -5,6 +5,7 @@ import { FaLinkedin, FaGithubSquare } from 'react-icons/fa';
 import { useRef } from 'react';
 import Contact from '../../components/Contact/Contact';
 import MobileProject from '../../components/MobileProject/MobileProject';
+import { mobileProject } from '../../data/data.js';
 function HomePage() {
 	const projectRef = useRef(null);
 	const aboutRef = useRef(null);
@@ -20,17 +21,8 @@ function HomePage() {
 		}
 	};
 
-	const mobil = [
-		{
-			url: 'https://lammai442.github.io/yumyum-gimme-sum/',
-			title: 'Yum Yum Gimmie Sum',
-			tech: ['JavaScript', 'html', 'css'],
-		},
-	];
-	const url = 'https://lammai442.github.io/yumyum-gimme-sum/';
-
 	return (
-		<div className='pages'>
+		<div className='wrapper'>
 			<Header scrollToSection={scrollToSection} />
 			<main className='main__homepage'>
 				<section className='info__box'>
@@ -58,11 +50,17 @@ function HomePage() {
 				<hr />
 				<section ref={projectRef} id='project' className='section__box'>
 					<h2 className='section__title'>PROJEKT</h2>
-					<MobileProject
-						url={mobil[0].url}
-						title={mobil[0].title}
-						tech={mobil[0].tech}
-					/>
+					{mobileProject.map((m) => {
+						return (
+							<MobileProject
+								url={m.url}
+								title={m.title}
+								tech={m.tech}
+								desc={m.desc}
+								additionalDesc={m.additionalDesc}
+							/>
+						);
+					})}
 				</section>
 				<hr />
 				<section ref={aboutRef} id='about' className='section__box'>
