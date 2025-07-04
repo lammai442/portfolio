@@ -51,7 +51,6 @@ function HomePage() {
 				<hr />
 				<section ref={projectRef} id='project' className='section__box'>
 					<h2 className='section__title'>PROJEKT</h2>
-					<p>hej</p>
 					<MobileProject url={url} />
 				</section>
 				<hr />
