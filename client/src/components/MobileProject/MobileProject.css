@@ -30,7 +30,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
-	padding: 0 3rem;
+	padding: 0 1rem;
 }
 
 .icon__tech-box {
@@ -55,5 +55,9 @@
 	.mobile__frame-box {
 		height: 700px;
 		transform: scale(0.8);
+	}
+
+	.mobile__info-box {
+		padding: 0 3rem;
 	}
 }
