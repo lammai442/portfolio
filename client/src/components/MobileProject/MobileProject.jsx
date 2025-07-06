@@ -1,6 +1,6 @@
 import './MobileProject.css';
 import { TbBrandJavascript } from 'react-icons/tb';
-import { FaHtml5, FaCss3Alt, FaFigma, FaGithub } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaFigma, FaGithub, FaReact } from 'react-icons/fa';
 import { FaPeopleLine } from 'react-icons/fa6';
 import { BiLogoVisualStudio } from 'react-icons/bi';
 function MobileProject({ url, title, tech, desc, additionalDesc }) {
@@ -12,6 +12,7 @@ function MobileProject({ url, title, tech, desc, additionalDesc }) {
 		Git: FaGithub,
 		Agilt: FaPeopleLine,
 		VScode: BiLogoVisualStudio,
+		React: FaReact,
 	};
 
 	return (
