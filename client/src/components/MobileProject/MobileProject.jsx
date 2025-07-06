@@ -3,7 +3,10 @@ import { TbBrandJavascript } from 'react-icons/tb';
 import { FaHtml5, FaCss3Alt, FaFigma, FaGithub, FaReact } from 'react-icons/fa';
 import { FaPeopleLine } from 'react-icons/fa6';
 import { BiLogoVisualStudio } from 'react-icons/bi';
+import { useState } from 'react';
 function MobileProject({ url, title, tech, desc, additionalDesc }) {
+	const [isLoaded, setIsLoaded] = useState(false);
+
 	const iconMap = {
 		JavaScript: TbBrandJavascript,
 		HTML: FaHtml5,
@@ -19,10 +22,17 @@ function MobileProject({ url, title, tech, desc, additionalDesc }) {
 		<section className='mobile__box'>
 			<div className='mobile__frame-box'>
 				<div className='mobile__frame'>
+					{!isLoaded && (
+						<section className='loading__box'>
+							<div className='loading__spinner'></div>
+							<p className='loading__text'>Laddar sidan...</p>
+						</section>
+					)}
 					<iframe
 						src={url}
 						title='Mobilapp'
-						className='mobile__iframe'></iframe>
+						className='mobile__iframe'
+						onLoad={() => setIsLoaded(true)}></iframe>
 				</div>
 			</div>
 			<section className='mobile__info-box'>
