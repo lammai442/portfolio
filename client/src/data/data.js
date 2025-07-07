@@ -1,3 +1,7 @@
+import { TbBrandJavascript } from 'react-icons/tb';
+import { FaHtml5, FaCss3Alt, FaFigma, FaGithub, FaReact } from 'react-icons/fa';
+import { FaPeopleLine } from 'react-icons/fa6';
+import { BiLogoVisualStudio } from 'react-icons/bi';
 export const mobileProjects = [
 	{
 		desc: `Where it's @ är en frontend-applikation byggd i React där användare kan upptäcka och köpa biljetter till lokala musikevenemang.`,
@@ -30,3 +34,14 @@ export const webProjects = [
 		git: 'https://lammai442.github.io/my-movie-database/',
 	},
 ];
+
+export const iconMap = {
+	JavaScript: TbBrandJavascript,
+	HTML: FaHtml5,
+	CSS: FaCss3Alt,
+	Figma: FaFigma,
+	Git: FaGithub,
+	Agilt: FaPeopleLine,
+	VScode: BiLogoVisualStudio,
+	React: FaReact,
+};

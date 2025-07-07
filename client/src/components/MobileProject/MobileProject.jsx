@@ -1,22 +1,8 @@
 import './MobileProject.css';
-import { TbBrandJavascript } from 'react-icons/tb';
-import { FaHtml5, FaCss3Alt, FaFigma, FaGithub, FaReact } from 'react-icons/fa';
-import { FaPeopleLine } from 'react-icons/fa6';
-import { BiLogoVisualStudio } from 'react-icons/bi';
 import { useState } from 'react';
+import { iconMap } from '../../data/data.js';
 function MobileProject({ url, title, tech, desc, additionalDesc }) {
 	const [isLoaded, setIsLoaded] = useState(false);
-
-	const iconMap = {
-		JavaScript: TbBrandJavascript,
-		HTML: FaHtml5,
-		CSS: FaCss3Alt,
-		Figma: FaFigma,
-		Git: FaGithub,
-		Agilt: FaPeopleLine,
-		VScode: BiLogoVisualStudio,
-		React: FaReact,
-	};
 
 	return (
 		<section className='mobile__box'>
