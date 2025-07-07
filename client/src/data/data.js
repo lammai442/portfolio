@@ -1,4 +1,4 @@
-export const mobileProject = [
+export const mobileProjects = [
 	{
 		desc: `Where it's @ är en frontend-applikation byggd i React där användare kan upptäcka och köpa biljetter till lokala musikevenemang.`,
 		additionalDesc:
@@ -16,5 +16,17 @@ export const mobileProject = [
 		title: 'Yum Yum Gimmie Sum',
 		tech: ['JavaScript', 'HTML', 'CSS', 'Figma', 'Git', 'Agilt', 'VScode'],
 		git: 'https://github.com/lammai442/yumyum-gimme-sum',
+	},
+];
+
+export const webProjects = [
+	{
+		desc: `Movie database`,
+		additionalDesc:
+			'Projektet har utvecklats av mig från grunden. Jag har lagt fokus på att skapa en användarvänlig upplevelse med tydlig struktur och responsiv design.',
+		mobileUrl: 'https://lammai442.github.io/my-movie-database//',
+		title: `My Movie Database`,
+		tech: ['JavaScript', 'HTML', 'CSS', 'Figma', 'Git', 'VScode'],
+		git: 'https://lammai442.github.io/my-movie-database/',
 	},
 ];

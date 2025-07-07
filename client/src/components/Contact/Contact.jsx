@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
 function Contact() {
+	// Fadeing effect
 	useEffect(() => {
 		AOS.init({
 			duration: 1500,

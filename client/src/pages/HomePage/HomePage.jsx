@@ -5,7 +5,8 @@ import { FaLinkedin, FaGithubSquare } from 'react-icons/fa';
 import { useRef } from 'react';
 import Contact from '../../components/Contact/Contact';
 import MobileProject from '../../components/MobileProject/MobileProject';
-import { mobileProject } from '../../data/data.js';
+import { mobileProjects, webProjects } from '../../data/data.js';
+import WebProjects from '../../components/WebProjects/WebProjects.jsx';
 function HomePage() {
 	const projectRef = useRef(null);
 	const aboutRef = useRef(null);
@@ -50,7 +51,7 @@ function HomePage() {
 				<hr />
 				<section ref={projectRef} id='project' className='section__box'>
 					<h2 className='section__title'>PROJEKT</h2>
-					{mobileProject.map((m) => {
+					{mobileProjects.map((m) => {
 						return (
 							<MobileProject
 								url={m.url}
@@ -61,6 +62,18 @@ function HomePage() {
 							/>
 						);
 					})}
+					{webProjects.map((w) => {
+						return (
+							<WebProjects
+								mobileUrl={w.mobileUrl}
+								title={w.title}
+								tech={w.tech}
+								desc={w.desc}
+								additionalDesc={w.additionalDesc}
+							/>
+						);
+					})}
+					;
 				</section>
 				<hr />
 				<section ref={aboutRef} id='about' className='section__box'>
