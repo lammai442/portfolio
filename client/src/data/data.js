@@ -2,6 +2,7 @@ import { TbBrandJavascript } from 'react-icons/tb';
 import { FaHtml5, FaCss3Alt, FaFigma, FaGithub, FaReact } from 'react-icons/fa';
 import { FaPeopleLine } from 'react-icons/fa6';
 import { BiLogoVisualStudio } from 'react-icons/bi';
+import myMovieDatabase from '../assets/webpages/my-movie-database.png';
 export const mobileProjects = [
 	{
 		desc: `Where it's @ är en frontend-applikation byggd i React där användare kan upptäcka och köpa biljetter till lokala musikevenemang.`,
@@ -28,10 +29,21 @@ export const webProjects = [
 		desc: `Movie database`,
 		additionalDesc:
 			'Projektet har utvecklats av mig från grunden. Jag har lagt fokus på att skapa en användarvänlig upplevelse med tydlig struktur och responsiv design.',
-		mobileUrl: 'https://lammai442.github.io/my-movie-database//',
+		webUrl: 'https://lammai442.github.io/my-movie-database/',
 		title: `My Movie Database`,
 		tech: ['JavaScript', 'HTML', 'CSS', 'Figma', 'Git', 'VScode'],
 		git: 'https://lammai442.github.io/my-movie-database/',
+		webPageImg: myMovieDatabase,
+	},
+	{
+		desc: `Movie database`,
+		additionalDesc:
+			'Projektet har utvecklats av mig från grunden. Jag har lagt fokus på att skapa en användarvänlig upplevelse med tydlig struktur och responsiv design.',
+		webUrl: 'https://lammai442.github.io/my-movie-database/',
+		title: `My Movie Database`,
+		tech: ['JavaScript', 'HTML', 'CSS', 'Figma', 'Git', 'VScode'],
+		git: 'https://lammai442.github.io/my-movie-database/',
+		webPageImg: myMovieDatabase,
 	},
 ];
 

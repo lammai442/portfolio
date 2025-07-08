@@ -62,18 +62,20 @@ function HomePage() {
 							/>
 						);
 					})}
-					{webProjects.map((w) => {
-						return (
-							<WebProjects
-								mobileUrl={w.mobileUrl}
-								title={w.title}
-								tech={w.tech}
-								desc={w.desc}
-								additionalDesc={w.additionalDesc}
-							/>
-						);
-					})}
-					;
+					<section className='web-projects__box'>
+						{webProjects.map((w) => {
+							return (
+								<WebProjects
+									webUrl={w.webUrl}
+									title={w.title}
+									tech={w.tech}
+									desc={w.desc}
+									additionalDesc={w.additionalDesc}
+									webPageImg={w.webPageImg}
+								/>
+							);
+						})}
+					</section>
 				</section>
 				<hr />
 				<section ref={aboutRef} id='about' className='section__box'>

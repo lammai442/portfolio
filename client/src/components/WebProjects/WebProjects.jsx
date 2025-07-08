@@ -1,26 +1,19 @@
 import './WebProjects.css';
-import { TbBrandJavascript } from 'react-icons/tb';
-import { FaHtml5, FaCss3Alt, FaFigma, FaGithub, FaReact } from 'react-icons/fa';
-import { FaPeopleLine } from 'react-icons/fa6';
-import { BiLogoVisualStudio } from 'react-icons/bi';
 import { useState } from 'react';
-function WebProjects({ mobileUrl, title, tech, desc, additionalDesc }) {
-	const [isLoaded, setIsLoaded] = useState(false);
-
-	const iconMap = {
-		JavaScript: TbBrandJavascript,
-		HTML: FaHtml5,
-		CSS: FaCss3Alt,
-		Figma: FaFigma,
-		Git: FaGithub,
-		Agilt: FaPeopleLine,
-		VScode: BiLogoVisualStudio,
-		React: FaReact,
-	};
+import { iconMap } from '../../data/data.js';
+function WebProjects({
+	webUrl,
+	title,
+	tech,
+	desc,
+	additionalDesc,
+	webPageImg,
+}) {
+	console.log(webUrl);
 
 	return (
-		<section className='mobile__box'>
-			{mobileUrl && (
+		<section className='web-card__box'>
+			{/* {mobileUrl && (
 				<div className='mobile__frame-box'>
 					<div className='mobile__frame'>
 						{!isLoaded && (
@@ -36,9 +29,22 @@ function WebProjects({ mobileUrl, title, tech, desc, additionalDesc }) {
 							onLoad={() => setIsLoaded(true)}></iframe>
 					</div>
 				</div>
-			)}
+			)} */}
+			<section>
+				<a
+					href={webUrl}
+					className='web-page__link'
+					target='_blank'
+					rel='noopener noreferrer'>
+					<img
+						src={webPageImg}
+						alt='Image of webpage'
+						className='web-page__img'
+					/>
+				</a>
+			</section>
 			<section className='mobile__info-box'>
-				<h2>Mobilapp - {title}</h2>
+				<h2>Webbsida - {title}</h2>
 				<p className='mobile__info-paragraph'>{desc}</p>
 				<p className='mobile__info-paragraph'>{additionalDesc}</p>
 				<h3>Tekniker som används</h3>

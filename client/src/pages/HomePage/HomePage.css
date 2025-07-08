@@ -63,6 +63,10 @@
 	font-size: 2.5rem;
 }
 
+.web-projects__box {
+	display: grid;
+}
+
 @media screen and (max-width: 600px) {
 	.info__box {
 		flex-direction: column;

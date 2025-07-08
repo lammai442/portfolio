@@ -1,0 +1,16 @@
+.web-card__box {
+	max-width: 300px;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	padding: 1rem;
+	border-radius: 5px;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.web-page__img {
+	width: 100%;
+	cursor: pointer;
+}
+
+.web-page__img:hover {
+}
