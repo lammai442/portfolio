@@ -44,7 +44,7 @@ function WebProjects({
 				</a>
 			</section>
 			<section className='mobile__info-box'>
-				<h2>Webbsida - {title}</h2>
+				<h2>{title}</h2>
 				<p className='mobile__info-paragraph'>{desc}</p>
 				<p className='mobile__info-paragraph'>{additionalDesc}</p>
 				<h3>Tekniker som används</h3>
