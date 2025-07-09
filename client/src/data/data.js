@@ -51,7 +51,7 @@ export const webProjects = [
 		desc: `Movie database`,
 		additionalDesc:
 			'Projektet har utvecklats av mig från grunden. Jag har lagt fokus på att skapa en användarvänlig upplevelse med tydlig struktur och responsiv design.',
-		webUrl: 'https://lammai442.github.io/my-movie-database/',
+		webUrl: 'https://lammai442.github.io/catching-pokemons/',
 		title: `Catching Pokemons`,
 		tech: ['JavaScript', 'HTML', 'CSS', 'Figma', 'Git', 'VScode'],
 		git: 'https://lammai442.github.io/my-movie-database/',
