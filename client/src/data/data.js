@@ -2,6 +2,7 @@ import { TbBrandJavascript } from 'react-icons/tb';
 import { FaHtml5, FaCss3Alt, FaFigma, FaGithub, FaReact } from 'react-icons/fa';
 import { FaPeopleLine } from 'react-icons/fa6';
 import { BiLogoVisualStudio } from 'react-icons/bi';
+import { TbApi } from 'react-icons/tb';
 import myMovieDatabase from '../assets/webpages/my-movie-database.png';
 export const mobileProjects = [
 	{
@@ -31,7 +32,7 @@ export const webProjects = [
 			'Projektet har utvecklats av mig från grunden. Jag har lagt fokus på att skapa en användarvänlig upplevelse med tydlig struktur och responsiv design.',
 		webUrl: 'https://lammai442.github.io/my-movie-database/',
 		title: `My Movie Database`,
-		tech: ['JavaScript', 'HTML', 'CSS', 'Figma', 'Git', 'VScode'],
+		tech: ['JavaScript', 'HTML', 'CSS', 'Figma', 'Git', 'VScode', 'API'],
 		git: 'https://lammai442.github.io/my-movie-database/',
 		webPageImg: myMovieDatabase,
 	},
@@ -56,4 +57,5 @@ export const iconMap = {
 	Agilt: FaPeopleLine,
 	VScode: BiLogoVisualStudio,
 	React: FaReact,
+	API: TbApi,
 };

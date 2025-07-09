@@ -65,6 +65,7 @@
 
 .web-projects__box {
 	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 @media screen and (max-width: 600px) {

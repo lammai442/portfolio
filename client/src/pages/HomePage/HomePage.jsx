@@ -7,6 +7,9 @@ import Contact from '../../components/Contact/Contact';
 import MobileProject from '../../components/MobileProject/MobileProject';
 import { mobileProjects, webProjects } from '../../data/data.js';
 import WebProjects from '../../components/WebProjects/WebProjects.jsx';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 function HomePage() {
 	const projectRef = useRef(null);
 	const aboutRef = useRef(null);
@@ -21,6 +24,15 @@ function HomePage() {
 			contactRef.current.scrollIntoView({ behavior: 'smooth' });
 		}
 	};
+
+	// Fadeing effect
+	useEffect(() => {
+		AOS.init({
+			duration: 1500,
+			easing: 'ease-in-out-sine',
+			once: true,
+		});
+	}, []);
 
 	return (
 		<div className='wrapper'>
@@ -62,7 +74,7 @@ function HomePage() {
 							/>
 						);
 					})}
-					<section className='web-projects__box'>
+					<section className='web-projects__box' data-aos='fade-up'>
 						{webProjects.map((w) => {
 							return (
 								<WebProjects

@@ -48,7 +48,7 @@ function WebProjects({
 				<p className='mobile__info-paragraph'>{desc}</p>
 				<p className='mobile__info-paragraph'>{additionalDesc}</p>
 				<h3>Tekniker som används</h3>
-				<section className='icon__tech-box'>
+				<section className='icon__tech-box icon__tech-box--less-gap'>
 					{tech.map((techName, index) => {
 						const IconComponent = iconMap[techName];
 						return (
@@ -56,7 +56,7 @@ function WebProjects({
 								<section className='icon__item-box'>
 									<IconComponent
 										key={index}
-										size={32}
+										size={26}
 										title={techName}></IconComponent>
 									<p>
 										{techName === 'VScode'

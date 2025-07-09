@@ -14,3 +14,7 @@
 
 .web-page__img:hover {
 }
+
+.icon__tech-box--less-gap {
+	gap: 0.5rem;
+}
