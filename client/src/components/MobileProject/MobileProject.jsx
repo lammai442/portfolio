@@ -5,7 +5,7 @@ function MobileProject({ url, title, tech, desc, additionalDesc }) {
 	const [isLoaded, setIsLoaded] = useState(false);
 
 	return (
-		<section className='mobile__box'>
+		<section className='mobile__box' data-aos='fade-up'>
 			<div className='mobile__frame-box'>
 				<div className='mobile__frame'>
 					{!isLoaded && (

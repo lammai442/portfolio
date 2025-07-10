@@ -9,27 +9,8 @@ function WebProjects({
 	additionalDesc,
 	webPageImg,
 }) {
-	console.log(webUrl);
-
 	return (
 		<section className='web-card__box'>
-			{/* {mobileUrl && (
-				<div className='mobile__frame-box'>
-					<div className='mobile__frame'>
-						{!isLoaded && (
-							<section className='loading__box'>
-								<div className='loading__spinner'></div>
-								<p className='loading__text'>Laddar sidan...</p>
-							</section>
-						)}
-						<iframe
-							src={mobileUrl}
-							title='Mobilapp'
-							className='mobile__iframe'
-							onLoad={() => setIsLoaded(true)}></iframe>
-					</div>
-				</div>
-			)} */}
 			<section>
 				<a
 					href={webUrl}

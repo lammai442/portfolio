@@ -1,8 +1,7 @@
 import Header from '../../components/Header/Header';
 import profileimg from '../../assets/cv-img-round.png';
 import './HomePage.css';
-import { FaLinkedin, FaGithubSquare } from 'react-icons/fa';
-import { CiCircleChevUp } from 'react-icons/ci';
+import { FaLinkedin, FaGithubSquare, FaAngleUp } from 'react-icons/fa';
 import { MdOutgoingMail } from 'react-icons/md';
 import { useRef } from 'react';
 import Contact from '../../components/Contact/Contact';
@@ -49,7 +48,7 @@ function HomePage() {
 					onClick={() => {
 						scrollToSection('toTop');
 					}}>
-					<CiCircleChevUp className='top-scroll-btn__icon' />
+					<FaAngleUp className='top-scroll-btn__icon' />
 				</button>
 				<section className='info__box'>
 					<img
@@ -77,11 +76,7 @@ function HomePage() {
 					</section>
 				</section>
 				<hr />
-				<section
-					ref={projectRef}
-					id='project'
-					className='section__box'
-					data-aos='fade-up'>
+				<section ref={projectRef} id='project' className='section__box'>
 					<h2 className='section__title'>PROJEKT</h2>
 					{mobileProjects.map((m) => {
 						return (

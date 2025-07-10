@@ -13,8 +13,13 @@ function Contact() {
 		});
 	}, []);
 
+	const handleSubmit = (event) => {
+		event.preventDefault();
+		console.log('handleSubmit');
+	};
+
 	return (
-		<form className='form__box' data-aos='fade-up'>
+		<form className='form__box' data-aos='fade-up' onSubmit={handleSubmit}>
 			<label className='contact__box'>
 				<p className='contact__paragraph'>
 					Är du nyfiken på vad jag kan bidra med i ert team? Skicka
@@ -24,15 +29,18 @@ function Contact() {
 				<input
 					type='text'
 					className='contact__input'
-					placeholder='Namn'></input>
+					placeholder='Namn'
+					required={true}></input>
 				<input
 					type='email'
 					className='contact__input'
-					placeholder='Mail'></input>
+					placeholder='Mail'
+					required={true}></input>
 				<textarea
 					type='text'
 					className='contact__text-area'
-					placeholder='Meddelande'></textarea>
+					placeholder='Meddelande'
+					required={true}></textarea>
 				<button type='submit' className='contact__btn'>
 					Skicka
 				</button>
