@@ -5,6 +5,7 @@ import { BiLogoVisualStudio } from 'react-icons/bi';
 import { TbApi } from 'react-icons/tb';
 import myMovieDatabase from '../assets/webpages/my-movie-database.png';
 import bonzAi from '../assets/webpages/bonz-ai.png';
+import catchingPokemons from '../assets/webpages/catching-pokemon.png';
 export const mobileProjects = [
 	{
 		desc: `Where it's @ är en frontend-applikation byggd i React där användare kan upptäcka och köpa biljetter till lokala musikevenemang.`,
@@ -38,6 +39,16 @@ export const webProjects = [
 		webPageImg: myMovieDatabase,
 	},
 	{
+		desc: `Catching pokemon`,
+		additionalDesc:
+			'Projektet har utvecklats av mig från grunden. Jag har lagt fokus på att skapa en användarvänlig upplevelse med tydlig struktur och responsiv design.',
+		webUrl: 'https://lammai442.github.io/catching-pokemons/',
+		title: `Catching Pokemons`,
+		tech: ['JavaScript', 'HTML', 'CSS', 'Git', 'VScode'],
+		git: 'https://github.com/lammai442/catching-pokemons.git',
+		webPageImg: catchingPokemons,
+	},
+	{
 		desc: `Bonz AI`,
 		additionalDesc:
 			'Projektet har utvecklats av mig från grunden. Jag har lagt fokus på att skapa en användarvänlig upplevelse med tydlig struktur och responsiv design.',
@@ -46,26 +57,6 @@ export const webProjects = [
 		tech: ['JavaScript', 'HTML', 'CSS', 'Figma', 'Git', 'VScode'],
 		git: 'https://github.com/lammai442/bonz-ai.git/',
 		webPageImg: bonzAi,
-	},
-	{
-		desc: `Movie database`,
-		additionalDesc:
-			'Projektet har utvecklats av mig från grunden. Jag har lagt fokus på att skapa en användarvänlig upplevelse med tydlig struktur och responsiv design.',
-		webUrl: 'https://lammai442.github.io/catching-pokemons/',
-		title: `Catching Pokemons`,
-		tech: ['JavaScript', 'HTML', 'CSS', 'Figma', 'Git', 'VScode'],
-		git: 'https://lammai442.github.io/my-movie-database/',
-		webPageImg: myMovieDatabase,
-	},
-	{
-		desc: `Movie database`,
-		additionalDesc:
-			'Projektet har utvecklats av mig från grunden. Jag har lagt fokus på att skapa en användarvänlig upplevelse med tydlig struktur och responsiv design.',
-		webUrl: 'https://lammai442.github.io/my-movie-database/',
-		title: `My Movie Database`,
-		tech: ['JavaScript', 'HTML', 'CSS', 'Figma', 'Git', 'VScode'],
-		git: 'https://lammai442.github.io/my-movie-database/',
-		webPageImg: myMovieDatabase,
 	},
 ];
 

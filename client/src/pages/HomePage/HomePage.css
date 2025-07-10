@@ -5,6 +5,25 @@
 	padding: 0 1rem;
 }
 
+.top-scroll-btn__box {
+	position: fixed;
+	right: 2rem;
+	bottom: 2rem;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	z-index: 999;
+}
+
+.top-scroll-btn__box:hover {
+	transform: scale(1.1);
+}
+
+.top-scroll-btn__icon {
+	font-size: 3rem;
+	background-color: var(--secondary-bg-color);
+	border-radius: 50%;
+}
 .info__box {
 	display: flex;
 	justify-content: center;
@@ -63,7 +82,14 @@
 	font-size: 2.5rem;
 }
 
-.web-projects__box {
+.projects__box {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.web-projects__items-box {
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 300px));

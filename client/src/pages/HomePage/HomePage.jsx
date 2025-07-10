@@ -2,6 +2,8 @@ import Header from '../../components/Header/Header';
 import profileimg from '../../assets/cv-img-round.png';
 import './HomePage.css';
 import { FaLinkedin, FaGithubSquare } from 'react-icons/fa';
+import { CiCircleChevUp } from 'react-icons/ci';
+import { MdOutgoingMail } from 'react-icons/md';
 import { useRef } from 'react';
 import Contact from '../../components/Contact/Contact';
 import MobileProject from '../../components/MobileProject/MobileProject';
@@ -14,6 +16,7 @@ function HomePage() {
 	const projectRef = useRef(null);
 	const aboutRef = useRef(null);
 	const contactRef = useRef(null);
+	const toTopRef = useRef(null);
 
 	const scrollToSection = (section) => {
 		if (section === 'about') {
@@ -22,6 +25,8 @@ function HomePage() {
 			projectRef.current.scrollIntoView({ behavior: 'smooth' });
 		} else if (section === 'contact') {
 			contactRef.current.scrollIntoView({ behavior: 'smooth' });
+		} else if (section === 'toTop') {
+			toTopRef.current.scrollIntoView({ behavior: 'smooth' });
 		}
 	};
 
@@ -36,8 +41,16 @@ function HomePage() {
 
 	return (
 		<div className='wrapper'>
+			<div ref={toTopRef}></div>
 			<Header scrollToSection={scrollToSection} />
 			<main className='main__homepage'>
+				<button
+					className='top-scroll-btn__box'
+					onClick={() => {
+						scrollToSection('toTop');
+					}}>
+					<CiCircleChevUp className='top-scroll-btn__icon' />
+				</button>
 				<section className='info__box'>
 					<img
 						src={profileimg}
@@ -57,11 +70,18 @@ function HomePage() {
 							<a href='https://github.com/lammai442/lam-mai'>
 								<FaGithubSquare className='info__right-links' />
 							</a>
+							<a href='mailto:lam.mai442@gmail.com'>
+								<MdOutgoingMail className='info__right-links' />
+							</a>
 						</section>
 					</section>
 				</section>
 				<hr />
-				<section ref={projectRef} id='project' className='section__box'>
+				<section
+					ref={projectRef}
+					id='project'
+					className='section__box'
+					data-aos='fade-up'>
 					<h2 className='section__title'>PROJEKT</h2>
 					{mobileProjects.map((m) => {
 						return (
@@ -74,19 +94,22 @@ function HomePage() {
 							/>
 						);
 					})}
-					<section className='web-projects__box' data-aos='fade-up'>
-						{webProjects.map((w) => {
-							return (
-								<WebProjects
-									webUrl={w.webUrl}
-									title={w.title}
-									tech={w.tech}
-									desc={w.desc}
-									additionalDesc={w.additionalDesc}
-									webPageImg={w.webPageImg}
-								/>
-							);
-						})}
+					<section className='projects__box' data-aos='fade-up'>
+						<h2 className='projects__title'>Webbsidor</h2>
+						<section className='web-projects__items-box'>
+							{webProjects.map((w) => {
+								return (
+									<WebProjects
+										webUrl={w.webUrl}
+										title={w.title}
+										tech={w.tech}
+										desc={w.desc}
+										additionalDesc={w.additionalDesc}
+										webPageImg={w.webPageImg}
+									/>
+								);
+							})}
+						</section>
 					</section>
 				</section>
 				<hr />
