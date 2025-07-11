@@ -11,11 +11,20 @@ import WebProjects from '../../components/WebProjects/WebProjects.jsx';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
+
 function HomePage() {
 	const projectRef = useRef(null);
 	const aboutRef = useRef(null);
 	const contactRef = useRef(null);
 	const toTopRef = useRef(null);
+
+	const titles = [
+		'Webbutvecklare',
+		'Pedagogik',
+		'Kommunikativ',
+		'Webbutvecklare',
+	];
 
 	const scrollToSection = (section) => {
 		if (section === 'about') {
@@ -61,7 +70,16 @@ function HomePage() {
 							Hej, kul att du ville kika in på mig!
 						</p>
 						<h2 className='info__right-middle-txt'>Lam Mai</h2>
-						<p className='info__right-bottom-txt'>Webbutvecklare</p>
+						<section className='info__title-container'>
+							{titles.map((t, index) => {
+								return (
+									<span key={index} className='info__title'>
+										{t}
+									</span>
+								);
+							})}
+						</section>
+
 						<section className='info__right-links-box'>
 							<a href='http://www.linkedin.com/in/lam-mai'>
 								<FaLinkedin className='info__right-links' />
