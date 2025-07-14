@@ -19,12 +19,7 @@ function HomePage() {
 	const contactRef = useRef(null);
 	const toTopRef = useRef(null);
 
-	const titles = [
-		'Webbutvecklare',
-		'Pedagogik',
-		'Kommunikativ',
-		'Webbutvecklare',
-	];
+	const titles = ['Webbutvecklare', 'Pedagogik', 'Webbutvecklare'];
 
 	const scrollToSection = (section) => {
 		if (section === 'about') {
