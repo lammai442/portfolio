@@ -12,6 +12,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import TimeLine from '../../components/TimeLine/TimeLine.jsx';
 
 function HomePage() {
 	const projectRef = useRef(null);
@@ -123,6 +124,7 @@ function HomePage() {
 				<hr />
 				<section ref={aboutRef} id='about' className='section__box'>
 					<h2 className='section__title'>OM MIG</h2>
+					<TimeLine />
 				</section>
 				<hr />
 				<section ref={contactRef} id='contact' className='section__box'>
