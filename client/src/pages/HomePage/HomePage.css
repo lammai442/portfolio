@@ -127,6 +127,14 @@
 	gap: 2rem;
 }
 
+.hobby-projects__items-box {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	place-content: center;
+	gap: 2rem;
+}
+
 @media screen and (max-width: 600px) {
 	.info__box {
 		flex-direction: column;

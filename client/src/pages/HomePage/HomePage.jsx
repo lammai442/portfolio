@@ -13,6 +13,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import TimeLine from '../../components/TimeLine/TimeLine.jsx';
+import HobbyProjects from '../../components/HobbyProjects/HobbyProjects.jsx';
 
 function HomePage() {
 	const projectRef = useRef(null);
@@ -21,6 +22,11 @@ function HomePage() {
 	const toTopRef = useRef(null);
 
 	const titles = ['Webbutvecklare', 'Pedagogik', 'Webbutvecklare'];
+	const hobbyProjects = [
+		'https://www.youtube.com/embed/8LkwRue9aK4?si=LqNZ7-FGdLymO6St',
+		'https://www.youtube.com/embed/73xmRAfDTFA?si=KRFrVuKhNPt5hDEY',
+		'https://www.youtube.com/embed/73xmRAfDTFA?si=KRFrVuKhNPt5hDEY',
+	];
 
 	const scrollToSection = (section) => {
 		if (section === 'about') {
@@ -117,6 +123,14 @@ function HomePage() {
 										webPageImg={w.webPageImg}
 									/>
 								);
+							})}
+						</section>
+					</section>
+					<section className='projects__box' data-aos='fade-up'>
+						<h2 className='projects__title'>Hobby Projekts</h2>
+						<section className='hobby-projects__items-box'>
+							{hobbyProjects.map((h, index) => {
+								return <HobbyProjects url={h} />;
 							})}
 						</section>
 					</section>
