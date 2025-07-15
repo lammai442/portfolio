@@ -3,6 +3,7 @@ import { FaHtml5, FaCss3Alt, FaFigma, FaGithub, FaReact } from 'react-icons/fa';
 import { FaPeopleLine } from 'react-icons/fa6';
 import { BiLogoVisualStudio } from 'react-icons/bi';
 import { TbApi } from 'react-icons/tb';
+import { MdOutlineWorkOutline } from 'react-icons/md';
 import myMovieDatabase from '../assets/webpages/my-movie-database.png';
 import bonzAi from '../assets/webpages/bonz-ai.png';
 import catchingPokemons from '../assets/webpages/catching-pokemon.png';
@@ -57,6 +58,35 @@ export const webProjects = [
 		tech: ['JavaScript', 'HTML', 'CSS', 'Figma', 'Git', 'VScode'],
 		git: 'https://github.com/lammai442/bonz-ai.git/',
 		webPageImg: bonzAi,
+	},
+];
+
+export const TimeLineData = [
+	{
+		id: '1',
+		icon: MdOutlineWorkOutline,
+		title: 'Arbetskonsulent',
+		subtitle: 'Karlstad kommun',
+		content: 'sadasdasdasdasdad',
+		fromDate: 'Maj 2020',
+		toDate: 'Apr 2021',
+		iconStyle: { background: 'rgb(33, 150, 243)', color: '#fff' },
+	},
+	{
+		id: '2',
+		icon: MdOutlineWorkOutline,
+		title: 'Arbetskonsulent',
+		subtitle: 'Karlstad kommun',
+		content: 'sadasdasdasdasdad',
+		fromDate: 'Maj 2020',
+		toDate: 'Apr 2021',
+		iconStyle: { background: 'rgb(33, 150, 243)', color: '#fff' },
+	},
+	{
+		icon: MdOutlineWorkOutline,
+		content: 'sadasdasdasdasdad',
+		fromDate: 'Maj 2020',
+		toDate: 'Apr 2021',
 	},
 ];
 

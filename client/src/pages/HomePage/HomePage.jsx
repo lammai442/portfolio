@@ -23,7 +23,7 @@ function HomePage() {
 
 	const titles = ['Webbutvecklare', 'Pedagogik', 'Webbutvecklare'];
 	const hobbyProjects = [
-		'https://www.youtube.com/embed/8LkwRue9aK4?si=LqNZ7-FGdLymO6St',
+		'https://www.youtube.com/embed/UpqL-yCir9I?si=DUGbNH9yvO_ujVpb',
 		'https://www.youtube.com/embed/73xmRAfDTFA?si=KRFrVuKhNPt5hDEY',
 		'https://www.youtube.com/embed/73xmRAfDTFA?si=KRFrVuKhNPt5hDEY',
 	];
@@ -127,7 +127,9 @@ function HomePage() {
 						</section>
 					</section>
 					<section className='projects__box' data-aos='fade-up'>
-						<h2 className='projects__title'>Hobby Projekts</h2>
+						<h2 className='projects__title'>
+							Andra hobbyprojekter
+						</h2>
 						<section className='hobby-projects__items-box'>
 							{hobbyProjects.map((h, index) => {
 								return <HobbyProjects url={h} />;
@@ -137,7 +139,7 @@ function HomePage() {
 				</section>
 				<hr />
 				<section ref={aboutRef} id='about' className='section__box'>
-					<h2 className='section__title'>OM MIG</h2>
+					<h2 className='section__title'>Arbete och utbildning</h2>
 					<TimeLine />
 				</section>
 				<hr />
