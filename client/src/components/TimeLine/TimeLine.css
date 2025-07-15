@@ -3,5 +3,10 @@
 	color: #787878;
 }
 
-.timeline__item {
+.vertical-timeline-element--work {
+	background-color: red;
+}
+
+.vertical-timeline-element-date {
+	text-align: start;
 }

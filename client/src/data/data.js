@@ -4,6 +4,7 @@ import { FaPeopleLine } from 'react-icons/fa6';
 import { BiLogoVisualStudio } from 'react-icons/bi';
 import { TbApi } from 'react-icons/tb';
 import { MdOutlineWorkOutline } from 'react-icons/md';
+import { IoSchoolOutline } from 'react-icons/io5';
 import myMovieDatabase from '../assets/webpages/my-movie-database.png';
 import bonzAi from '../assets/webpages/bonz-ai.png';
 import catchingPokemons from '../assets/webpages/catching-pokemon.png';
@@ -64,29 +65,30 @@ export const webProjects = [
 export const TimeLineData = [
 	{
 		id: '1',
+		icon: IoSchoolOutline,
+		title: 'Webbutvecklare',
+		subtitle: 'Folkuniversitetet Göteborg',
+		content: 'sadasdasdasdasdad',
+		date: 'Augusti 2023',
+		iconStyle: { background: 'rgb(33, 150, 243)', color: '#fff' },
+	},
+	{
+		id: '1',
 		icon: MdOutlineWorkOutline,
 		title: 'Arbetskonsulent',
 		subtitle: 'Karlstad kommun',
 		content: 'sadasdasdasdasdad',
-		fromDate: 'Maj 2020',
-		toDate: 'Apr 2021',
+		date: 'Maj 2020',
 		iconStyle: { background: 'rgb(33, 150, 243)', color: '#fff' },
 	},
 	{
 		id: '2',
-		icon: MdOutlineWorkOutline,
-		title: 'Arbetskonsulent',
-		subtitle: 'Karlstad kommun',
+		icon: IoSchoolOutline,
+		title: 'Lärarexamen',
+		subtitle: 'GIH Örebro universitet / Uppsala universitet',
 		content: 'sadasdasdasdasdad',
-		fromDate: 'Maj 2020',
-		toDate: 'Apr 2021',
-		iconStyle: { background: 'rgb(33, 150, 243)', color: '#fff' },
-	},
-	{
-		icon: MdOutlineWorkOutline,
-		content: 'sadasdasdasdasdad',
-		fromDate: 'Maj 2020',
-		toDate: 'Apr 2021',
+		date: 'Maj 2020',
+		iconStyle: { background: 'red', color: '#fff' },
 	},
 ];
 

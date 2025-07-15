@@ -18,7 +18,6 @@ function HobbyProjects({ url }) {
 				frameborder='0'
 				className='iframe'
 				onClick={handleClick}></iframe>
-			;
 			{openModal && (
 				<iframe
 					src={url}
