@@ -13,8 +13,13 @@ function Header({ scrollToSection }) {
 					/>
 					<NavItem
 						onClick={scrollToSection}
-						text={'Om mig'}
-						ref={'about'}
+						text={'Erfarenheter'}
+						ref={'experience'}
+					/>
+					<NavItem
+						onClick={scrollToSection}
+						text={'Hobbyprojekt'}
+						ref={'hobbieproject'}
 					/>
 					<NavItem
 						onClick={scrollToSection}

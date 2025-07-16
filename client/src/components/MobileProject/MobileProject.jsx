@@ -24,7 +24,6 @@ function MobileProject({ url, title, tech, desc, additionalDesc }) {
 			<section className='mobile__info-box'>
 				<h2>Mobilapp - {title}</h2>
 				<p className='mobile__info-paragraph'>{desc}</p>
-				<p className='mobile__info-paragraph'>{additionalDesc}</p>
 				<h3>Tekniker som används</h3>
 				<section className='icon__tech-box'>
 					{tech.map((techName, index) => {

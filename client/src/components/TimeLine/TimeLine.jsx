@@ -27,7 +27,9 @@ function TimeLine() {
 									<h3 className='vertical-timeline-element-subtitle'>
 										{t.subtitle}
 									</h3>
-									<p>{t.content}</p>
+									<p className='timeline__content'>
+										{t.content}
+									</p>
 								</VerticalTimelineElement>
 							</>
 						);

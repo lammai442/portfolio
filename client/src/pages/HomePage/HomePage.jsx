@@ -17,9 +17,10 @@ import HobbyProjects from '../../components/HobbyProjects/HobbyProjects.jsx';
 
 function HomePage() {
 	const projectRef = useRef(null);
-	const aboutRef = useRef(null);
+	const experienceRef = useRef(null);
 	const contactRef = useRef(null);
 	const toTopRef = useRef(null);
+	const hobbiesRef = useRef(null);
 
 	const titles = ['Webbutvecklare', 'Pedagogik', 'Webbutvecklare'];
 	const hobbyProjects = [
@@ -30,14 +31,16 @@ function HomePage() {
 	];
 
 	const scrollToSection = (section) => {
-		if (section === 'about') {
-			aboutRef.current.scrollIntoView({ behavior: 'smooth' });
+		if (section === 'experience') {
+			experienceRef.current.scrollIntoView({ behavior: 'smooth' });
 		} else if (section === 'project') {
 			projectRef.current.scrollIntoView({ behavior: 'smooth' });
 		} else if (section === 'contact') {
 			contactRef.current.scrollIntoView({ behavior: 'smooth' });
 		} else if (section === 'toTop') {
 			toTopRef.current.scrollIntoView({ behavior: 'smooth' });
+		} else if (section === 'hobbieproject') {
+			hobbiesRef.current.scrollIntoView({ behavior: 'smooth' });
 		}
 	};
 
@@ -97,7 +100,7 @@ function HomePage() {
 					</section>
 				</section>
 				<hr />
-				<section ref={projectRef} id='project' className='section__box'>
+				<section ref={projectRef} className='section__box'>
 					<h2 className='section__title'>PROJEKT</h2>
 					{mobileProjects.map((m) => {
 						return (
@@ -127,21 +130,23 @@ function HomePage() {
 							})}
 						</section>
 					</section>
-					<section className='projects__box' data-aos='fade-up'>
-						<h2 className='projects__title'>
-							Andra hobbyprojekter
-						</h2>
-						<section className='hobby-projects__items-box'>
-							{hobbyProjects.map((h, index) => {
-								return <HobbyProjects url={h} />;
-							})}
-						</section>
-					</section>
 				</section>
 				<hr />
-				<section ref={aboutRef} id='about' className='section__box'>
-					<h2 className='section__title'>Arbete och utbildning</h2>
+				<section ref={experienceRef} className='section__box'>
+					<h2 className='section__title'>Erfarenheter</h2>
 					<TimeLine />
+				</section>
+				<hr />
+				<section
+					ref={hobbiesRef}
+					className='section__box'
+					data-aos='fade-up'>
+					<h2 className='section__title'>Andra hobbyprojekter</h2>
+					<section className='hobby-projects__items-box'>
+						{hobbyProjects.map((h, index) => {
+							return <HobbyProjects url={h} />;
+						})}
+					</section>
 				</section>
 				<hr />
 				<section ref={contactRef} id='contact' className='section__box'>

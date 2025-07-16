@@ -10,3 +10,7 @@
 .vertical-timeline-element-date {
 	text-align: start;
 }
+
+.timeline__content {
+	white-space: pre-line;
+}

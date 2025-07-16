@@ -21,3 +21,7 @@
 .icon__tech-box--less-gap {
 	gap: 0.5rem;
 }
+
+.mobile__info-paragraph {
+	white-space: pre-line;
+}

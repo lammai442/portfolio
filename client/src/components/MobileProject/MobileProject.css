@@ -46,6 +46,10 @@
 	align-items: center;
 }
 
+.mobile__info-paragraph {
+	white-space: pre-line;
+}
+
 .loading__box {
 	background: linear-gradient(to right, var(--primary-bg-color), #f9d9a8);
 	height: 100%;
