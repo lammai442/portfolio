@@ -5,13 +5,31 @@ import {
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { TimeLineData } from '../../data/data.js';
+import { useEffect, useState } from 'react';
 
-function TimeLine() {
+function TimeLine({ scrollToSection }) {
+	const [visible, setVisible] = useState(3);
+	const [minimize, setminimize] = useState(false);
+
+	const handleShowMore = () => {
+		if (visible < TimeLineData.length) {
+			setVisible((prev) => prev + 3);
+		} else {
+			setVisible(3);
+			setminimize(false);
+			scrollToSection('experience');
+		}
+	};
+
+	useEffect(() => {
+		if (visible > TimeLineData.length) setminimize(true);
+	}, [visible]);
+
 	return (
 		<div className='timeline__box'>
 			<VerticalTimeline lineColor='#787878'>
 				{TimeLineData &&
-					TimeLineData.map((t, index) => {
+					TimeLineData.slice(0, visible).map((t, index) => {
 						const IconComponent = t.icon;
 						return (
 							<>
@@ -35,6 +53,15 @@ function TimeLine() {
 						);
 					})}
 			</VerticalTimeline>
+			<button
+				onClick={handleShowMore}
+				className={
+					minimize
+						? 'timeline__btn timeline__btn--minimize'
+						: 'timeline__btn'
+				}>
+				{minimize ? 'Minimera' : 'Visa fler'}
+			</button>
 		</div>
 	);
 }

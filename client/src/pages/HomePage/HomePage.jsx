@@ -14,6 +14,7 @@ import { useEffect } from 'react';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import TimeLine from '../../components/TimeLine/TimeLine.jsx';
 import HobbyProjects from '../../components/HobbyProjects/HobbyProjects.jsx';
+import { useState } from 'react';
 
 function HomePage() {
 	const projectRef = useRef(null);
@@ -134,14 +135,14 @@ function HomePage() {
 				<hr />
 				<section ref={experienceRef} className='section__box'>
 					<h2 className='section__title'>Erfarenheter</h2>
-					<TimeLine />
+					<TimeLine scrollToSection={scrollToSection} />
 				</section>
 				<hr />
 				<section
 					ref={hobbiesRef}
 					className='section__box'
 					data-aos='fade-up'>
-					<h2 className='section__title'>Andra hobbyprojekter</h2>
+					<h2 className='section__title'>Hobbyprojekt</h2>
 					<section className='hobby-projects__items-box'>
 						{hobbyProjects.map((h, index) => {
 							return <HobbyProjects url={h} />;
