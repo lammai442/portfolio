@@ -28,6 +28,12 @@ function WebProjects({
 				<h2>{title}</h2>
 				<p className='mobile__info-paragraph'>{desc}</p>
 				<p className='mobile__info-paragraph'>{additionalDesc}</p>
+				<a
+					href={webUrl}
+					className='link__url'
+					aria-label='Link to webpage'>
+					Länk
+				</a>
 				<h3>Tekniker som används</h3>
 				<section className='icon__tech-box icon__tech-box--less-gap'>
 					{tech.map((techName, index) => {

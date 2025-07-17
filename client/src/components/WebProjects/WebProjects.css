@@ -3,6 +3,7 @@
 	max-width: 300px;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	background-color: white;
 	padding: 1rem;
 	border-radius: 5px;
@@ -16,6 +17,17 @@
 }
 
 .web-page__img:hover {
+}
+
+.link__url {
+	align-self: center;
+	width: 40%;
+	text-decoration: none;
+	padding: 1rem;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+	border: 1px solid black;
 }
 
 .icon__tech-box--less-gap {

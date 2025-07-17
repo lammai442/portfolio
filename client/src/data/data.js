@@ -27,7 +27,7 @@ export const mobileProjects = [
 
 export const webProjects = [
 	{
-		desc: `Movie database \nProjektet har utvecklats av mig från grunden. Jag har lagt fokus på att skapa en användarvänlig upplevelse med tydlig struktur och responsiv design.`,
+		desc: `Projektet har utvecklats av mig från grunden. Jag har lagt fokus på att skapa en användarvänlig upplevelse med tydlig struktur och responsiv design.`,
 		webUrl: 'https://lammai442.github.io/my-movie-database/',
 		title: `My Movie Database`,
 		tech: ['JavaScript', 'HTML', 'CSS', 'Figma', 'Git', 'VScode', 'API'],
