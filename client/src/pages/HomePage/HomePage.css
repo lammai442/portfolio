@@ -132,7 +132,7 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	place-content: center;
-	gap: 2rem;
+	gap: 1rem;
 }
 
 @media screen and (max-width: 600px) {

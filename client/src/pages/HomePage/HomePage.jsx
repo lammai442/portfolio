@@ -143,9 +143,17 @@ function HomePage() {
 					className='section__box'
 					data-aos='fade-up'>
 					<h2 className='section__title'>Hobbyprojekt</h2>
+					<p>
+						Jag och min dotter älskar att hitta på skämtvideos
+						tillsammans – ett sätt för oss att både ha kul och
+						sprida glädje! Med humor, lekfullhet och lite tokigheter
+						delar vi små stunder som får både oss och andra att
+						skratta. Det är vår grej, vår kvalitetstid och vårt sätt
+						att göra världen lite gladare, en video i taget.
+					</p>
 					<section className='hobby-projects__items-box'>
 						{hobbyProjects.map((h, index) => {
-							return <HobbyProjects url={h} />;
+							return <HobbyProjects url={h} index={index} />;
 						})}
 					</section>
 				</section>
