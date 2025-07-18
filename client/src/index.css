@@ -10,11 +10,13 @@
 /* GENERIC COLORS */
 :root {
 	--primary-bg-color: #f8f6f2;
-	--primary-bg-color: #ffffff;
+	--primary-bg-color: #3bbadb;
 	--secondary-bg-color: #f8f4ed;
 	--accent-bg-color: #d1884f;
+	--white-bg-color: #ffffff;
 	--primary-btn-color: #008aaa;
 
+	--primary-bg-color-03: rgb(59, 186, 219, 0.3);
 	--primary-txt-color: #000;
 	--secondary-text-color: #ffffff;
 
@@ -32,5 +34,5 @@
 }
 
 body {
-	background-color: var(--primary-bg-color);
+	background-color: var(--white-bg-color);
 }

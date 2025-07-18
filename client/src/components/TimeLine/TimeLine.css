@@ -13,15 +13,15 @@
 
 .timeline__btn {
 	margin-top: 1rem;
-	padding: 1rem;
+	padding: 0.5rem;
 	border-radius: 5px;
-	border: none;
-	background-color: white;
+	border: 2px solid var(--primary-bg-color);
+	background-color: var(--white-bg-color);
 	font-size: 1.2rem;
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 	cursor: pointer;
 }
 
 .timeline__btn--minimize {
-	background-color: rgb(211, 211, 211);
+	background-color: var(--primary-btn-color);
 }
