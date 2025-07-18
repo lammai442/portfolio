@@ -24,10 +24,11 @@
 	width: 40%;
 	text-decoration: none;
 	padding: 1rem;
-	background-color: white;
+	background-color: var(--primary-btn-color);
 	border-radius: 5px;
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 	border: 1px solid black;
+	color: var(--secondary-text-color);
 }
 
 .icon__tech-box--less-gap {
