@@ -4,7 +4,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background-color: white;
+	background-color: var(--primary-bg-color);
 	padding: 1rem;
 	border-radius: 5px;
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
@@ -27,8 +27,13 @@
 	background-color: var(--primary-btn-color);
 	border-radius: 5px;
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-	border: 1px solid black;
+	border: 1px solid var(--primary-btn-color);
 	color: var(--secondary-text-color);
+}
+
+.link__url:hover {
+	background-color: var(--primary-bg-color);
+	color: var(--primary-txt-color);
 }
 
 .icon__tech-box--less-gap {
