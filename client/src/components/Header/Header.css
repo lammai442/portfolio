@@ -9,13 +9,21 @@
 		font-style: italic;
 		font-weight: 300;
 	}
-
-	.nav__list {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 1rem;
-	}
 }
+
+.nav__list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	/* transition: all 0.5s ease-in-out; */
+}
+/* .nav__list:hover li {
+		opacity: 0.9;
+	} */
+
+/* .nav__list:hover li:hover {
+	opacity: 1;
+} */
 
 @media screen and (max-width: 600px) {
 	.header {

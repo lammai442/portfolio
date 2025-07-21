@@ -1,3 +1,11 @@
+.hobby-projects__box {
+	transition: all 0.3s ease-in-out;
+}
+
+.hobby-projects__box:hover {
+	transform: scale(1.05);
+}
+
 .iframe {
 	width: 100%;
 	aspect-ratio: 16/9;

@@ -12,7 +12,7 @@ function HobbyProjects({ url, index }) {
 	};
 
 	return (
-		<section key={index} className=''>
+		<section key={index} className='hobby-projects__box'>
 			<iframe
 				src={url}
 				frameborder='0'
