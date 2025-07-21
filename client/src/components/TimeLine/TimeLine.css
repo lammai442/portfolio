@@ -20,6 +20,7 @@
 	font-size: 1.2rem;
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 	cursor: pointer;
+	transition: all 0.3s ease-in-out;
 }
 
 .timeline__btn--minimize {
@@ -30,4 +31,5 @@
 .timeline__btn--minimize:hover {
 	background-color: var(--primary-btn-color);
 	color: var(--secondary-text-color);
+	transform: scale(1.1);
 }
