@@ -17,9 +17,9 @@
 	gap: 1rem;
 	/* transition: all 0.5s ease-in-out; */
 }
-/* .nav__list:hover li {
-		opacity: 0.9;
-	} */
+.nav__list:hover li {
+	color: grey;
+}
 
 /* .nav__list:hover li:hover {
 	opacity: 1;
