@@ -4,9 +4,9 @@
 	font-family: var(--secondary-font);
 }
 
-/* .nav__title:hover {
-	color: grey;
-} */
+.nav__title:hover {
+	color: var();
+}
 
 .nav__title::after {
 	content: '';
