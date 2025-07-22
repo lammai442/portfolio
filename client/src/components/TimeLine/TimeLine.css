@@ -30,6 +30,6 @@
 .timeline__btn:hover,
 .timeline__btn--minimize:hover {
 	background-color: var(--primary-btn-color);
-	color: var(--secondary-text-color);
+	color: var(--white-text-color);
 	transform: scale(1.1);
 }

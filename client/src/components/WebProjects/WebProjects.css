@@ -34,7 +34,7 @@
 	border-radius: 50px;
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 	border: 1px solid var(--primary-btn-color);
-	color: var(--secondary-text-color);
+	color: var(--white-text-color);
 	transition: all 0.3s ease-in-out;
 }
 
@@ -50,7 +50,7 @@
 
 .link__url--white:hover {
 	background-color: var(--accent-bg-color);
-	color: var(--secondary-text-color);
+	color: var(--white-text-color);
 }
 
 .icon__tech-box--less-gap {

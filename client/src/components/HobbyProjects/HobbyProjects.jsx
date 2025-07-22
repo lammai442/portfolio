@@ -12,18 +12,12 @@ function HobbyProjects({ url, index }) {
 	};
 
 	return (
-		<section key={index} className='hobby-projects__box'>
-			<iframe
-				src={url}
-				frameborder='0'
-				className='iframe'
-				onClick={handleClick}></iframe>
-			{openModal && (
-				<iframe
-					src={url}
-					frameborder='0'
-					className='iframe-modal'></iframe>
-			)}
+		<section
+			key={index}
+			className='hobby-projects__box'
+			onClick={handleClick}>
+			<iframe src={url} className='iframe' allowFullScreen></iframe>
+			{openModal && <iframe src={url} className='iframe-modal'></iframe>}
 		</section>
 	);
 }
