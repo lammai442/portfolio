@@ -14,7 +14,7 @@ import { useEffect } from 'react';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import TimeLine from '../../components/TimeLine/TimeLine.jsx';
 import HobbyProjects from '../../components/HobbyProjects/HobbyProjects.jsx';
-import { useState } from 'react';
+import { hobbyProjects } from '../../data/data.js';
 
 function HomePage() {
 	const projectRef = useRef(null);
@@ -24,12 +24,6 @@ function HomePage() {
 	const hobbiesRef = useRef(null);
 
 	const titles = ['Webbutvecklare', 'Pedagogik', 'Webbutvecklare'];
-	const hobbyProjects = [
-		'https://www.youtube.com/embed/UpqL-yCir9I?si=DUGbNH9yvO_ujVpb',
-		'https://www.youtube.com/embed/mSomucajWoM?si=hQzLTTUaOc7Z_ffF',
-		'https://www.youtube.com/embed/LIYX7OQBpII?si=SgNo3Z7tKmBOJ5T8',
-		'https://www.youtube.com/embed/hVmWIBVKBa8?si=MomyBTDbEZPz2yMK',
-	];
 
 	const scrollToSection = (section) => {
 		if (section === 'experience') {
@@ -103,9 +97,10 @@ function HomePage() {
 				<hr />
 				<section ref={projectRef} className='section__box'>
 					<h2 className='section__title'>PROJEKT</h2>
-					{mobileProjects.map((m) => {
+					{mobileProjects.map((m, index) => {
 						return (
 							<MobileProject
+								key={index}
 								url={m.url}
 								title={m.title}
 								tech={m.tech}
@@ -117,9 +112,10 @@ function HomePage() {
 					<section className='projects__box' data-aos='fade-up'>
 						<h2 className='projects__title'>Webbsidor</h2>
 						<section className='web-projects__items-box'>
-							{webProjects.map((w) => {
+							{webProjects.map((w, index) => {
 								return (
 									<WebProjects
+										key={index}
 										webUrl={w.webUrl}
 										title={w.title}
 										tech={w.tech}

@@ -139,3 +139,10 @@ export const iconMap = {
 	React: FaReact,
 	API: TbApi,
 };
+
+export const hobbyProjects = [
+	'https://www.youtube.com/embed/UpqL-yCir9I?si=DUGbNH9yvO_ujVpb',
+	'https://www.youtube.com/embed/mSomucajWoM?si=hQzLTTUaOc7Z_ffF',
+	'https://www.youtube.com/embed/LIYX7OQBpII?si=SgNo3Z7tKmBOJ5T8',
+	'https://www.youtube.com/embed/hVmWIBVKBa8?si=MomyBTDbEZPz2yMK',
+];

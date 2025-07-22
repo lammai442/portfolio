@@ -48,9 +48,8 @@ function WebProjects({
 						const IconComponent = iconMap[techName];
 						return (
 							IconComponent && (
-								<section className='icon__item-box'>
+								<section className='icon__item-box' key={index}>
 									<IconComponent
-										key={index}
 										size={26}
 										title={techName}></IconComponent>
 									<p>
