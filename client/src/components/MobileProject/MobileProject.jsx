@@ -30,9 +30,8 @@ function MobileProject({ url, title, tech, desc, additionalDesc }) {
 						const IconComponent = iconMap[techName];
 						return (
 							IconComponent && (
-								<section className='icon__item-box'>
+								<section className='icon__item-box' key={index}>
 									<IconComponent
-										key={index}
 										size={32}
 										title={techName}></IconComponent>
 									<p>
