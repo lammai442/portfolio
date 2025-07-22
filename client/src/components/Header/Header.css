@@ -17,6 +17,11 @@
 	gap: 1rem;
 }
 
+.nav__list:hover li {
+	color: grey;
+	opacity: 0.9;
+}
+
 @media screen and (max-width: 600px) {
 	.header {
 		flex-direction: column;
