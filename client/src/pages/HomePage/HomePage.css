@@ -29,7 +29,14 @@
 	background-color: var(--secondary-bg-color);
 	border-radius: 50%;
 	border: 2px solid black;
+	transition: all 0.3s ease-in-out;
 }
+
+.top-scroll-btn__icon:hover {
+	background-color: var(--primary-bg-color);
+	color: var(--white-text-color);
+}
+
 .info__box {
 	display: flex;
 	justify-content: center;

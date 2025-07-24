@@ -13,13 +13,31 @@
 }
 
 .contact__input,
-.contact__text-area,
-.contact__btn {
+.contact__text-area {
 	padding: 0.5rem;
 	align-self: center;
 	width: 100%;
 	border-radius: 0.625rem;
 	border: 1px solid black;
+}
+
+.contact__btn {
+	padding: 0.7rem 0.5rem;
+	border-radius: 0.625rem;
+	border: none;
+	background-color: var(--primary-bg-color);
+	color: var(--white-text-color);
+	transition: all 0.3s ease-in-out;
+}
+
+.contact__btn:hover {
+	transform: scale(1.02);
+}
+
+.contact__input:focus,
+.contact__text-area:focus {
+	outline: none;
+	border: 2px solid var(--primary-text-color);
 }
 
 .contact__text-area {

@@ -8,6 +8,11 @@
 	padding: 1rem;
 	border-radius: 5px;
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+	transition: all 0.5s ease-in-out;
+}
+
+.web-card__box:hover {
+	transform: scale(1.05);
 }
 
 .web-page__img {

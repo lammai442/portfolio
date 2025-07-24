@@ -49,9 +49,7 @@ function WebProjects({
 						return (
 							IconComponent && (
 								<section className='icon__item-box' key={index}>
-									<IconComponent
-										size={26}
-										title={techName}></IconComponent>
+									<IconComponent size={26}></IconComponent>
 									<p>
 										{techName === 'VScode'
 											? 'VS code'
