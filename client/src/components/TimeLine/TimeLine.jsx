@@ -32,24 +32,19 @@ function TimeLine({ scrollToSection }) {
 					TimeLineData.slice(0, visible).map((t, index) => {
 						const IconComponent = t.icon;
 						return (
-							<>
-								<VerticalTimelineElement
-									animate={true}
-									key={t.id}
-									date={t.date}
-									icon={<IconComponent />}
-									iconStyle={t.iconStyle}>
-									<h2 className='vertical-timeline-element-title'>
-										{t.title}
-									</h2>
-									<h3 className='vertical-timeline-element-subtitle'>
-										{t.subtitle}
-									</h3>
-									<p className='timeline__content'>
-										{t.content}
-									</p>
-								</VerticalTimelineElement>
-							</>
+							<VerticalTimelineElement
+								key={t.id}
+								date={t.date}
+								icon={<IconComponent />}
+								iconStyle={t.iconStyle}>
+								<h2 className='vertical-timeline-element-title'>
+									{t.title}
+								</h2>
+								<h3 className='vertical-timeline-element-subtitle'>
+									{t.subtitle}
+								</h3>
+								<p className='timeline__content'>{t.content}</p>
+							</VerticalTimelineElement>
 						);
 					})}
 			</VerticalTimeline>

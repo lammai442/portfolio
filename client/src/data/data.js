@@ -77,7 +77,7 @@ Ansvarig för utskick av nyhetsbrev, digital information på Karlstad.se samt st
 		iconStyle: { background: 'var(--accent-bg-color)', color: '#fff' },
 	},
 	{
-		id: '2',
+		id: '3',
 		icon: MdOutlineWorkOutline,
 		title: 'Mai foto – Eget företag',
 		subtitle: 'Karlstads kommun',
@@ -86,7 +86,7 @@ Ansvarig för utskick av nyhetsbrev, digital information på Karlstad.se samt st
 		iconStyle: { background: 'var(--accent-bg-color)', color: '#fff' },
 	},
 	{
-		id: '2',
+		id: '4',
 		icon: MdOutlineWorkOutline,
 		title: 'e-Social – Eget företag',
 		subtitle: 'Karlstads kommun',
@@ -95,7 +95,7 @@ Ansvarig för utskick av nyhetsbrev, digital information på Karlstad.se samt st
 		iconStyle: { background: 'var(--accent-bg-color)', color: '#fff' },
 	},
 	{
-		id: '2',
+		id: '5',
 		icon: MdOutlineWorkOutline,
 		title: 'Integrationshandledare',
 		subtitle: 'Kils kommun',
@@ -104,7 +104,7 @@ Ansvarig för utskick av nyhetsbrev, digital information på Karlstad.se samt st
 		iconStyle: { background: 'var(--accent-bg-color)', color: '#fff' },
 	},
 	{
-		id: '2',
+		id: '6',
 		icon: MdOutlineWorkOutline,
 		title: 'Integrationshandledare',
 		subtitle: 'Karlstads kommun',
@@ -114,7 +114,7 @@ Ansvarig för utskick av nyhetsbrev, digital information på Karlstad.se samt st
 		iconStyle: { background: 'var(--accent-bg-color)', color: '#fff' },
 	},
 	{
-		id: '2',
+		id: '7',
 		icon: IoSchoolOutline,
 		title: 'Lärarexamen inom idrott & media',
 		subtitle: 'GIH Örebro universitet / Uppsala universitet',
