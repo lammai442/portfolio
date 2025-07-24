@@ -149,7 +149,7 @@ function HomePage() {
 					</p>
 					<section className='hobby-projects__items-box'>
 						{hobbyProjects.map((h, index) => {
-							return <HobbyProjects url={h} index={index} />;
+							return <HobbyProjects url={h} key={index} />;
 						})}
 					</section>
 				</section>

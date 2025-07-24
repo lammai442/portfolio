@@ -46,6 +46,10 @@
 	align-items: center;
 }
 
+.icon__item-box:hover {
+	color: var(--primary-text-color);
+}
+
 .mobile__info-paragraph {
 	white-space: pre-line;
 }

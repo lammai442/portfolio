@@ -2,7 +2,7 @@ import { iframe, section } from 'framer-motion/client';
 import './HobbyProjects.css';
 import { useState } from 'react';
 
-function HobbyProjects({ url, index }) {
+function HobbyProjects({ url }) {
 	const [openModal, setOpenModal] = useState(false);
 
 	const handleClick = () => {
@@ -12,7 +12,7 @@ function HobbyProjects({ url, index }) {
 	};
 
 	return (
-		<section key={index} className='hobby-projects__box'>
+		<section className='hobby-projects__box'>
 			<iframe
 				src={url}
 				className='iframe'

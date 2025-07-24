@@ -1,7 +1,7 @@
 import './MobileProject.css';
 import { useState } from 'react';
 import { iconMap } from '../../data/data.js';
-function MobileProject({ url, title, tech, desc, additionalDesc }) {
+function MobileProject({ url, title, tech, desc }) {
 	const [isLoaded, setIsLoaded] = useState(false);
 
 	return (
@@ -33,8 +33,10 @@ function MobileProject({ url, title, tech, desc, additionalDesc }) {
 								<section className='icon__item-box' key={index}>
 									<IconComponent
 										size={32}
-										title={techName}></IconComponent>
-									<p>
+										className={
+											'icon__component'
+										}></IconComponent>
+									<p className='icon__text'>
 										{techName === 'VScode'
 											? 'VS code'
 											: techName}

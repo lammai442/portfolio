@@ -62,6 +62,7 @@
 			.info__right-links {
 				font-size: 3rem;
 				color: #0077b5;
+				transition: all 0.3s ease-in-out;
 			}
 
 			.info__right-links:hover {
