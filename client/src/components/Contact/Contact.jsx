@@ -4,7 +4,10 @@ import 'aos/dist/aos.css';
 import { useEffect, useState } from 'react';
 
 function Contact() {
-	const [submitForm, setSubmitForm] = useState(null);
+	const [name, setName] = useState('Adam');
+	const [email, setEmail] = useState('asdsad@sad.sa');
+	const [textArea, setTextArea] = useState('asdads');
+	const [sentMsg, setSentMsg] = useState(false);
 	// Fadeing effect
 	useEffect(() => {
 		AOS.init({
@@ -16,6 +19,10 @@ function Contact() {
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
+		console.log(name + email + textArea);
+		setName('');
+		setEmail('');
+		setTextArea('');
 	};
 
 	return (
@@ -30,27 +37,28 @@ function Contact() {
 					type='text'
 					className='contact__input'
 					placeholder='Namn'
-					name='name-input'
-					defaultValue={'Adam'}
-					required={true}></input>
+					value={name}
+					required={true}
+					onChange={(e) => setName(e.target.value)}></input>
 				<input
 					type='email'
 					className='contact__input'
 					placeholder='Mail'
-					name='email-input'
-					defaultValue={'asdad@dsd.se'}
+					value={email}
+					onChange={(e) => setEmail(e.target.value)}
 					required={true}></input>
 				<textarea
 					type='text'
-					defaultValue={'hej'}
 					className='contact__text-area'
 					placeholder='Meddelande'
-					name='textarea-input'
+					onChange={(e) => setTextArea(e.target.value)}
+					value={textArea}
 					required={true}></textarea>
 				<button type='submit' className='contact__btn'>
 					Skicka
 				</button>
 			</label>
+			{sentMsg && }
 		</form>
 	);
 }
