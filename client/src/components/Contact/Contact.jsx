@@ -1,6 +1,7 @@
 import './Contact.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { p } from 'framer-motion/client';
 import { useEffect, useState } from 'react';
 
 function Contact() {
@@ -23,6 +24,11 @@ function Contact() {
 		setName('');
 		setEmail('');
 		setTextArea('');
+		setSentMsg(true);
+
+		setTimeout(() => {
+			setSentMsg(false);
+		}, 2500);
 	};
 
 	return (
@@ -58,7 +64,9 @@ function Contact() {
 					Skicka
 				</button>
 			</label>
-			{sentMsg && }
+			{sentMsg && (
+				<p className='contact__sent-msg'>Tack för din kontakt</p>
+			)}
 		</form>
 	);
 }
