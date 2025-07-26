@@ -64,6 +64,9 @@ function Contact() {
 					Skicka
 				</button>
 			</label>
+			<div className='sent-msg__box'>
+				<p className='sent-msg__text'>Tack för din kontakt</p>
+			</div>
 			{sentMsg && (
 				<p className='contact__sent-msg'>Tack för din kontakt</p>
 			)}

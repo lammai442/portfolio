@@ -3,6 +3,7 @@
 	background-color: white;
 	border-radius: 0.625rem;
 	box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.15);
+	position: relative;
 }
 
 .contact__box {
@@ -47,4 +48,18 @@
 
 .contact__btn {
 	cursor: pointer;
+}
+
+.sent-msg__box {
+	position: absolute;
+	padding: 2rem;
+	border-radius: 5px;
+	top: 40%;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 999;
+	background-color: var(--accent-bg-color);
+}
+
+.sent-msg__text {
 }
