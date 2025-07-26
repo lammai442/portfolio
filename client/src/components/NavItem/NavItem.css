@@ -30,3 +30,7 @@
 	font-size: 1.8rem;
 	cursor: pointer;
 }
+
+.nav__item:hover {
+	opacity: 1;
+}

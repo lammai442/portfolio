@@ -17,10 +17,13 @@
 	gap: 1rem;
 }
 
-/* .nav__list:hover li {
-	color: grey;
-	opacity: 0.9;
-} */
+.nav__list:hover .nav__item {
+	opacity: 0.5;
+}
+
+.nav__item:hover {
+	opacity: 1;
+}
 
 @media screen and (max-width: 600px) {
 	.header {
