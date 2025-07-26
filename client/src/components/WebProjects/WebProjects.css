@@ -21,9 +21,6 @@
 	cursor: pointer;
 }
 
-.web-page__img:hover {
-}
-
 .link__box {
 	display: flex;
 	justify-content: center;
