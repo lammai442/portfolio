@@ -59,6 +59,7 @@
 	transform: translateX(-50%);
 	z-index: 999;
 	background-color: var(--accent-bg-color);
+	color: var(--white-text-color);
 }
 
 .sent-msg__text {
