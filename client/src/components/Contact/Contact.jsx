@@ -10,6 +10,7 @@ function Contact() {
 	const [textArea, setTextArea] = useState('asdads');
 	const [sentMsg, setSentMsg] = useState(false);
 	const form = useRef();
+	const publicKey = import.meta.env.VITE_PUBLIC_KEY;
 
 	// Fade sentMsging effect
 	useEffect(() => {
@@ -28,9 +29,9 @@ function Contact() {
 		setTextArea('');
 		setSentMsg(true);
 
-		// emailjs.sendForm('service_p4tn17r', 'template_8fzves8', form.current, {
-		// 	publicKey: '7niU1DhY5yrmhkVx2',
-		// });
+		emailjs.sendForm('service_p4tn17r', 'template_8fzves8', form.current, {
+			publicKey: publicKey,
+		});
 
 		setTimeout(() => {
 			setSentMsg((prev) => !prev);
@@ -45,9 +46,9 @@ function Contact() {
 			onSubmit={handleSubmit}>
 			<label className='contact__box'>
 				<p className='contact__paragraph'>
-					Är du nyfiken på vad jag kan bidra med i ert team? Skicka
-					gärna ett meddelande via formuläret nedan – jag ser fram
-					emot att höra mer om er!
+					Är du nyfiken på vad jag kan bidra med i ert team? {'\n'}
+					Skicka gärna ett meddelande via formuläret nedan – jag ser
+					fram emot att höra mer om er!
 				</p>
 				<input
 					type='text'
@@ -82,8 +83,8 @@ function Contact() {
 					className='sent-msg__box'
 					onClick={() => setSentMsg((prev) => !prev)}>
 					<p className='sent-msg__text'>
-						Oh vad kul med mail. Jag kommer svara dig så fort jag
-						kan!
+						Oh vad kul med mail.{'\n'}Jag kommer svara dig så fort
+						jag kan!
 					</p>
 				</div>
 			)}

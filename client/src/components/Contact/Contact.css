@@ -13,6 +13,10 @@
 	padding: 1rem;
 }
 
+.contact__paragraph {
+	white-space: pre-line;
+}
+
 .contact__input,
 .contact__text-area {
 	padding: 0.5rem;
@@ -69,4 +73,5 @@
 	background-color: var(--accent-bg-color);
 	color: var(--white-text-color);
 	border-radius: 5px;
+	white-space: pre-line;
 }
