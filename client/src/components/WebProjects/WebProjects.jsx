@@ -31,12 +31,14 @@ function WebProjects({
 				<section className='link__box'>
 					<a
 						href={webUrl}
+						target='_blank'
 						className='link__url'
 						aria-label='Link to webpage'>
 						Demo
 					</a>
 					<a
 						href={webUrl}
+						target='_blank'
 						className='link__url link__url--white'
 						aria-label='Link to githubpages'>
 						Git

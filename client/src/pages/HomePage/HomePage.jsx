@@ -82,13 +82,19 @@ function HomePage() {
 						</section>
 
 						<section className='info__right-links-box'>
-							<a href='http://www.linkedin.com/in/lam-mai'>
+							<a
+								href='http://www.linkedin.com/in/lam-mai'
+								target='_blank'>
 								<FaLinkedin className='info__right-links' />
 							</a>
-							<a href='https://github.com/lammai442/lam-mai'>
+							<a
+								href='https://github.com/lammai442'
+								target='_blank'>
 								<FaGithubSquare className='info__right-links' />
 							</a>
-							<a href='mailto:lam.mai442@gmail.com'>
+							<a
+								href='mailto:lam.mai442@gmail.com'
+								target='_blank'>
 								<MdOutgoingMail className='info__right-links' />
 							</a>
 						</section>

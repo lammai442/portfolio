@@ -11,7 +11,7 @@ function Contact() {
 	const [sentMsg, setSentMsg] = useState(false);
 	const form = useRef();
 
-	// FadsentMsgeing effect
+	// Fade sentMsging effect
 	useEffect(() => {
 		AOS.init({
 			duration: 1500,
@@ -28,13 +28,13 @@ function Contact() {
 		setTextArea('');
 		setSentMsg(true);
 
-		emailjs.sendForm('service_p4tn17r', 'template_8fzves8', form.current, {
-			publicKey: '7niU1DhY5yrmhkVx2',
-		});
+		// emailjs.sendForm('service_p4tn17r', 'template_8fzves8', form.current, {
+		// 	publicKey: '7niU1DhY5yrmhkVx2',
+		// });
 
 		setTimeout(() => {
 			setSentMsg((prev) => !prev);
-		}, 2500);
+		}, 3000);
 	};
 
 	return (
@@ -81,7 +81,10 @@ function Contact() {
 				<div
 					className='sent-msg__box'
 					onClick={() => setSentMsg((prev) => !prev)}>
-					<p className='sent-msg__text'>Tack för din kontakt</p>
+					<p className='sent-msg__text'>
+						Oh vad kul med mail. Jag kommer svara dig så fort jag
+						kan!
+					</p>
 				</div>
 			)}
 		</form>
