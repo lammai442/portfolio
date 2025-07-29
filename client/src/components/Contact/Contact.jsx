@@ -1,14 +1,15 @@
 import './Contact.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { div, p } from 'framer-motion/client';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 function Contact() {
 	const [name, setName] = useState('Adam');
 	const [email, setEmail] = useState('asdsad@sad.sa');
 	const [textArea, setTextArea] = useState('asdads');
 	const [sentMsg, setSentMsg] = useState(false);
+	const form = useRef();
 
 	// FadsentMsgeing effect
 	useEffect(() => {
@@ -27,13 +28,21 @@ function Contact() {
 		setTextArea('');
 		setSentMsg(true);
 
+		emailjs.sendForm('service_p4tn17r', 'template_8fzves8', form.current, {
+			publicKey: '7niU1DhY5yrmhkVx2',
+		});
+
 		setTimeout(() => {
 			setSentMsg((prev) => !prev);
 		}, 2500);
 	};
 
 	return (
-		<form className='form__box' data-aos='fade-up' onSubmit={handleSubmit}>
+		<form
+			ref={form}
+			className='form__box'
+			data-aos='fade-up'
+			onSubmit={handleSubmit}>
 			<label className='contact__box'>
 				<p className='contact__paragraph'>
 					Är du nyfiken på vad jag kan bidra med i ert team? Skicka
@@ -46,6 +55,7 @@ function Contact() {
 					placeholder='Namn'
 					value={name}
 					required={true}
+					name='name'
 					onChange={(e) => setName(e.target.value)}></input>
 				<input
 					type='email'
@@ -53,14 +63,16 @@ function Contact() {
 					placeholder='Mail'
 					value={email}
 					onChange={(e) => setEmail(e.target.value)}
-					required={true}></input>
+					required={true}
+					name='email'></input>
 				<textarea
 					type='text'
 					className='contact__text-area'
 					placeholder='Meddelande'
 					onChange={(e) => setTextArea(e.target.value)}
 					value={textArea}
-					required={true}></textarea>
+					required={true}
+					name='message'></textarea>
 				<button type='submit' className='contact__btn'>
 					Skicka
 				</button>

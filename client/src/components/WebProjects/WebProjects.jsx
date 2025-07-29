@@ -33,7 +33,7 @@ function WebProjects({
 						href={webUrl}
 						className='link__url'
 						aria-label='Link to webpage'>
-						Länk
+						Demo
 					</a>
 					<a
 						href={webUrl}
