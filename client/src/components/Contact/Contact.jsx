@@ -9,7 +9,8 @@ function Contact() {
 	const [email, setEmail] = useState('asdsad@sad.sa');
 	const [textArea, setTextArea] = useState('asdads');
 	const [sentMsg, setSentMsg] = useState(false);
-	// Fadeing effect
+
+	// FadsentMsgeing effect
 	useEffect(() => {
 		AOS.init({
 			duration: 1500,
@@ -26,9 +27,9 @@ function Contact() {
 		setTextArea('');
 		setSentMsg(true);
 
-		// setTimeout(() => {
-		// 	setSentMsg(false);
-		// }, 2500);
+		setTimeout(() => {
+			setSentMsg((prev) => !prev);
+		}, 2500);
 	};
 
 	return (
