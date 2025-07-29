@@ -62,5 +62,9 @@
 	color: var(--white-text-color);
 }
 
+.form__box--opacity {
+	opacity: 1;
+}
+
 .sent-msg__text {
 }

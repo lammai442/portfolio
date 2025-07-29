@@ -20,7 +20,7 @@ function Contact() {
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
-		console.log(name + email + textArea);
+
 		setName('');
 		setEmail('');
 		setTextArea('');
@@ -32,7 +32,12 @@ function Contact() {
 	};
 
 	return (
-		<form className='form__box' data-aos='fade-up' onSubmit={handleSubmit}>
+		<form
+			className={
+				{ sentMsg } ? 'form__box form__box--opacity' : 'form__box'
+			}
+			data-aos='fade-up'
+			onSubmit={handleSubmit}>
 			<label className='contact__box'>
 				<p className='contact__paragraph'>
 					Är du nyfiken på vad jag kan bidra med i ert team? Skicka
