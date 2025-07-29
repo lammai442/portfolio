@@ -16,7 +16,7 @@ import TimeLine from '../../components/TimeLine/TimeLine.jsx';
 import HobbyProjects from '../../components/HobbyProjects/HobbyProjects.jsx';
 import { hobbyProjects } from '../../data/data.js';
 import LinkElement from '../../components/LinkElement/LinkElement.jsx';
-import cv from '../../assets/cv/lam-mai-cv.pdf';
+import cv from '../../assets/cv/lam-mai-CV.pdf';
 
 function HomePage() {
 	const projectRef = useRef(null);
