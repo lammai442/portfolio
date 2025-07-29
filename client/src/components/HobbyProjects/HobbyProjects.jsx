@@ -1,4 +1,3 @@
-import { iframe, section } from 'framer-motion/client';
 import './HobbyProjects.css';
 import { useState } from 'react';
 
@@ -8,16 +7,17 @@ function HobbyProjects({ url }) {
 	const handleClick = () => {
 		console.log('click');
 
-		// setOpenModal(true);
+		setOpenModal(true);
 	};
 
 	return (
-		<section className='hobby-projects__box'>
+		<section className='hobby-projects__box' onClick={handleClick}>
+			{openModal && <div>hejs</div>}
 			<iframe
 				src={url}
 				className='iframe'
 				allowFullScreen
-				onClick={handleClick}></iframe>
+				onClick={() => handleClick}></iframe>
 			{openModal && <iframe src={url} className='iframe-modal'></iframe>}
 		</section>
 	);

@@ -15,6 +15,8 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import TimeLine from '../../components/TimeLine/TimeLine.jsx';
 import HobbyProjects from '../../components/HobbyProjects/HobbyProjects.jsx';
 import { hobbyProjects } from '../../data/data.js';
+import LinkElement from '../../components/LinkElement/LinkElement.jsx';
+import cv from '../../assets/cv/lam-mai-cv.pdf';
 
 function HomePage() {
 	const projectRef = useRef(null);
@@ -97,6 +99,13 @@ function HomePage() {
 								target='_blank'>
 								<MdOutgoingMail className='info__right-links' />
 							</a>
+						</section>
+						<section>
+							<LinkElement
+								webUrl={cv}
+								linkStyle={'link__url link__url--white'}
+								text={'CV'}
+							/>
 						</section>
 					</section>
 				</section>

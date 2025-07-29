@@ -1,0 +1,33 @@
+.link__box {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.link__url {
+	align-self: center;
+	width: 40%;
+	text-decoration: none;
+	padding: 1rem;
+	background-color: var(--primary-btn-color);
+	border-radius: 50px;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+	border: 1px solid var(--primary-btn-color);
+	color: var(--white-text-color);
+	transition: all 0.3s ease-in-out;
+}
+
+.link__url:hover {
+	transform: scale(1.1);
+}
+
+.link__url--white {
+	border: 1px solid var(--accent-bg-color);
+	background-color: var(--secondary-bg-color);
+	color: var(--primary-text-color);
+}
+
+.link__url--white:hover {
+	background-color: var(--accent-bg-color);
+	color: var(--white-text-color);
+}
