@@ -1,7 +1,7 @@
 import './Contact.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { p } from 'framer-motion/client';
+import { div, p } from 'framer-motion/client';
 import { useEffect, useState } from 'react';
 
 function Contact() {
@@ -26,18 +26,13 @@ function Contact() {
 		setTextArea('');
 		setSentMsg(true);
 
-		setTimeout(() => {
-			setSentMsg(false);
-		}, 2500);
+		// setTimeout(() => {
+		// 	setSentMsg(false);
+		// }, 2500);
 	};
 
 	return (
-		<form
-			className={
-				{ sentMsg } ? 'form__box form__box--opacity' : 'form__box'
-			}
-			data-aos='fade-up'
-			onSubmit={handleSubmit}>
+		<form className='form__box' data-aos='fade-up' onSubmit={handleSubmit}>
 			<label className='contact__box'>
 				<p className='contact__paragraph'>
 					Är du nyfiken på vad jag kan bidra med i ert team? Skicka
@@ -69,11 +64,12 @@ function Contact() {
 					Skicka
 				</button>
 			</label>
-			<div className='sent-msg__box'>
-				<p className='sent-msg__text'>Tack för din kontakt</p>
-			</div>
 			{sentMsg && (
-				<p className='contact__sent-msg'>Tack för din kontakt</p>
+				<div
+					className='sent-msg__box'
+					onClick={() => setSentMsg((prev) => !prev)}>
+					<p className='sent-msg__text'>Tack för din kontakt</p>
+				</div>
 			)}
 		</form>
 	);

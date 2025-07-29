@@ -52,19 +52,21 @@
 
 .sent-msg__box {
 	position: absolute;
+	display: grid;
+	place-content: center;
 	padding: 2rem;
 	border-radius: 5px;
-	top: 40%;
-	left: 50%;
-	transform: translateX(-50%);
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
 	z-index: 999;
-	background-color: var(--accent-bg-color);
-	color: var(--white-text-color);
-}
-
-.form__box--opacity {
-	opacity: 1;
+	backdrop-filter: blur(1px);
 }
 
 .sent-msg__text {
+	padding: 2rem;
+	background-color: var(--accent-bg-color);
+	color: var(--white-text-color);
+	border-radius: 5px;
 }
