@@ -8,6 +8,8 @@
 	align-self: center;
 	width: 40%;
 	text-decoration: none;
+	font-size: 1.2rem;
+	font-weight: 600;
 	padding: 1rem;
 	background-color: var(--primary-btn-color);
 	border-radius: 50px;

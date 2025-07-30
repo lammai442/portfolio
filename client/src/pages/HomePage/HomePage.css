@@ -139,7 +139,7 @@
 .hobby-projects__items-box {
 	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 	place-content: center;
 	gap: 1rem;
 }
