@@ -30,3 +30,15 @@
 	font-size: 1.8rem;
 	cursor: pointer;
 }
+
+@media screen and (max-width: 820px) {
+	.nav__item {
+		font-size: 1.4rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.nav__item {
+		font-size: 1.3rem;
+	}
+}
