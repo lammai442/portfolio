@@ -23,8 +23,8 @@
 
 .link__url--white {
 	border: 1px solid var(--accent-bg-color);
-	background-color: var(--secondary-bg-color);
-	color: var(--primary-text-color);
+	background-color: var(--white-bg-color);
+	color: var(--secondary-text-color);
 }
 
 .link__url--white:hover {
