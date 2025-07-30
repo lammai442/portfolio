@@ -10,14 +10,13 @@ import { mobileProjects, webProjects } from '../../data/data.js';
 import WebProjects from '../../components/WebProjects/WebProjects.jsx';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import TimeLine from '../../components/TimeLine/TimeLine.jsx';
 import HobbyProjects from '../../components/HobbyProjects/HobbyProjects.jsx';
 import { hobbyProjects } from '../../data/data.js';
 import LinkElement from '../../components/LinkElement/LinkElement.jsx';
 import cv from '../../assets/cv/lam-mai-CV.pdf';
-
 function HomePage() {
 	const projectRef = useRef(null);
 	const experienceRef = useRef(null);
@@ -72,7 +71,6 @@ function HomePage() {
 						<p className='info__right-top-txt'>
 							Hej, kul att du ville kika in på mig!
 						</p>
-						<h2 className='info__right-middle-txt'>Lam Mai</h2>
 						<section className='info__title-container'>
 							{titles.map((t, index) => {
 								return (

@@ -5,6 +5,9 @@
 }
 
 .link__url {
+	display: flex;
+	justify-content: center;
+	gap: 0.2rem;
 	align-self: center;
 	width: 40%;
 	text-decoration: none;
