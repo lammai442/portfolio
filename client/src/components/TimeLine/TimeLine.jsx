@@ -42,7 +42,7 @@ function TimeLine({ scrollToSection }) {
 								}}
 								contentArrowStyle={{
 									borderRight:
-										'7px solid (--primary-card-color)',
+										'7px solid var(--primary-card-color)',
 								}}
 								className='vertical-timeline__content-box'>
 								<h2 className='vertical-timeline-element-title'>
