@@ -29,16 +29,16 @@
 
 .top-scroll-btn__icon {
 	font-size: 3rem;
-	background-color: var(--white-bg-color);
+	background-color: var(--primary-bg-color);
 	border-radius: 50%;
 	border: 2px solid var(--accent-bg-color);
 	transition: all 0.3s ease-in-out;
-	color: var(--secondary-text-color);
+	color: var(--accent-text-color);
 }
 
 .top-scroll-btn__icon:hover {
 	background-color: var(--accent-bg-color);
-	color: var(--white-text-color);
+	color: var(--secondary-text-color);
 }
 
 .info__box {

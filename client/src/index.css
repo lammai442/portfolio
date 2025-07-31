@@ -14,15 +14,16 @@
 	/* BACKGROUND COLORS */
 	--acc-bg-color: #121212;
 	--primary-bg-color: #1e1e1e;
+	--primary-bg-color-frame: #faf7f2c5;
 	--secondary-bg-color: #2c2c2c;
 	--accent-bg-color: #d1884f;
-	--white-bg-color: #1a1a1a;
 	--primary-btn-color: #008aaa;
+	--primary-card-color: #008aaa;
 
-	--primary-text-color: #ffffff;
-	--secondary-text-color: #d1884f;
+	/* TEXT COLORS */
+	--primary-text-color: #faf7f2;
+	--secondary-text-color: #000000;
 	--black-text-color: #fff;
-	--white-text-color: #ffffff;
 }
 
 :root {
@@ -32,18 +33,19 @@
 
 	/* BACKGROUND COLORS */
 	--acc-bg-color: #f8f6f2;
-	--primary-bg-color: #008aaa;
+	--primary-bg-color: #1e1e1e;
 	--primary-bg-color-03: rgb(59, 186, 219, 0.3);
+	--primary-bg-color-frame: #333;
 	--secondary-bg-color: #faf7f2;
 	--accent-bg-color: #d1884f;
-	--white-bg-color: #ffffff;
 	--primary-btn-color: #008aaa;
+	--primary-card-color: #ffffff;
 
 	/* TEXT COLORS */
-	--primary-text-color: #008aaa;
-	--secondary-text-color: #d1884f;
-	--black-text-color: #000;
-	--white-text-color: #ffffff;
+	--primary-text-color: #000;
+	--secondary-text-color: #ffffff;
+	--highlight-text-color: #008aaa;
+	--accent-text-color: #d1884f;
 }
 
 .wrapper {
@@ -57,4 +59,10 @@
 
 body {
 	background-color: var(--secondary-bg-color);
+}
+
+h2,
+h3,
+p {
+	color: var(--primary-text-color);
 }

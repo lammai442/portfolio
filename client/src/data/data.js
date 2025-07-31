@@ -63,7 +63,7 @@ Arbeta agilt , Backend med Node.js , React, TypeScript, HTML & CSS, JavaScri
 		date: 'Augusti 2024 - Pågående',
 		iconStyle: {
 			background: 'var(--primary-btn-color)',
-			color: 'var(--white-text-color)',
+			color: 'var(--secondary-text-color)',
 		},
 	},
 	{
@@ -123,7 +123,7 @@ Ansvarig för utskick av nyhetsbrev, digital information på Karlstad.se samt st
 		date: 'Maj 2020',
 		iconStyle: {
 			background: 'var(--primary-btn-color)',
-			color: 'var(--white-text-color)',
+			color: 'var(--secondary-text-color)',
 		},
 	},
 ];

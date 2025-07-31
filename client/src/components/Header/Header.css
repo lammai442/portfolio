@@ -8,7 +8,7 @@
 		font-family: var(--secondary-font);
 		font-style: italic;
 		font-weight: 300;
-		color: var(--);
+		color: var(--primary-text-color);
 	}
 }
 

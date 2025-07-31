@@ -36,7 +36,15 @@ function TimeLine({ scrollToSection }) {
 								key={t.id}
 								date={t.date}
 								icon={<IconComponent />}
-								iconStyle={t.iconStyle}>
+								iconStyle={t.iconStyle}
+								contentStyle={{
+									background: 'var(--primary-card-color)',
+								}}
+								contentArrowStyle={{
+									borderRight:
+										'7px solid (--primary-card-color)',
+								}}
+								className='vertical-timeline__content-box'>
 								<h2 className='vertical-timeline-element-title'>
 									{t.title}
 								</h2>

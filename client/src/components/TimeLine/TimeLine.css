@@ -1,13 +1,18 @@
 .timeline__box {
 	width: 100%;
-	color: #787878;
+	color: var(--primary-text-color);
 }
 
 .vertical-timeline-element-date {
 	text-align: start;
 }
 
+.vertical-timeline-element-subtitle {
+	color: var(--primary-text-color);
+}
+
 .timeline__content {
+	color: var(--primary-text-color);
 	white-space: pre-line;
 }
 
@@ -21,6 +26,7 @@
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 	cursor: pointer;
 	transition: all 0.3s ease-in-out;
+	color: var(--primary-text-color);
 }
 
 .timeline__btn--minimize {
@@ -30,6 +36,6 @@
 .timeline__btn:hover,
 .timeline__btn--minimize:hover {
 	background-color: var(--primary-btn-color);
-	color: var(--white-text-color);
+	color: var(--secondary-text-color);
 	transform: scale(1.1);
 }

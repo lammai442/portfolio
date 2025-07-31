@@ -13,7 +13,7 @@
 .mobile__frame {
 	width: 460px;
 	height: 846px;
-	border: 1rem solid #333;
+	border: 1rem solid var(--primary-bg-color-frame);
 	border-radius: 1.875rem;
 	overflow: hidden;
 	box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.3);
@@ -44,13 +44,19 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	color: var(--primary-text-color);
 }
 
 .icon__item-box:hover {
+	color: var(--highlight-text-color);
+}
+
+.mobile__title {
 	color: var(--primary-text-color);
 }
 
 .mobile__info-paragraph {
+	color: var(--primary-text-color);
 	white-space: pre-line;
 }
 

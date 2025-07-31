@@ -18,7 +18,7 @@
 	border-radius: 50px;
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 	border: 1px solid var(--primary-btn-color);
-	color: var(--white-text-color);
+	color: var(--secondary-text-color);
 	transition: all 0.3s ease-in-out;
 }
 
@@ -29,12 +29,12 @@
 .link__url--white {
 	border: 1px solid var(--accent-bg-color);
 	background-color: var(--white-bg-color);
-	color: var(--secondary-text-color);
+	color: var(--accent-text-color);
 }
 
 .link__url--white:hover {
 	background-color: var(--accent-bg-color);
-	color: var(--white-text-color);
+	color: var(--secondary-text-color);
 }
 
 @media screen and (max-width: 600px) {

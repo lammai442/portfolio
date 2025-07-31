@@ -22,7 +22,7 @@ function MobileProject({ url, title, tech, desc }) {
 				</div>
 			</div>
 			<section className='mobile__info-box'>
-				<h2>Mobilapp - {title}</h2>
+				<h2 className='mobile__title'>Mobilapp - {title}</h2>
 				<p className='mobile__info-paragraph'>{desc}</p>
 				<h3>Tekniker som används</h3>
 				<section className='icon__tech-box'>
