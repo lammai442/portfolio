@@ -62,3 +62,9 @@
 .mobile__info-paragraph {
 	white-space: pre-line;
 }
+
+@media screen and (max-width: 600px) {
+	.link__url {
+		font-size: 5rem;
+	}
+}

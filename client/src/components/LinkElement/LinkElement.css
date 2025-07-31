@@ -36,3 +36,10 @@
 	background-color: var(--accent-bg-color);
 	color: var(--white-text-color);
 }
+
+@media screen and (max-width: 600px) {
+	.link__url {
+		font-size: 1rem;
+		padding: 0.8rem;
+	}
+}

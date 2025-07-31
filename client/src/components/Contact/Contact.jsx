@@ -5,9 +5,9 @@ import { useEffect, useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 function Contact() {
-	const [name, setName] = useState('Adam');
-	const [email, setEmail] = useState('asdsad@sad.sa');
-	const [textArea, setTextArea] = useState('asdads');
+	const [name, setName] = useState('');
+	const [email, setEmail] = useState('');
+	const [textArea, setTextArea] = useState('');
 	const [sentMsg, setSentMsg] = useState(false);
 	const form = useRef();
 	const publicKey = import.meta.env.VITE_PUBLIC_KEY;
