@@ -1,5 +1,7 @@
-import { MdOutlineDarkMode, MdDarkMode } from 'react-icons/md';
+import { MdOutlineDarkMode } from 'react-icons/md';
+import { CiLight } from 'react-icons/ci';
 import { useState } from 'react';
+import './DarkMode.css';
 
 function DarkMode() {
 	const [lightThemeOn, setLightThemeOn] = useState(true);
@@ -13,8 +15,12 @@ function DarkMode() {
 	};
 
 	return (
-		<button onClick={() => toggleTheme()}>
-			{lightThemeOn ? <MdOutlineDarkMode /> : <MdDarkMode />}
+		<button onClick={() => toggleTheme()} className='theme-btn'>
+			{lightThemeOn ? (
+				<MdOutlineDarkMode className='theme__dark' />
+			) : (
+				<CiLight className='theme__light' />
+			)}
 		</button>
 	);
 }
