@@ -1,13 +1,14 @@
-function DarkMode() {
-	const toggleTheme = () => {
-		const current = document.documentElement.getAttribute('data-theme');
-		const nextTheme = current === 'dark' ? 'light' : 'dark';
-		console.log(nextTheme);
-
-		document.documentElement.setAttribute('data-theme', nextTheme);
+import { MdOutlineDarkMode, MdDarkMode } from 'react-icons/md';
+function DarkMode({ theme }) {
+	const toggleTheme = (theme) => {
+		document.documentElement.setAttribute('data-theme', theme);
 	};
 
-	return <button onClick={toggleTheme}>Byt tema</button>;
+	return (
+		<button onClick={() => toggleTheme(theme)}>
+			{theme === 'light' ? <MdOutlineDarkMode /> : <MdDarkMode />}
+		</button>
+	);
 }
 
 export default DarkMode;
