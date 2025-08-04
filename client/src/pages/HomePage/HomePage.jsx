@@ -98,7 +98,7 @@ function HomePage() {
 								<MdOutgoingMail className='info__right-links' />
 							</a>
 						</section>
-						<section>
+						<section className='link__box'>
 							<LinkElement
 								webUrl={cv}
 								linkStyle={'link__url link__url--white'}
@@ -135,6 +135,7 @@ function HomePage() {
 										desc={w.desc}
 										additionalDesc={w.additionalDesc}
 										webPageImg={w.webPageImg}
+										gitUrl={w.git}
 									/>
 								);
 							})}

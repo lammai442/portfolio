@@ -31,11 +31,7 @@ function MobileProject({ url, title, tech, desc }) {
 						return (
 							IconComponent && (
 								<section className='icon__item-box' key={index}>
-									<IconComponent
-										size={32}
-										className={
-											'icon__component'
-										}></IconComponent>
+									<IconComponent size={32}></IconComponent>
 									<p className='icon__text'>
 										{techName === 'VScode'
 											? 'VS code'

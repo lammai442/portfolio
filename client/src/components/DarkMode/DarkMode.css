@@ -4,7 +4,7 @@
 	place-content: center;
 	height: 40px;
 	width: 40px;
-	border: 1px solid var(--primary-btn-color);
+	border: 1px solid var(--accent-btn-color);
 	border-radius: 50px;
 	font-size: 2rem;
 	color: var(--accent-btn-color);
@@ -14,11 +14,3 @@
 .theme-btn:hover {
 	background-color: var(--primary-bg-color-frame);
 }
-
-/* .theme__light {
-	color: var(--primary-btn-color);
-}
-
-.theme__dark {
-	color: var(--accent-btn-color);
-} */

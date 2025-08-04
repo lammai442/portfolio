@@ -1,15 +1,13 @@
 import './LinkElement.css';
-function LinkButton({ webUrl, text, linkStyle }) {
+function LinkButton({ webUrl, text, linkStyle, ariaLabel }) {
 	return (
-		<section className='link__box'>
-			<a
-				href={webUrl}
-				target='_blank'
-				className={linkStyle}
-				aria-label='Link to webpage'>
-				{text}
-			</a>
-		</section>
+		<a
+			href={webUrl}
+			target='_blank'
+			className={linkStyle}
+			aria-label='Link to webpage'>
+			{text}
+		</a>
 	);
 }
 

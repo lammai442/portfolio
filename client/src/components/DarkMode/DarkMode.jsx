@@ -16,11 +16,7 @@ function DarkMode() {
 
 	return (
 		<button onClick={() => toggleTheme()} className='theme-btn'>
-			{lightThemeOn ? (
-				<MdOutlineDarkMode className='theme__dark' />
-			) : (
-				<CiLight className='theme__light' />
-			)}
+			{lightThemeOn ? <MdOutlineDarkMode /> : <CiLight />}
 		</button>
 	);
 }

@@ -32,7 +32,6 @@
 	--secondary-font: 'Poppins', sans-serif;
 
 	/* BACKGROUND COLORS */
-	--acc-bg-color: #f8f6f2;
 	--primary-bg-color: #1e1e1e;
 	--primary-bg-color-03: rgb(59, 186, 219, 0.3);
 	--primary-bg-color-frame: #333;
@@ -50,6 +49,7 @@
 	--secondary-text-color: #ffffff;
 	--highlight-text-color: #008aaa;
 	--accent-text-color: #d1884f;
+	--white-text-color: #ffffff;
 }
 
 .wrapper {

@@ -47,7 +47,8 @@
 	color: var(--primary-text-color);
 }
 
-.icon__item-box:hover {
+.icon__item-box:hover,
+.icon__text:hover {
 	color: var(--highlight-text-color);
 }
 
