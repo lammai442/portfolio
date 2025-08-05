@@ -23,8 +23,6 @@ function HomePage() {
 	const toTopRef = useRef(null);
 	const hobbiesRef = useRef(null);
 
-	const titles = ['Webbutvecklare', 'Pedagogik', 'Webbutvecklare'];
-
 	const scrollToSection = (section) => {
 		if (section === 'experience') {
 			experienceRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -67,18 +65,10 @@ function HomePage() {
 						className='info__left-img'
 					/>
 					<section className='info__right-box'>
+						<h1 className='info__name-title'>Lam Mai</h1>
 						<p className='info__right-top-txt'>
 							Hej, kul att du ville kika in på mig!
 						</p>
-						<section className='info__title-container'>
-							{titles.map((t, index) => {
-								return (
-									<span key={index} className='info__title'>
-										{t}
-									</span>
-								);
-							})}
-						</section>
 						<section className='info__right-links-box'>
 							<a
 								href='http://www.linkedin.com/in/lam-mai'

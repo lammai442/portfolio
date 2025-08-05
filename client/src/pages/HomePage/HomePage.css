@@ -86,32 +86,16 @@
 			}
 		}
 	}
-}
-.info__title-container {
-	height: 2.5rem;
-	overflow: hidden;
-	position: relative;
-}
-.info__title {
-	font-size: 2rem;
-	display: block;
-	animation: title-change 4s 2s infinite;
+
+	.info__name-title {
+		font-family: var(--secondary-font);
+		font-size: 2.5rem;
+		font-style: italic;
+		font-weight: 300;
+		color: var(--primary-text-color);
+	}
 }
 
-@keyframes title-change {
-	0% {
-		transform: translateY(0%);
-	}
-	33% {
-		transform: translateY(-100%);
-	}
-	66% {
-		transform: translateY(-200%);
-	}
-	100% {
-		transform: translateY(0%);
-	}
-}
 .section__box {
 	text-align: center;
 	display: flex;
