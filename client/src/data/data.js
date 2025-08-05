@@ -140,6 +140,25 @@ export const iconMap = {
 	API: TbApi,
 };
 
+export const navItems = [
+	{
+		text: 'Projekt',
+		ref: 'project',
+	},
+	{
+		text: 'Erfarenheter',
+		ref: 'experience',
+	},
+	{
+		text: 'Hobbyprojekt',
+		ref: 'hobbieproject',
+	},
+	{
+		text: 'Kontakt',
+		ref: 'contact',
+	},
+];
+
 export const hobbyProjects = [
 	{
 		url: [
