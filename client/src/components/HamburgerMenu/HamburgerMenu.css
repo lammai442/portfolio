@@ -1,45 +1,76 @@
 .hamburger__btn {
-	width: 3rem;
+	display: none;
+	width: 2.5rem;
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
 	position: relative;
 }
 
-.hamburger__lines,
-.hamburger__lines::before,
-.hamburger__lines::after {
-	z-index: 901;
-	display: block;
-	position: relative;
-	content: '';
-	width: 100%;
-	height: 0.2rem;
-	border-radius: 50px;
-	background-color: var(--primary-text-color);
-	transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+.hamburger__nav {
+	display: none;
 }
 
-.hamburger__lines::before {
-	top: -0.7rem;
-	position: absolute;
-}
+@media screen and (max-width: 820px) {
+	.hamburger__btn {
+		display: block;
+		width: 2.5rem;
+		border: none;
+		background-color: transparent;
+		cursor: pointer;
+		position: relative;
+	}
 
-.hamburger__lines::after {
-	top: 0.7rem;
-	position: absolute;
-}
+	.hamburger__lines,
+	.hamburger__lines::before,
+	.hamburger__lines::after {
+		z-index: 901;
+		display: block;
+		position: relative;
+		content: '';
+		width: 100%;
+		height: 0.2rem;
+		border-radius: 50px;
+		background-color: var(--primary-text-color);
+		transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+	}
 
-.hamburger__lines--active {
-	transform: rotate(45deg);
-}
+	.hamburger__lines::before {
+		top: -0.7rem;
+		position: absolute;
+	}
 
-.hamburger__lines--active::before {
-	transform: rotate(0);
-	top: 0;
-}
+	.hamburger__lines::after {
+		top: 0.7rem;
+		position: absolute;
+	}
 
-.hamburger__lines--active::after {
-	transform: rotate(90deg);
-	top: 0;
+	.hamburger__lines--active {
+		transform: rotate(45deg);
+	}
+
+	.hamburger__lines--active::before {
+		transform: rotate(0);
+		top: 0;
+	}
+
+	.hamburger__lines--active::after {
+		transform: rotate(90deg);
+		top: 0;
+	}
+
+	.hamburger__nav {
+		display: block;
+		top: 80px;
+		left: 0;
+		width: 100%;
+		z-index: 999;
+		position: absolute;
+		background-color: aqua;
+	}
+	.nav__list {
+		margin-left: 2rem;
+		flex-direction: column;
+		align-items: start;
+	}
 }

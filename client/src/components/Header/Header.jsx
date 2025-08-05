@@ -5,7 +5,7 @@ import './Header.css';
 function Header({ scrollToSection }) {
 	return (
 		<header className='header'>
-			<h1 className='header__name'>Lam Mai</h1>
+			<div className='spacer'></div>
 			<nav className='nav'>
 				<ul className='nav__list'>
 					<NavItem
@@ -30,7 +30,7 @@ function Header({ scrollToSection }) {
 					/>
 				</ul>
 			</nav>
-			<DarkMode />
+			<DarkMode className='hej' />
 			<HamburgerMenu scrollToSection={scrollToSection} />
 		</header>
 	);

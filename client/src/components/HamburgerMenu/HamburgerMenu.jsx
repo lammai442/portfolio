@@ -7,6 +7,36 @@ function HamburgerMenu({ scrollToSection }) {
 
 	return (
 		<>
+			{openMenu && (
+				<nav className='hamburger__nav'>
+					<ul className='nav__list'>
+						<NavItem
+							onClick={scrollToSection}
+							text={'Projekt'}
+							ref={'project'}
+							setOpenMenu={setOpenMenu}
+						/>
+						<NavItem
+							onClick={scrollToSection}
+							text={'Erfarenheter'}
+							ref={'experience'}
+							setOpenMenu={setOpenMenu}
+						/>
+						<NavItem
+							onClick={scrollToSection}
+							text={'Hobbyprojekt'}
+							ref={'hobbieproject'}
+							setOpenMenu={setOpenMenu}
+						/>
+						<NavItem
+							onClick={scrollToSection}
+							text={'Kontakt'}
+							ref={'contact'}
+							setOpenMenu={setOpenMenu}
+						/>
+					</ul>
+				</nav>
+			)}
 			<button
 				className='hamburger__btn'
 				aria-label='Open nav menu button'
@@ -18,32 +48,6 @@ function HamburgerMenu({ scrollToSection }) {
 							: 'hamburger__lines'
 					}></span>
 			</button>
-			{openMenu && (
-				<nav className='nav'>
-					<ul className='nav__list'>
-						<NavItem
-							onClick={scrollToSection}
-							text={'Projekt'}
-							ref={'project'}
-						/>
-						<NavItem
-							onClick={scrollToSection}
-							text={'Erfarenheter'}
-							ref={'experience'}
-						/>
-						<NavItem
-							onClick={scrollToSection}
-							text={'Hobbyprojekt'}
-							ref={'hobbieproject'}
-						/>
-						<NavItem
-							onClick={scrollToSection}
-							text={'Kontakt'}
-							ref={'contact'}
-						/>
-					</ul>
-				</nav>
-			)}
 		</>
 	);
 }
