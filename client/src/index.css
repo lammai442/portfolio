@@ -18,7 +18,9 @@
 	--secondary-bg-color: #2c2c2c;
 	--accent-bg-color: #d1884f;
 	--primary-btn-color: #008aaa;
+
 	--primary-card-color: #1e1e1e;
+	--secondary-card-color: #008aaa;
 
 	/* TEXT COLORS */
 	--primary-text-color: #faf7f2;
@@ -43,6 +45,7 @@
 	--accent-btn-color: #d1884f;
 
 	--primary-card-color: #ffffff;
+	--secondary-card-color: #000;
 
 	/* TEXT COLORS */
 	--primary-text-color: #000;
