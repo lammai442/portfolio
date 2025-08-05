@@ -1,4 +1,5 @@
 import DarkMode from '../DarkMode/DarkMode';
+import HamburgerMenu from '../HamburgerMenu/HamburgerMenu';
 import NavItem from '../NavItem/NavItem';
 import './Header.css';
 function Header({ scrollToSection }) {
@@ -30,6 +31,7 @@ function Header({ scrollToSection }) {
 				</ul>
 			</nav>
 			<DarkMode />
+			<HamburgerMenu scrollToSection={scrollToSection} />
 		</header>
 	);
 }
