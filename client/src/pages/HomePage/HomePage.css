@@ -41,6 +41,11 @@
 	color: var(--secondary-text-color);
 }
 
+.hr__small {
+	width: 50%;
+	margin: 0 auto;
+}
+
 .info__box {
 	display: flex;
 	justify-content: center;

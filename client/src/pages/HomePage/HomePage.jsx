@@ -80,7 +80,6 @@ function HomePage() {
 								);
 							})}
 						</section>
-
 						<section className='info__right-links-box'>
 							<a
 								href='http://www.linkedin.com/in/lam-mai'
@@ -123,6 +122,7 @@ function HomePage() {
 						);
 					})}
 					<section className='projects__box' data-aos='fade-up'>
+						<hr className='hr__small' />
 						<h2 className='projects__title'>Webbsidor</h2>
 						<section className='web-projects__items-box'>
 							{webProjects.map((w, index) => {
@@ -153,16 +153,9 @@ function HomePage() {
 					className='section__box'
 					data-aos='fade-up'>
 					<h2 className='section__title'>Hobbyprojekt</h2>
-					<p>
-						Jag och min dotter älskar att hitta på skämtvideos
-						tillsammans – ett sätt för oss att både ha kul och
-						sprida glädje! Med humor, lekfullhet och lite tokigheter
-						delar vi små stunder som får både oss och andra att
-						skratta. Det är vår grej, vår kvalitetstid och vårt sätt
-						att göra världen lite gladare, en video i taget.
-					</p>
+					<p>{hobbyProjects[0].desc}</p>
 					<section className='hobby-projects__items-box'>
-						{hobbyProjects.map((h, index) => {
+						{hobbyProjects[0].url.map((h, index) => {
 							return <HobbyProjects url={h} key={index} />;
 						})}
 					</section>

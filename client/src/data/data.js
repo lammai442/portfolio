@@ -141,8 +141,15 @@ export const iconMap = {
 };
 
 export const hobbyProjects = [
-	'https://www.youtube.com/embed/hVmWIBVKBa8?si=MomyBTDbEZPz2yMK',
-	'https://www.youtube.com/embed/LIYX7OQBpII?si=SgNo3Z7tKmBOJ5T8',
-	'https://www.youtube.com/embed/mSomucajWoM?si=hQzLTTUaOc7Z_ffF',
-	'https://www.youtube.com/embed/UpqL-yCir9I?si=DUGbNH9yvO_ujVpb',
+	{
+		url: [
+			'https://www.youtube.com/embed/hVmWIBVKBa8?si=MomyBTDbEZPz2yMK',
+			'https://www.youtube.com/embed/LIYX7OQBpII?si=SgNo3Z7tKmBOJ5T8',
+			'https://www.youtube.com/embed/mSomucajWoM?si=hQzLTTUaOc7Z_ffF',
+			'https://www.youtube.com/embed/UpqL-yCir9I?si=DUGbNH9yvO_ujVpb',
+		],
+		desc: 'Jag och min dotter älskar att hitta på skämtvideos tillsammans – ett sätt för oss att både ha kul och sprida glädje! Med humor, lekfullhet och lite tokigheter delar vi små stunder som får både oss och andra att skratta. Det är vår grej, vår kvalitetstid och vårt sätt att göra världen lite gladare, en video i taget.',
+	},
 ];
+
+export const hobbyProject = [{}];
