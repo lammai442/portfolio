@@ -34,12 +34,15 @@
 }
 
 .timeline__btn--minimize {
-	background-color: var(--white-bg-color);
+	border: 2px solid var(--accent-btn-color);
 }
 
-.timeline__btn:hover,
-.timeline__btn--minimize:hover {
+.timeline__btn:hover {
 	background-color: var(--primary-btn-color);
 	color: var(--secondary-text-color);
 	transform: scale(1.1);
+}
+
+.timeline__btn--minimize:hover {
+	background-color: var(--accent-btn-color);
 }

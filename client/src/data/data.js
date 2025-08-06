@@ -59,11 +59,11 @@ export const TimeLineData = [
 		title: 'Webbutvecklare',
 		subtitle: 'Folkuniversitetet Göteborg',
 		content: `Utbildning till webbutvecklare. \nUtbildningens innehåll:
-Arbeta agilt , Backend med Node.js , React, TypeScript, HTML & CSS, JavaScript, LIA, Driftsättning i molnmiljö och UX/UI`,
+Arbeta agilt , Backend med Node.js , React, TypeScript, HTML & CSS, JavaScript, LIA, Driftsättning i molnmiljö och UX/UI \n\n Studeranderepresentant för klassen och deltar i programmets ledningsgruppsmöten, där jag förmedlar klassens synpunkter och bidrar till utbildningens utveckling.`,
 		date: 'Augusti 2024 - Pågående',
 		iconStyle: {
 			background: 'var(--primary-btn-color)',
-			color: 'var(--secondary-text-color)',
+			color: 'var(--white-text-color)',
 		},
 	},
 	{
@@ -72,9 +72,12 @@ Arbeta agilt , Backend med Node.js , React, TypeScript, HTML & CSS, JavaScri
 		title: 'Arbetskonsulent',
 		subtitle: 'Karlstads kommun',
 		content: `Projektledare för utbildningskontrakt med ansvar för totalt 75 personer där jag hjälpte unga vuxna att studera upp sina gymnasiebetyg genom stöd och handledning. \n
-Ansvarig för utskick av nyhetsbrev, digital information på Karlstad.se samt startade webbinar på Jobbcenter med veckovisa sändningar.`,
+		Ansvarig för utskick av nyhetsbrev, digital information på Karlstad.se samt startade webbinar på Jobbcenter med veckovisa sändningar.`,
 		date: '2017 - 2025/tjänstledig',
-		iconStyle: { background: 'var(--accent-bg-color)', color: '#fff' },
+		iconStyle: {
+			background: 'var(--accent-bg-color)',
+			color: 'var(--white-text-color)',
+		},
 	},
 	{
 		id: '3',
@@ -83,7 +86,10 @@ Ansvarig för utskick av nyhetsbrev, digital information på Karlstad.se samt st
 		subtitle: 'Karlstads kommun',
 		content: `Egna företaget Mai foto som inriktade på foto av familjer/parporträtt och filmproduktion med bas i Karlstad.`,
 		date: '2013-2017',
-		iconStyle: { background: 'var(--accent-bg-color)', color: '#fff' },
+		iconStyle: {
+			background: 'var(--accent-bg-color)',
+			color: 'var(--white-text-color)',
+		},
 	},
 	{
 		id: '4',
@@ -92,7 +98,10 @@ Ansvarig för utskick av nyhetsbrev, digital information på Karlstad.se samt st
 		subtitle: 'Karlstads kommun',
 		content: `Egna företaget e-Social där vi inriktade oss mot privat- och gruppkurser inom digitala prylar som iPad, iPhone, Win 8, Androidtelefoner osv. `,
 		date: '2013-2017',
-		iconStyle: { background: 'var(--accent-bg-color)', color: '#fff' },
+		iconStyle: {
+			background: 'var(--accent-bg-color)',
+			color: 'var(--white-text-color)',
+		},
 	},
 	{
 		id: '5',
@@ -101,7 +110,10 @@ Ansvarig för utskick av nyhetsbrev, digital information på Karlstad.se samt st
 		subtitle: 'Kils kommun',
 		content: `Ansvar för introduktion av nyanlända ungdomar och stödja dem i deras integration i samhället. \n\nSamarbeta med myndigheter och andra samarbetspartners som kan vara aktuella. `,
 		date: '2016-2017',
-		iconStyle: { background: 'var(--accent-bg-color)', color: '#fff' },
+		iconStyle: {
+			background: 'var(--accent-bg-color)',
+			color: 'var(--white-text-color)',
+		},
 	},
 	{
 		id: '6',
@@ -111,7 +123,10 @@ Ansvarig för utskick av nyhetsbrev, digital information på Karlstad.se samt st
 		content: `Arbetade som lärarvikarie från årskurs 3 till 9 i grundskolan. Utför den ordinarie lärarens planering och rapporterar.
 \nVikarierat inom alla skolämnen, från svenska, matematik, syslöjd, till idrott. `,
 		date: '2016-2017',
-		iconStyle: { background: 'var(--accent-bg-color)', color: '#fff' },
+		iconStyle: {
+			background: 'var(--accent-bg-color)',
+			color: 'var(--white-text-color)',
+		},
 	},
 	{
 		id: '7',
@@ -123,7 +138,7 @@ Ansvarig för utskick av nyhetsbrev, digital information på Karlstad.se samt st
 		date: 'Maj 2020',
 		iconStyle: {
 			background: 'var(--primary-btn-color)',
-			color: 'var(--secondary-text-color)',
+			color: 'var(--white-text-color)',
 		},
 	},
 ];
