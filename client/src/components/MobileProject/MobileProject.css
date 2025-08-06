@@ -47,9 +47,12 @@
 	color: var(--primary-text-color);
 }
 
-.icon__item-box:hover,
-.icon__text:hover {
+.icon__item-box:hover {
 	color: var(--highlight-text-color);
+}
+
+.icon__item-box:hover .icon__text {
+	color: inherit;
 }
 
 .mobile__title {
@@ -115,5 +118,9 @@
 
 	.arrow {
 		rotate: 90deg;
+	}
+
+	.mobile__info-box {
+		margin-top: 0.8rem;
 	}
 }

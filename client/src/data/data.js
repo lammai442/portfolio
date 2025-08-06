@@ -73,7 +73,7 @@ Arbeta agilt , Backend med Node.js , React, TypeScript, HTML & CSS, JavaScri
 		subtitle: 'Karlstads kommun',
 		content: `Projektledare för utbildningskontrakt med ansvar för totalt 75 personer där jag hjälpte unga vuxna att studera upp sina gymnasiebetyg genom stöd och handledning. \n
 Ansvarig för utskick av nyhetsbrev, digital information på Karlstad.se samt startade webbinar på Jobbcenter med veckovisa sändningar.`,
-		date: 'Maj 2020',
+		date: '2017 - 2025/tjänstledig',
 		iconStyle: { background: 'var(--accent-bg-color)', color: '#fff' },
 	},
 	{

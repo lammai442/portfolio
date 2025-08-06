@@ -40,7 +40,7 @@
 	border-radius: 50px;
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 	border: 1px solid var(--primary-btn-color);
-	color: var(--secondary-text-color);
+	color: var(--white-text-color);
 	transition: all 0.3s ease-in-out;
 }
 
@@ -51,7 +51,7 @@
 .link__url--white {
 	border: 1px solid var(--accent-bg-color);
 	background-color: var(--secondary-bg-color);
-	color: var(--highlight-text-color);
+	color: var(--accent-text-color);
 	cursor: pointer;
 }
 
@@ -70,6 +70,6 @@
 
 @media screen and (max-width: 600px) {
 	.link__url {
-		font-size: 5rem;
+		font-size: 1rem;
 	}
 }
