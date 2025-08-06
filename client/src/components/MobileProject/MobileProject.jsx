@@ -1,6 +1,7 @@
 import './MobileProject.css';
 import { useState } from 'react';
 import { iconMap } from '../../data/data.js';
+import LinkElement from '../LinkElement/LinkElement.jsx';
 function MobileProject({ url, title, tech, desc }) {
 	const [isLoaded, setIsLoaded] = useState(false);
 
@@ -24,6 +25,20 @@ function MobileProject({ url, title, tech, desc }) {
 			<section className='mobile__info-box'>
 				<h2 className='mobile__title'>Mobilapp - {title}</h2>
 				<p className='mobile__info-paragraph'>{desc}</p>
+				<section className='link__box'>
+					<LinkElement
+						text={
+							<>
+								<span className='arrow'>⬅</span> Demo
+							</>
+						}
+						linkStyle={'link__url link__url-demo'}
+					/>
+					<LinkElement
+						text={'Git'}
+						linkStyle={'link__url link__url--white'}
+					/>
+				</section>
 				<h3>Tekniker som används</h3>
 				<section className='icon__tech-box'>
 					{tech.map((techName, index) => {

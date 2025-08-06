@@ -11,14 +11,20 @@ function HamburgerMenu({ scrollToSection }) {
 			{openMenu && (
 				<nav className='hamburger__nav'>
 					<ul className='nav__list'>
-						{navItems.map((n) => {
+						{navItems.map((n, index) => {
 							return (
-								<NavItem
-									onClick={scrollToSection}
-									text={n.text}
-									ref={n.ref}
-									setOpenMenu={setOpenMenu}
-								/>
+								<>
+									<div className='hamburger-nav__wrapper'>
+										<NavItem
+											key={index}
+											onClick={scrollToSection}
+											text={n.text}
+											ref={n.ref}
+											setOpenMenu={setOpenMenu}
+										/>
+										<hr className='hr' />
+									</div>
+								</>
 							);
 						})}
 					</ul>

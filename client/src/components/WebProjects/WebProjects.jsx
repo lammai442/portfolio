@@ -12,7 +12,7 @@ function WebProjects({
 }) {
 	return (
 		<section className='web-card__box'>
-			<section>
+			<section className='web-card__link'>
 				<a
 					href={webUrl}
 					className='web-page__link'

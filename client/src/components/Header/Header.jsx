@@ -9,9 +9,10 @@ function Header({ scrollToSection }) {
 			<div className='spacer'></div>
 			<nav className='nav'>
 				<ul className='nav__list'>
-					{navItems.map((n) => {
+					{navItems.map((n, index) => {
 						return (
 							<NavItem
+								key={index}
 								onClick={scrollToSection}
 								text={n.text}
 								ref={n.ref}

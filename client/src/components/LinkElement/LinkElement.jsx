@@ -1,5 +1,5 @@
 import './LinkElement.css';
-function LinkButton({ webUrl, text, linkStyle, ariaLabel }) {
+function LinkButton({ webUrl, text, linkStyle }) {
 	return (
 		<a
 			href={webUrl}
