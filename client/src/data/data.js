@@ -59,7 +59,7 @@ export const TimeLineData = [
 		title: 'Webbutvecklare',
 		subtitle: 'Folkuniversitetet Göteborg',
 		content: `Utbildning till webbutvecklare. \nUtbildningens innehåll:
-Arbeta agilt , Backend med Node.js , React, TypeScript, HTML & CSS, JavaScript, LIA, Driftsättning i molnmiljö och UX/UI \n\n Studeranderepresentant för klassen och deltar i programmets ledningsgruppsmöten, där jag förmedlar klassens synpunkter och bidrar till utbildningens utveckling.`,
+		Arbeta agilt , Backend med Node.js , React, TypeScript, HTML & CSS, JavaScript, LIA, Driftsättning i molnmiljö och UX/UI \n\n Studeranderepresentant för klassen och deltar i programmets ledningsgruppsmöten, där jag förmedlar klassens synpunkter och bidrar till utbildningens utveckling.`,
 		date: 'Augusti 2024 - Pågående',
 		iconStyle: {
 			background: 'var(--primary-btn-color)',
@@ -85,7 +85,7 @@ Arbeta agilt , Backend med Node.js , React, TypeScript, HTML & CSS, JavaScri
 		title: 'Mai foto – Eget företag',
 		subtitle: 'Karlstads kommun',
 		content: `Egna företaget Mai foto som inriktade på foto av familjer/parporträtt och filmproduktion med bas i Karlstad.`,
-		date: '2013-2017',
+		date: '2013 - 2017',
 		iconStyle: {
 			background: 'var(--accent-bg-color)',
 			color: 'var(--white-text-color)',
@@ -97,7 +97,7 @@ Arbeta agilt , Backend med Node.js , React, TypeScript, HTML & CSS, JavaScri
 		title: 'e-Social – Eget företag',
 		subtitle: 'Karlstads kommun',
 		content: `Egna företaget e-Social där vi inriktade oss mot privat- och gruppkurser inom digitala prylar som iPad, iPhone, Win 8, Androidtelefoner osv. `,
-		date: '2013-2017',
+		date: '2013 - 2017',
 		iconStyle: {
 			background: 'var(--accent-bg-color)',
 			color: 'var(--white-text-color)',
@@ -109,7 +109,7 @@ Arbeta agilt , Backend med Node.js , React, TypeScript, HTML & CSS, JavaScri
 		title: 'Integrationshandledare',
 		subtitle: 'Kils kommun',
 		content: `Ansvar för introduktion av nyanlända ungdomar och stödja dem i deras integration i samhället. \n\nSamarbeta med myndigheter och andra samarbetspartners som kan vara aktuella. `,
-		date: '2016-2017',
+		date: '2016 - 2017',
 		iconStyle: {
 			background: 'var(--accent-bg-color)',
 			color: 'var(--white-text-color)',
@@ -121,8 +121,8 @@ Arbeta agilt , Backend med Node.js , React, TypeScript, HTML & CSS, JavaScri
 		title: 'Integrationshandledare',
 		subtitle: 'Karlstads kommun',
 		content: `Arbetade som lärarvikarie från årskurs 3 till 9 i grundskolan. Utför den ordinarie lärarens planering och rapporterar.
-\nVikarierat inom alla skolämnen, från svenska, matematik, syslöjd, till idrott. `,
-		date: '2016-2017',
+		\nVikarierat inom alla skolämnen, från svenska, matematik, syslöjd, till idrott. `,
+		date: '2016 - 2017',
 		iconStyle: {
 			background: 'var(--accent-bg-color)',
 			color: 'var(--white-text-color)',
@@ -134,8 +134,8 @@ Arbeta agilt , Backend med Node.js , React, TypeScript, HTML & CSS, JavaScri
 		title: 'Lärarexamen inom idrott & media',
 		subtitle: 'GIH Örebro universitet / Uppsala universitet',
 		content: `Under utbildningen utvecklade jag en stark pedagogisk grund, ämnesdidaktik och kunskap i att planera och genomföra undervisning utifrån läroplanens mål. 
-\nJag fördjupade mig särskilt i sambandet mellan fysisk aktivitet och lärande, samt hur media kan användas kreativt i undervisning.`,
-		date: 'Maj 2020',
+		\nJag fördjupade mig särskilt i sambandet mellan fysisk aktivitet och lärande, samt hur media kan användas kreativt i undervisning.`,
+		date: '2008 - 2014',
 		iconStyle: {
 			background: 'var(--primary-btn-color)',
 			color: 'var(--white-text-color)',
