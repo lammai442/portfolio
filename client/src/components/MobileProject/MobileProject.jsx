@@ -4,11 +4,28 @@ import { iconMap } from '../../data/data.js';
 import LinkElement from '../LinkElement/LinkElement.jsx';
 function MobileProject({ url, title, tech, desc }) {
 	const [isLoaded, setIsLoaded] = useState(false);
+	const [wiggle, setWiggle] = useState(false);
+	const handleWiggle = (trigger) => {
+		if (trigger) {
+			setWiggle(true);
+			console.log('wiggle true');
+
+			setTimeout(() => {
+				setWiggle(false);
+				console.log('wiggle false');
+			}, 3000);
+		}
+	};
 
 	return (
 		<section className='mobile__box' data-aos='fade-up'>
 			<div className='mobile__frame-box'>
-				<div className='mobile__frame'>
+				<div
+					className={
+						wiggle
+							? 'mobile__frame mobile__wiggle'
+							: 'mobile__frame'
+					}>
 					{!isLoaded && (
 						<section className='loading__box'>
 							<div className='loading__spinner'></div>
@@ -33,6 +50,7 @@ function MobileProject({ url, title, tech, desc }) {
 							</>
 						}
 						linkStyle={'link__url link__url-demo'}
+						handleWiggle={handleWiggle}
 					/>
 					<LinkElement
 						text={'Git'}
