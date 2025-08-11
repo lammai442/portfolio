@@ -5,9 +5,9 @@ function LinkButton({ webUrl, text, linkStyle, handleWiggle }) {
 			href={webUrl}
 			target='_blank'
 			className={linkStyle}
-			aria-label='Link to webpage'>
+			aria-label='Link to webpage'
+			{...(handleWiggle ? { onClick: () => handleWiggle(true) } : {})}>
 			{text}
-			{...handleWiggle ? { onClick: handleWiggle(true) } : {}}
 		</a>
 	);
 }

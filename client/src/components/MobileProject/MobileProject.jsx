@@ -5,15 +5,14 @@ import LinkElement from '../LinkElement/LinkElement.jsx';
 function MobileProject({ url, title, tech, desc }) {
 	const [isLoaded, setIsLoaded] = useState(false);
 	const [wiggle, setWiggle] = useState(false);
+
 	const handleWiggle = (trigger) => {
 		if (trigger) {
 			setWiggle(true);
-			console.log('wiggle true');
 
 			setTimeout(() => {
 				setWiggle(false);
-				console.log('wiggle false');
-			}, 3000);
+			}, 1000);
 		}
 	};
 

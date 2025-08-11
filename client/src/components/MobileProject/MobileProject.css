@@ -91,9 +91,6 @@
 	}
 }
 
-.mobile__wiggle {
-}
-
 @keyframes spin {
 	0% {
 		transform: translate(-50%, -50%) rotate(0deg);
@@ -105,6 +102,23 @@
 
 .link__url-demo {
 	align-items: center;
+}
+
+.mobile__wiggle {
+	animation: wiggle 0.2s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+	0%,
+	100% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(-1deg);
+	}
+	75% {
+		transform: rotate(1deg);
+	}
 }
 
 @media screen and (max-width: 750px) {
