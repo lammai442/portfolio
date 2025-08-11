@@ -142,7 +142,9 @@ function HomePage() {
 					className='section__box'
 					data-aos='fade-up'>
 					<h2 className='section__title'>Hobbyprojekt</h2>
-					<p>{hobbyProjects[0].desc}</p>
+					<p className='section__paragraph'>
+						{hobbyProjects[0].desc}
+					</p>
 					<section className='hobby-projects__items-box'>
 						{hobbyProjects[0].url.map((h, index) => {
 							return <HobbyProjects url={h} key={index} />;
