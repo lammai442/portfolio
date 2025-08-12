@@ -2,7 +2,7 @@ import './MobileProject.css';
 import { useState } from 'react';
 import { iconMap } from '../../data/data.js';
 import LinkElement from '../LinkElement/LinkElement.jsx';
-function MobileProject({ url, title, tech, desc }) {
+function MobileProject({ url, title, tech, desc, git }) {
 	const [isLoaded, setIsLoaded] = useState(false);
 	const [wiggle, setWiggle] = useState(false);
 
@@ -54,6 +54,7 @@ function MobileProject({ url, title, tech, desc }) {
 					<LinkElement
 						text={'Git'}
 						linkStyle={'link__url link__url--white'}
+						webUrl={git}
 					/>
 				</section>
 				<h3>Tekniker som används</h3>

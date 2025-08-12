@@ -103,6 +103,7 @@ function HomePage() {
 							<MobileProject
 								key={index}
 								url={m.url}
+								git={m.git}
 								title={m.title}
 								tech={m.tech}
 								desc={m.desc}
