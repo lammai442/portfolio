@@ -7,7 +7,7 @@ function LinkButton({ webUrl, text, linkStyle, handleWiggle, setWiggle }) {
 			className={linkStyle}
 			aria-label='Link to webpage'
 			{...(handleWiggle ? { onClick: () => handleWiggle(true) } : {})}
-			onMouseOver={() => setWiggle(true)}
+			onMouseEnter={() => setWiggle(true)}
 			onMouseLeave={() => setWiggle(false)}>
 			{text}
 		</a>
