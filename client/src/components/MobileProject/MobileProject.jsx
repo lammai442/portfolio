@@ -48,8 +48,9 @@ function MobileProject({ url, title, tech, desc, git }) {
 								<span className='arrow'>⬅</span> Demo
 							</>
 						}
-						linkStyle={'link__url link__url-demo'}
+						linkStyle={'link__url link__url-demo link__url--wiggle'}
 						handleWiggle={handleWiggle}
+						setWiggle={setWiggle}
 					/>
 					<LinkElement
 						text={'Git'}

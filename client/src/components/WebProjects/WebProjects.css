@@ -25,12 +25,12 @@
 	cursor: pointer;
 }
 
-.link__box {
+/* .link__box {
 	display: flex;
 	justify-content: center;
 	gap: 1rem;
-}
-
+} */
+/* 
 .link__url {
 	align-self: center;
 	width: 40%;
@@ -42,23 +42,23 @@
 	border: 1px solid var(--primary-btn-color);
 	color: var(--white-text-color);
 	transition: all 0.3s ease-in-out;
-}
+} */
 
-.link__url:hover {
+/* .link__url:hover {
 	transform: scale(1.1);
-}
+} */
 
-.link__url--white {
+/* .link__url--white {
 	border: 1px solid var(--accent-bg-color);
 	background-color: var(--secondary-bg-color);
 	color: var(--accent-text-color);
 	cursor: pointer;
-}
+} */
 
-.link__url--white:hover {
+/* .link__url--white:hover {
 	background-color: var(--accent-bg-color);
 	color: var(--secondary-text-color);
-}
+} */
 
 .icon__tech-box--less-gap {
 	gap: 0.5rem;
