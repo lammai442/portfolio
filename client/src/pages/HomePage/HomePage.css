@@ -52,8 +52,20 @@
 	align-items: center;
 	gap: 2rem;
 
-	.info__left-img {
+	.info__left-box {
+		display: grid;
 		width: 33%;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+
+	.info__left-img {
+		width: 100%;
+		transition: all 0.7s ease-in-out;
+	}
+
+	.info__left-img:hover {
+		transform: scale(1.1);
 	}
 
 	.info__right-box {

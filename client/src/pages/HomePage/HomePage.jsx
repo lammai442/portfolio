@@ -59,11 +59,13 @@ function HomePage() {
 					<FaAngleUp className='top-scroll-btn__icon' />
 				</button>
 				<section className='info__box'>
-					<img
-						src={profileimg}
-						alt='Profile image'
-						className='info__left-img'
-					/>
+					<div className='info__left-box'>
+						<img
+							src={profileimg}
+							alt='Profile image'
+							className='info__left-img'
+						/>
+					</div>
 					<section className='info__right-box'>
 						<h1 className='info__name-title'>Lam Mai</h1>
 						<p className='info__right-top-txt'>
