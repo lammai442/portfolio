@@ -1,8 +1,30 @@
 .chatbot__wrapper {
+	position: fixed;
+	left: 2rem;
+	bottom: 6rem;
 	max-width: 400px;
 	margin: 0 auto;
-	border: 1px solid gray;
+	z-index: 999;
+	background-color: var(--primary-card-color);
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.chatbot__header {
+	top: 0;
+	left: 0;
+	width: 100%;
 	padding: 1rem;
+	background-color: var(--primary-bg-color);
+	display: flex;
+	place-content: center;
+}
+
+.chatbot__header-title {
+	color: var(--white-text-color);
 }
 
 .chatbot__message-box {
@@ -15,6 +37,12 @@
 	padding: 1rem;
 }
 
+.chatbot__message-item {
+	display: flex;
+	flex-direction: column;
+	gap: 0.2rem;
+}
+
 .chatbot__close-btn {
 	justify-self: flex-end;
 }
@@ -23,46 +51,84 @@
 	position: fixed;
 	bottom: 2rem;
 	left: 2rem;
-	font-size: 3rem;
+	font-size: 2rem;
 	color: var(--white-text-color);
 	background-color: var(--primary-btn-color);
-	width: 60px;
+	width: 50px;
+	aspect-ratio: 1;
 	display: grid;
 	place-content: center;
 	border: none;
-	border-radius: 50% 50% 50% 25%;
+	border-radius: 50% 50% 50% 15%;
+}
+
+.fade-scale {
+	display: inline-block;
+	transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.fade-scale.show {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.fade-scale.hide {
+	opacity: 0;
+	transform: scale(0.8);
 }
 
 .chatbot__message {
 	border-radius: 10px;
 	padding: 0.5rem;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 .chatbot__message--ai {
 	text-align: left;
-	background-color: var(--accent-bg-color);
 }
 
 .chatbot__message--user {
 	display: inline;
 	align-self: end;
 	background-color: var(--primary-bg-color);
+	color: var(--white-text-color);
+}
+
+.chatbot__profile--ai {
+	font-size: 1.2rem;
+	color: var(--accent-bg-color);
+}
+
+.chatbot__profile--user {
+	align-self: end;
+	font-size: 1.2rem;
+	color: var(--primary-bg-color);
+}
+
+.chatbot__bottom {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+	padding: 1rem;
 }
 
 .chatbot__input-box {
-	width: 70%;
+	width: 100%;
 	padding: 0.5rem;
 	border-radius: 50px;
+	font-size: 1rem;
 }
 
 .chatbot__input-box:focus {
-	border: 3px solid var(--primary-btn-color);
+	outline: none;
+	border: 2px solid var(--primary-btn-color);
 }
 
 .chatbot__btn {
-	width: 25%;
-	padding: 0.5rem;
-	margin-left: 5%;
+	width: 100%;
+	padding: 1rem;
+	font-size: 1.2rem;
 	background-color: var(--primary-btn-color);
 	color: var(--white-text-color);
 	border-radius: 10px;

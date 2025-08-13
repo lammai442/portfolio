@@ -8,6 +8,8 @@ import {
 } from '../../data/data.js';
 import { OpenAI } from 'openai/client.js';
 import { IoChatboxEllipsesOutline } from 'react-icons/io5';
+import { FaRobot } from 'react-icons/fa6';
+import { FaUser } from 'react-icons/fa';
 
 const openai = new OpenAI({
 	apiKey: import.meta.env.VITE_OPENAI_API_KEY,
@@ -70,52 +72,67 @@ function ChatBot() {
 
 	return (
 		<>
-			{!openChat && (
-				<button
-					onClick={() => setOpenChat((prev) => !prev)}
-					className='chatbox__icon'>
-					<IoChatboxEllipsesOutline />
-				</button>
-			)}
+			<button
+				onClick={() => setOpenChat((prev) => !prev)}
+				className='chatbox__icon'>
+				<span className={`fade-scale ${openChat ? 'hide' : 'show'}`}>
+					{openChat ? 'X' : <IoChatboxEllipsesOutline />}
+				</span>
+			</button>
 			{openChat && (
 				<div className='chatbot__wrapper'>
-					<button
-						className='chatbot__close-btn'
-						onClick={() => setOpenChat((prev) => !prev)}>
-						X
-					</button>
-					<div className='chatbot__message-box'>
-						{messages.map((m, i) => (
-							<p
-								key={i}
-								className={
-									m.role === 'ai'
-										? 'chatbot__message chatbot__message--ai'
-										: 'chatbot__message chatbot__message--user'
-								}
-								ref={
-									i === messages.length - 1
-										? lastMessageRef
-										: null
-								}>
-								<strong>
-									{m.role === 'ai' ? 'AI 🤖:' : ' Du👤:'}
-								</strong>{' '}
-								{m.text}
-							</p>
-						))}
+					<div className='chatbot__header'>
+						<h2 className='chatbot__header-title'>AI - Chat</h2>
 					</div>
-					<input
-						type='text'
-						value={input}
-						onChange={(e) => setInput(e.target.value)}
-						placeholder='Ställ en fråga om min portfolio...'
-						className='chatbot__input-box'
-						onKeyDown={handleKeyDown}
-					/>
-					<button onClick={handleSend} className='chatbot__btn'>
-						Skicka
-					</button>
+					<section className='chatbot__message-box'>
+						{messages.map((m, i) => (
+							<section className='chatbot__message-item'>
+								<p
+									key={i}
+									className={
+										m.role === 'ai'
+											? 'chatbot__message chatbot__message--ai'
+											: 'chatbot__message chatbot__message--user'
+									}
+									ref={
+										i === messages.length - 1
+											? lastMessageRef
+											: null
+									}>
+									{m.text}
+								</p>
+								<p
+									className={
+										m.role === 'ai'
+											? 'chatbot__profile--ai'
+											: 'chatbot__profile--user'
+									}>
+									{m.role === 'ai' ? (
+										<>
+											<FaRobot />
+										</>
+									) : (
+										<>
+											<FaUser />
+										</>
+									)}
+								</p>
+							</section>
+						))}
+					</section>
+					<section className='chatbot__bottom'>
+						<input
+							type='text'
+							value={input}
+							onChange={(e) => setInput(e.target.value)}
+							placeholder='Ställ en fråga om min portfolio...'
+							className='chatbot__input-box'
+							onKeyDown={handleKeyDown}
+						/>
+						<button onClick={handleSend} className='chatbot__btn'>
+							Skicka
+						</button>
+					</section>
 				</div>
 			)}
 		</>
