@@ -1,10 +1,7 @@
 .hobby-projects__box {
-	transition: all 0.3s ease-in-out;
 	z-index: 999;
-}
-
-.hobby-projects__box:hover {
-	transform: scale(1.05);
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
 }
 
 .iframe {
@@ -13,7 +10,15 @@
 	border: none;
 }
 
-.iframe-modal {
-	width: 500px;
-	aspect-ratio: 16/9;
+.iframe:hover {
+	transform: scale(1.03);
+}
+
+.hobby-projects__items-box:hover .hobby-projects__box {
+	filter: brightness(0.5);
+	transition: all 0.3s ease-in-out;
+}
+
+.hobby-projects__items-box:hover .hobby-projects__box:hover {
+	filter: brightness(1);
 }

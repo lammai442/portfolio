@@ -146,6 +146,7 @@
 	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 	place-content: center;
 	gap: 1rem;
+	transition: filter 0.3 ease-in-out;
 }
 
 .section__paragraph {
