@@ -16,6 +16,7 @@ import HobbyProjects from '../../components/HobbyProjects/HobbyProjects.jsx';
 import { hobbyProjects } from '../../data/data.js';
 import LinkElement from '../../components/LinkElement/LinkElement.jsx';
 import cv from '../../assets/cv/lam-mai-CV.pdf';
+import ChatBot from '../../components/ChatBot/ChatBot.jsx';
 function HomePage() {
 	const projectRef = useRef(null);
 	const experienceRef = useRef(null);
@@ -159,6 +160,7 @@ function HomePage() {
 					<h2 className='section__title'>KONTAKT</h2>
 					<Contact />
 				</section>
+				<ChatBot />
 			</main>
 		</div>
 	);

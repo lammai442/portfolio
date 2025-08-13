@@ -13,7 +13,7 @@
 :root[data-theme='dark'] {
 	/* BACKGROUND COLORS */
 	--acc-bg-color: #121212;
-	--primary-bg-color: #1e1e1e;
+	--primary-bg-color: #008aaa;
 	--primary-bg-color-frame: #faf7f2c5;
 	--secondary-bg-color: #2c2c2c;
 	--accent-bg-color: #d1884f;
@@ -34,7 +34,7 @@
 	--secondary-font: 'Poppins', sans-serif;
 
 	/* BACKGROUND COLORS */
-	--primary-bg-color: #1e1e1e;
+	--primary-bg-color: #008aaa;
 	--primary-bg-color-03: rgb(59, 186, 219, 0.3);
 	--primary-bg-color-frame: #333;
 	--secondary-bg-color: #faf7f2;
