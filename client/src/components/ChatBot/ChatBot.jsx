@@ -30,12 +30,9 @@ Personal info: name: Lam Mai, born: 1987, mail: lam.mai442@gmail.com, telephone:
 function ChatBot() {
 	const [ChatIsOpen, setChatIsOpen] = useState(false);
 	const [messages, setMessages] = useState([]);
-	const [noMessages, setNoMessages] = useState(false);
 	const [input, setInput] = useState('');
 	const [loadingAiMsg, setLoadingAiMsg] = useState(false);
 	const lastMessageRef = useRef(null);
-
-	let newTime = new Date();
 
 	const handleKeyDown = (e) => {
 		if (e.key === 'Enter') handleSend();
@@ -60,7 +57,7 @@ function ChatBot() {
 				{
 					role: 'system',
 					content:
-						'Du får addera 2 år till din data. Du är en AI som svarar utifrån denna portfolio: ',
+						'Du får addera 2 år till din data. Du är en AI som endast svarar utifrån denna portfolio: ',
 				},
 				{ role: 'system', content: portfolioText },
 				{ role: 'user', content: input },
@@ -98,72 +95,95 @@ function ChatBot() {
 				<div className='chatbot__wrapper'>
 					<div className='chatbot__header'>
 						<h2 className='chatbot__header-title'>AI - Chat</h2>
+						<button
+							onClick={() => setChatIsOpen((prev) => !prev)}
+							className='chatbox__minimize-btn'>
+							<span className='chatbox__minimize-line'></span>
+						</button>
 					</div>
-					<section className='chatbot__message-box'>
-						{!noMessages && (
+					<section className='chatbot__main'>
+						{messages.length === 0 && (
 							<RiRobot3Line className='chatbot__empty-message-ai' />
 						)}
-						{messages.map((m, i) => (
-							<section className='chatbot__message-item'>
-								<p
-									key={i}
-									className={
-										m.role === 'ai'
-											? 'chatbot__message chatbot__message--ai'
-											: 'chatbot__message chatbot__message--user'
-									}
-									ref={
-										i === messages.length - 1
-											? lastMessageRef
-											: null
-									}>
-									{m.text}
-								</p>
-								<p
-									className={
-										m.role === 'ai'
-											? 'chatbot__profile--ai'
-											: 'chatbot__profile--user'
-									}>
-									{m.role === 'ai' ? (
-										<>
-											<RiRobot3Line />
-										</>
-									) : (
-										<>
-											<FaUser />
-										</>
-									)}
-								</p>
-								<p className='chatbot__time'>{m.time}</p>
-							</section>
-						))}
+						{messages.length > 0 && (
+							<section className='chatbot__message-box'>
+								{messages.map((m, i) => (
+									<section className='chatbot__message-item'>
+										<p
+											key={i}
+											className={
+												m.role === 'ai'
+													? 'chatbot__message chatbot__message--ai'
+													: 'chatbot__message chatbot__message--user'
+											}
+											ref={
+												i === messages.length - 1
+													? lastMessageRef
+													: null
+											}>
+											{m.text}
+										</p>
+										<section
+											className={`
+												chatbot__profile-box ${
+													m.role === 'ai'
+														? ' chatbot__profile--ai'
+														: 'chatbot__profile--user'
+												}
+												`}>
+											<span className='chatbot__profile-time'>
+												{m.time}
+											</span>
+											<span>-</span>
+											<span
+												className={
+													m.role === 'ai'
+														? 'chatbot__profile--ai'
+														: 'chatbot__profile--user'
+												}>
+												{m.role === 'ai' ? (
+													<>
+														<RiRobot3Line />
+													</>
+												) : (
+													<>
+														<FaUser />
+													</>
+												)}
+											</span>
+										</section>
+									</section>
+								))}
 
-						{loadingAiMsg && (
-							<section className='chatbot__message-item'>
-								<div className='typing-dots'>
-									<span></span>
-									<span></span>
-									<span></span>
-								</div>
-								<p className='chatbot__profile--ai'>
-									<RiRobot3Line />
-								</p>
+								{loadingAiMsg && (
+									<section className='chatbot__message-item'>
+										<div className='typing-dots'>
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+										<p className='chatbot__profile--ai'>
+											<RiRobot3Line />
+										</p>
+									</section>
+								)}
 							</section>
 						)}
-					</section>
-					<section className='chatbot__bottom'>
-						<input
-							type='text'
-							value={input}
-							onChange={(e) => setInput(e.target.value)}
-							placeholder='Ställ en fråga om min portfolio...'
-							className='chatbot__input-box'
-							onKeyDown={handleKeyDown}
-						/>
-						<button onClick={handleSend} className='chatbot__btn'>
-							Skicka
-						</button>
+						<section className='chatbot__bottom'>
+							<input
+								type='text'
+								value={input}
+								onChange={(e) => setInput(e.target.value)}
+								placeholder='Ställ en fråga om min portfolio...'
+								className='chatbot__input-box'
+								onKeyDown={handleKeyDown}
+							/>
+							<button
+								onClick={handleSend}
+								className='chatbot__btn'>
+								Skicka
+							</button>
+						</section>
 					</section>
 				</div>
 			)}
