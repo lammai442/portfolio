@@ -8,11 +8,11 @@ function Contact() {
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
 	const [textArea, setTextArea] = useState('');
-	const [sentMsg, setSentMsg] = useState(false);
+	const [showSentMsg, setShowSentMsg] = useState(false);
 	const form = useRef();
 	const publicKey = import.meta.env.VITE_PUBLIC_KEY;
 
-	// Fade sentMsging effect
+	// Fade showSentMsging effect
 	useEffect(() => {
 		AOS.init({
 			duration: 1500,
@@ -27,15 +27,15 @@ function Contact() {
 		setName('');
 		setEmail('');
 		setTextArea('');
-		setSentMsg(true);
+		setShowSentMsg(true);
 
 		emailjs.sendForm('service_p4tn17r', 'template_8fzves8', form.current, {
 			publicKey: publicKey,
 		});
 
 		setTimeout(() => {
-			setSentMsg((prev) => !prev);
-		}, 3000);
+			setShowSentMsg((prev) => !prev);
+		}, 3500);
 	};
 
 	return (
@@ -50,38 +50,44 @@ function Contact() {
 					Skicka gärna ett meddelande via formuläret nedan – jag ser
 					fram emot att höra mer om er!
 				</p>
-				<input
-					type='text'
-					className='contact__input'
-					placeholder='Namn'
-					value={name}
-					required={true}
-					name='name'
-					onChange={(e) => setName(e.target.value)}></input>
-				<input
-					type='email'
-					className='contact__input'
-					placeholder='Mail'
-					value={email}
-					onChange={(e) => setEmail(e.target.value)}
-					required={true}
-					name='email'></input>
-				<textarea
-					type='text'
-					className='contact__text-area'
-					placeholder='Meddelande'
-					onChange={(e) => setTextArea(e.target.value)}
-					value={textArea}
-					required={true}
-					name='message'></textarea>
+				<label className='contact__label'>
+					Namn
+					<input
+						type='text'
+						className='contact__input'
+						value={name}
+						required={true}
+						name='name'
+						onChange={(e) => setName(e.target.value)}></input>
+				</label>
+				<label className='contact__label'>
+					Email
+					<input
+						type='email'
+						className='contact__input'
+						value={email}
+						onChange={(e) => setEmail(e.target.value)}
+						required={true}
+						name='email'></input>
+				</label>
+				<label className='contact__label'>
+					Meddelande
+					<textarea
+						type='text'
+						className='contact__text-area'
+						onChange={(e) => setTextArea(e.target.value)}
+						value={textArea}
+						required={true}
+						name='message'></textarea>
+				</label>
 				<button type='submit' className='contact__btn'>
 					Skicka
 				</button>
 			</label>
-			{sentMsg && (
+			{showSentMsg && (
 				<div
 					className='sent-msg__box'
-					onClick={() => setSentMsg((prev) => !prev)}>
+					onClick={() => setShowSentMsg((prev) => !prev)}>
 					<p className='sent-msg__text'>
 						Oh vad kul med mail.{'\n'}Jag kommer svara dig så fort
 						jag kan!

@@ -93,6 +93,10 @@
 				transition: all 0.3s ease-in-out;
 			}
 
+			.info__right-links--git {
+				color: var(--black-white-color);
+			}
+
 			.info__right-links:hover {
 				transform: scale(1.1);
 			}

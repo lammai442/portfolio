@@ -56,7 +56,8 @@ function HomePage() {
 					className='top-scroll-btn__box'
 					onClick={() => {
 						scrollToSection('toTop');
-					}}>
+					}}
+					aria-label='Scroll to top button'>
 					<FaAngleUp className='top-scroll-btn__icon' />
 				</button>
 				<section className='info__box'>
@@ -75,17 +76,20 @@ function HomePage() {
 						<section className='info__right-links-box'>
 							<a
 								href='http://www.linkedin.com/in/lam-mai'
-								target='_blank'>
+								target='_blank'
+								aria-label='Link to Linkedin'>
 								<FaLinkedin className='info__right-links' />
 							</a>
 							<a
 								href='https://github.com/lammai442'
-								target='_blank'>
-								<FaGithubSquare className='info__right-links' />
+								target='_blank'
+								aria-label='Link to Github'>
+								<FaGithubSquare className='info__right-links info__right-links--git' />
 							</a>
 							<a
 								href='mailto:lam.mai442@gmail.com'
-								target='_blank'>
+								target='_blank'
+								aria-label='Send email to Lam Mai'>
 								<MdOutgoingMail className='info__right-links' />
 							</a>
 						</section>

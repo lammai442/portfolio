@@ -5,16 +5,14 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: var(--primary-font);
-	transition: all 0.3s ease-in-out;
 }
 
 /* GENERIC COLORS */
 
 :root[data-theme='dark'] {
 	/* BACKGROUND COLORS */
-	/* --acc-bg-color: #121212; */
 	--primary-bg-color: #008aaa;
-	--primary-bg-color-frame: #faf7f2c5;
+	--primary-bg-color-frame: #000000;
 	--secondary-bg-color: #2c2c2c;
 	--accent-bg-color: #d1884f;
 	--primary-btn-color: #008aaa;
@@ -22,6 +20,7 @@
 	--primary-card-color: #1e1e1e;
 	--secondary-card-color: #008aaa;
 
+	--black-white-color: #faf7f2;
 	/* TEXT COLORS */
 	--primary-text-color: #faf7f2;
 	--secondary-text-color: #000000;
@@ -47,6 +46,7 @@
 	--primary-card-color: #ffffff;
 	--secondary-card-color: #000;
 
+	--black-white-color: #2c2c2c;
 	/* TEXT COLORS */
 	--primary-text-color: #000;
 	--secondary-text-color: #ffffff;

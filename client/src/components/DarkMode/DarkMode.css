@@ -10,6 +10,7 @@
 	font-size: 2rem;
 	color: var(--accent-btn-color);
 	cursor: pointer;
+	transition: 0.3s ease-in-out;
 }
 
 .theme-btn:hover {
