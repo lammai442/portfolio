@@ -28,7 +28,7 @@ Hobby Projects: ${hobbyProjects.map((h) => h.desc).join('\n')}
 Personal info: name: Lam Mai, born: 1987, mail: lam.mai442@gmail.com, telephone: 0735594082`;
 
 function ChatBot() {
-	const [openChat, setOpenChat] = useState(false);
+	const [ChatIsOpen, setChatIsOpen] = useState(false);
 	const [messages, setMessages] = useState([]);
 	const [input, setInput] = useState('');
 	const lastMessageRef = useRef(null);
@@ -73,13 +73,13 @@ function ChatBot() {
 	return (
 		<>
 			<button
-				onClick={() => setOpenChat((prev) => !prev)}
+				onClick={() => setChatIsOpen((prev) => !prev)}
 				className='chatbox__icon'>
-				<span className={`fade-scale ${openChat ? 'hide' : 'show'}`}>
-					{openChat ? 'X' : <IoChatboxEllipsesOutline />}
+				<span className={`fade-scale ${ChatIsOpen ? 'hide' : 'show'}`}>
+					{ChatIsOpen ? 'X' : <IoChatboxEllipsesOutline />}
 				</span>
 			</button>
-			{openChat && (
+			{ChatIsOpen && (
 				<div className='chatbot__wrapper'>
 					<div className='chatbot__header'>
 						<h2 className='chatbot__header-title'>AI - Chat</h2>

@@ -56,10 +56,9 @@
 	background-color: var(--primary-btn-color);
 	width: 50px;
 	aspect-ratio: 1;
-	display: grid;
-	place-content: center;
 	border: none;
 	border-radius: 50% 50% 50% 15%;
+	cursor: pointer;
 }
 
 .fade-scale {

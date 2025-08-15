@@ -41,7 +41,7 @@ function MobileProject({ url, title, tech, desc, git }) {
 			<section className='mobile__info-box'>
 				<h2 className='mobile__title'>Mobilapp - {title}</h2>
 				<p className='mobile__info-paragraph'>{desc}</p>
-				<section className='link__box'>
+				<section className='link__box link__box--mobile'>
 					<LinkElement
 						text={
 							<>
