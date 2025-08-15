@@ -12,7 +12,7 @@
 
 :root[data-theme='dark'] {
 	/* BACKGROUND COLORS */
-	--acc-bg-color: #121212;
+	/* --acc-bg-color: #121212; */
 	--primary-bg-color: #008aaa;
 	--primary-bg-color-frame: #faf7f2c5;
 	--secondary-bg-color: #2c2c2c;

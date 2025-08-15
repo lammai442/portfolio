@@ -8,7 +8,7 @@ import {
 } from '../../data/data.js';
 import { OpenAI } from 'openai/client.js';
 import { IoChatboxEllipsesOutline } from 'react-icons/io5';
-import { FaRobot } from 'react-icons/fa6';
+import { RiRobot3Line } from 'react-icons/ri';
 import { FaUser } from 'react-icons/fa';
 
 const openai = new OpenAI({
@@ -30,8 +30,12 @@ Personal info: name: Lam Mai, born: 1987, mail: lam.mai442@gmail.com, telephone:
 function ChatBot() {
 	const [ChatIsOpen, setChatIsOpen] = useState(false);
 	const [messages, setMessages] = useState([]);
+	const [noMessages, setNoMessages] = useState(false);
 	const [input, setInput] = useState('');
+	const [loadingAiMsg, setLoadingAiMsg] = useState(false);
 	const lastMessageRef = useRef(null);
+
+	let newTime = new Date();
 
 	const handleKeyDown = (e) => {
 		if (e.key === 'Enter') handleSend();
@@ -40,10 +44,16 @@ function ChatBot() {
 	const handleSend = async () => {
 		if (!input) return;
 
+		const currentTime = new Date().toLocaleTimeString([], {
+			hour: '2-digit',
+			minute: '2-digit',
+		});
+
 		setInput('');
-		const userMessage = { role: 'user', text: input };
+		const userMessage = { role: 'user', text: input, time: currentTime };
 		setMessages([...messages, userMessage]);
 
+		setLoadingAiMsg(true);
 		const response = await openai.chat.completions.create({
 			model: 'gpt-4o-mini',
 			messages: [
@@ -60,10 +70,17 @@ function ChatBot() {
 		const aiMessage = {
 			role: 'ai',
 			text: response.choices[0].message.content,
+			time: new Date().toLocaleTimeString([], {
+				hour: '2-digit',
+				minute: '2-digit',
+			}),
 		};
+
+		setLoadingAiMsg(false);
 		setMessages([...messages, userMessage, aiMessage]);
 	};
 
+	// Ref so that it autoscrools to the last msg
 	useEffect(() => {
 		if (lastMessageRef.current) {
 			lastMessageRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -74,10 +91,8 @@ function ChatBot() {
 		<>
 			<button
 				onClick={() => setChatIsOpen((prev) => !prev)}
-				className='chatbox__icon'>
-				<span className={`fade-scale ${ChatIsOpen ? 'hide' : 'show'}`}>
-					{ChatIsOpen ? 'X' : <IoChatboxEllipsesOutline />}
-				</span>
+				className='chatbox__icon-btn'>
+				{ChatIsOpen ? 'X' : <IoChatboxEllipsesOutline className='' />}
 			</button>
 			{ChatIsOpen && (
 				<div className='chatbot__wrapper'>
@@ -85,6 +100,9 @@ function ChatBot() {
 						<h2 className='chatbot__header-title'>AI - Chat</h2>
 					</div>
 					<section className='chatbot__message-box'>
+						{!noMessages && (
+							<RiRobot3Line className='chatbot__empty-message-ai' />
+						)}
 						{messages.map((m, i) => (
 							<section className='chatbot__message-item'>
 								<p
@@ -109,7 +127,7 @@ function ChatBot() {
 									}>
 									{m.role === 'ai' ? (
 										<>
-											<FaRobot />
+											<RiRobot3Line />
 										</>
 									) : (
 										<>
@@ -117,8 +135,22 @@ function ChatBot() {
 										</>
 									)}
 								</p>
+								<p className='chatbot__time'>{m.time}</p>
 							</section>
 						))}
+
+						{loadingAiMsg && (
+							<section className='chatbot__message-item'>
+								<div className='typing-dots'>
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+								<p className='chatbot__profile--ai'>
+									<RiRobot3Line />
+								</p>
+							</section>
+						)}
 					</section>
 					<section className='chatbot__bottom'>
 						<input
