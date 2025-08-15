@@ -90,7 +90,11 @@ function ChatBot() {
 				onClick={() => setChatIsOpen((prev) => !prev)}
 				className='chatbox__icon-btn'
 				aria-label='Ai chat button'>
-				{ChatIsOpen ? 'X' : <IoChatboxEllipsesOutline className='' />}
+				{ChatIsOpen ? (
+					<p className='chatbox__icon'>X</p>
+				) : (
+					<IoChatboxEllipsesOutline className='chatbox__icon' />
+				)}
 			</button>
 			{ChatIsOpen && (
 				<div className='chatbot__wrapper'>

@@ -19,6 +19,19 @@
 	}
 }
 
+.chatbox__icon {
+	color: var(--white-text-color);
+	transition: opacity 1.3s ease, transform 0.3s ease;
+}
+
+.chatbox__icon-btn .chatbox__icon {
+	opacity: 1;
+}
+
+.chatbox__icon-btn .chatbox__icon-exit {
+	opacity: 0;
+}
+
 .chatbot__wrapper {
 	position: fixed;
 	left: 2rem;
