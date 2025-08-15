@@ -1,13 +1,14 @@
 .hobby-projects__box {
 	z-index: 999;
+	border-radius: 5px;
 	overflow: hidden;
-	transition: all 0.3s ease-in-out;
 }
 
 .iframe {
 	width: 100%;
 	aspect-ratio: 16/9;
 	border: none;
+	transition: all 0.3s ease-in-out;
 }
 
 .iframe:hover {
