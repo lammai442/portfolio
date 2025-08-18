@@ -7,9 +7,10 @@ import {
 	hobbyProjects,
 } from '../../data/data.js';
 import { OpenAI } from 'openai/client.js';
-import { IoChatboxEllipsesOutline } from 'react-icons/io5';
 import { RiRobot3Line } from 'react-icons/ri';
 import { FaUser } from 'react-icons/fa';
+// import robotIcon from '../../assets/icons/ri_robot-3-line.svg';
+import RobotIcon from '../RobotIcon/RobotIcon.jsx';
 
 const openai = new OpenAI({
 	apiKey: import.meta.env.VITE_OPENAI_API_KEY,
@@ -86,6 +87,7 @@ function ChatBot() {
 
 	return (
 		<>
+			<RobotIcon />
 			<button
 				onClick={() => setChatIsOpen((prev) => !prev)}
 				className='chatbox__icon-btn'
@@ -93,7 +95,11 @@ function ChatBot() {
 				{ChatIsOpen ? (
 					<p className='chatbox__icon'>X</p>
 				) : (
-					<IoChatboxEllipsesOutline className='chatbox__icon' />
+					<>
+						{/* <img src={robotIcon} alt='' className='chatbox__icon' /> */}
+						{/* <RiRobot3Line className='chatbox__icon' /> */}
+						<RobotIcon />
+					</>
 				)}
 			</button>
 			{ChatIsOpen && (
@@ -180,7 +186,7 @@ function ChatBot() {
 								type='text'
 								value={input}
 								onChange={(e) => setInput(e.target.value)}
-								placeholder='Ställ en fråga om min portfolio...'
+								placeholder='Ställ gärna en fråga om min portfolio...'
 								className='chatbot__input-box'
 								onKeyDown={handleKeyDown}
 							/>

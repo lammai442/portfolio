@@ -22,6 +22,7 @@
 .chatbox__icon {
 	color: var(--white-text-color);
 	transition: opacity 1.3s ease, transform 0.3s ease;
+	font-size: 1rem;
 }
 
 .chatbox__icon-btn .chatbox__icon {
