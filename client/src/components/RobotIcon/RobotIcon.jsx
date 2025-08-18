@@ -14,27 +14,18 @@ function RobotIcon() {
 					fill='white'
 				/>
 
-				<motion.circle
-					cx='106.875'
-					cy='84.375'
-					r='16.875'
-					fill='white'
-					stroke='black'
-					strokeWidth='3'
-					animate={{ scaleY: [1, 0.1, 1] }}
-					transition={{ repeat: Infinity, duration: 2 }}
-				/>
-
-				<motion.circle
-					cx='163.125'
-					cy='84.375'
-					r='16.875'
-					fill='white'
-					stroke='black'
-					strokeWidth='3'
-					animate={{ scaleY: [1, 0.1, 1] }}
-					transition={{ repeat: Infinity, duration: 2, delay: 0.2 }}
-				/>
+				<motion.g
+					animate={{ scaleY: [1, 0.1, 1, 0.1, 1] }}
+					transition={{
+						duration: 0.6,
+						times: [0, 0.2, 0.4, 0.6, 1],
+						repeat: Infinity,
+						repeatDelay: 3,
+					}}
+					style={{ originY: 'center' }}>
+					<circle cx='106.875' cy='84.375' r='16.875' fill='white' />
+					<circle cx='163.125' cy='84.375' r='16.875' fill='white' />
+				</motion.g>
 			</g>
 		</motion.svg>
 	);
