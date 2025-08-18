@@ -15,10 +15,9 @@ function RobotIcon() {
 				/>
 
 				<motion.g
-					animate={{ scaleY: [1, 0.1, 1, 0.1, 1] }}
+					animate={{ scaleY: [1, 0, 1, 0, 1] }}
 					transition={{
 						duration: 0.6,
-						times: [0, 0.2, 0.4, 0.6, 1],
 						repeat: Infinity,
 						repeatDelay: 3,
 					}}
