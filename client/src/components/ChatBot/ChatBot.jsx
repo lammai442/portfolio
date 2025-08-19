@@ -9,7 +9,6 @@ import {
 import { OpenAI } from 'openai/client.js';
 import { RiRobot3Line } from 'react-icons/ri';
 import { FaUser } from 'react-icons/fa';
-// import robotIcon from '../../assets/icons/ri_robot-3-line.svg';
 import RobotIcon from '../RobotIcon/RobotIcon.jsx';
 
 const openai = new OpenAI({
@@ -114,9 +113,6 @@ function ChatBot() {
 						</button>
 					</div>
 					<section className='chatbot__main'>
-						{messages.length === 0 && (
-							<RiRobot3Line className='chatbot__empty-message-ai' />
-						)}
 						{messages.length > 0 && (
 							<section className='chatbot__message-box'>
 								{messages.map((m, i) => (
