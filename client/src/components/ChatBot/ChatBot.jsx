@@ -33,10 +33,26 @@ function ChatBot() {
 	const [input, setInput] = useState('');
 	const [loadingAiMsg, setLoadingAiMsg] = useState(false);
 	const lastMessageRef = useRef(null);
+	const chatbotRef = useRef(null);
 
 	const handleKeyDown = (e) => {
 		if (e.key === 'Enter') handleSend();
 	};
+
+	// Remove chatbot when clicked outside
+	useEffect(() => {
+		const handleClickOutside = (e) => {
+			if (chatbotRef.current && !chatbotRef.current.contains(e.target)) {
+				setChatIsOpen(false);
+			}
+		};
+
+		document.addEventListener('mousedown', handleClickOutside);
+
+		return () => {
+			document.removeEventListener('mousedown', handleClickOutside);
+		};
+	}, []);
 
 	const handleSend = async () => {
 		if (!input) return;
@@ -86,7 +102,6 @@ function ChatBot() {
 
 	return (
 		<>
-			<RobotIcon />
 			<button
 				onClick={() => setChatIsOpen((prev) => !prev)}
 				className='chatbox__icon-btn'
@@ -102,7 +117,7 @@ function ChatBot() {
 				)}
 			</button>
 			{ChatIsOpen && (
-				<div className='chatbot__wrapper'>
+				<div className='chatbot__wrapper' ref={chatbotRef}>
 					<div className='chatbot__header'>
 						<RiRobot3Line className='chatbot__header-icon' />
 						<h2 className='chatbot__header-title'>AI - Chat</h2>
@@ -116,9 +131,10 @@ function ChatBot() {
 						{messages.length > 0 && (
 							<section className='chatbot__message-box'>
 								{messages.map((m, i) => (
-									<section className='chatbot__message-item'>
+									<section
+										className='chatbot__message-item'
+										key={i}>
 										<p
-											key={i}
 											className={
 												m.role === 'ai'
 													? 'chatbot__message chatbot__message--ai'

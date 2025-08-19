@@ -29,16 +29,13 @@ function HamburgerMenu({ scrollToSection }) {
 					<ul className='nav__list'>
 						{navItems.map((n, index) => {
 							return (
-								<>
-									<NavItem
-										key={index}
-										onClick={scrollToSection}
-										text={n.text}
-										ref={n.ref}
-										setOpenMenu={setOpenMenu}
-									/>
-									{/* <hr className='hr' /> */}
-								</>
+								<NavItem
+									key={index}
+									onClick={scrollToSection}
+									text={n.text}
+									ref={n.ref}
+									setOpenMenu={setOpenMenu}
+								/>
 							);
 						})}
 					</ul>

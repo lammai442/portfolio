@@ -96,6 +96,7 @@
 	flex-direction: column;
 	gap: 1rem;
 	padding: 1rem;
+	scrollbar-width: thin;
 }
 
 .chatbot__message-item {

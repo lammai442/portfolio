@@ -27,7 +27,7 @@ export const mobileProjects = [
 
 export const webProjects = [
 	{
-		desc: `Projektet har utvecklats av mig från grunden. Jag har lagt fokus på att skapa en användarvänlig upplevelse med tydlig struktur och responsiv design.`,
+		desc: `En filmsökarhemsida där användaren inte bara kan söka efter filmer, utan även spara sina favoriter i en personlig lista.`,
 		webUrl: 'https://lammai442.github.io/my-movie-database/',
 		title: `My Movie Database`,
 		tech: ['JavaScript', 'HTML', 'CSS', 'Figma', 'Git', 'VScode', 'API'],
@@ -35,7 +35,7 @@ export const webProjects = [
 		webPageImg: myMovieDatabase,
 	},
 	{
-		desc: `Projektet har utvecklats av mig från grunden. Jag har lagt fokus på att skapa en användarvänlig upplevelse med tydlig struktur och responsiv design.`,
+		desc: `Med två andra utvecklare har vi skapat ett pokemonspel där användaren med musen ska fånga pokemon och slå highscore.`,
 		webUrl: 'https://lammai442.github.io/catching-pokemons/',
 		title: `Catching Pokemons`,
 		tech: ['JavaScript', 'HTML', 'CSS', 'Git', 'VScode'],
@@ -43,10 +43,10 @@ export const webProjects = [
 		webPageImg: catchingPokemons,
 	},
 	{
-		desc: `Projektet har utvecklats av mig från grunden. Jag har lagt fokus på att skapa en användarvänlig upplevelse med tydlig struktur och responsiv design.`,
+		desc: `En statisk hemsida byggd med endast HTML, CSS och Figma med fokus på responsiv design och enkel struktur.`,
 		webUrl: 'https://lammai442.github.io/bonz-ai/',
 		title: `Bonz.AI`,
-		tech: ['JavaScript', 'HTML', 'CSS', 'Figma', 'Git', 'VScode'],
+		tech: ['HTML', 'CSS', 'Figma', 'Git', 'VScode'],
 		git: 'https://github.com/lammai442/bonz-ai.git/',
 		webPageImg: bonzAi,
 	},
@@ -58,8 +58,10 @@ export const TimeLineData = [
 		icon: IoSchoolOutline,
 		title: 'Webbutvecklare',
 		subtitle: 'Folkuniversitetet Göteborg',
-		content: `Utbildning till webbutvecklare. \nUtbildningens innehåll:
-		Arbeta agilt , Backend med Node.js , React, TypeScript, HTML & CSS, JavaScript, LIA, Driftsättning i molnmiljö och UX/UI \n\n Studeranderepresentant för klassen och deltar i programmets ledningsgruppsmöten, där jag förmedlar klassens synpunkter och bidrar till utbildningens utveckling.`,
+		content: `Utbildning till webbutvecklare med följande innehåll:
+		AI-implementering,Arbeta agilt , Backend med Node.js , React, TypeScript, HTML & CSS, JavaScript, LIA, Driftsättning i molnmiljö och UX/UI.
+		
+		Studeranderepresentant för klassen och deltar i programmets ledningsgruppsmöten, där jag förmedlar klassens synpunkter och bidrar till utbildningens utveckling.`,
 		date: 'Augusti 2024 - Pågående',
 		iconStyle: {
 			background: 'var(--primary-btn-color)',
@@ -71,7 +73,8 @@ export const TimeLineData = [
 		icon: MdOutlineWorkOutline,
 		title: 'Arbetskonsulent',
 		subtitle: 'Karlstads kommun',
-		content: `Projektledare för utbildningskontrakt med ansvar för totalt 75 personer där jag hjälpte unga vuxna att studera upp sina gymnasiebetyg genom stöd och handledning. \n
+		content: `Projektledare för utbildningskontrakt med ansvar för totalt 75 personer där jag hjälpte unga vuxna att studera upp sina gymnasiebetyg genom stöd och handledning. 
+		
 		Ansvarig för utskick av nyhetsbrev, digital information på Karlstad.se samt startade webbinar på Jobbcenter med veckovisa sändningar.`,
 		date: '2017 - 2025/tjänstledig',
 		iconStyle: {
@@ -84,7 +87,7 @@ export const TimeLineData = [
 		icon: MdOutlineWorkOutline,
 		title: 'Mai foto – Eget företag',
 		subtitle: 'Karlstads kommun',
-		content: `Egna företaget Mai foto som inriktade på foto av familjer/parporträtt och filmproduktion med bas i Karlstad.`,
+		content: `Egna företaget Mai foto som inriktade på foto av familjer/parporträtt och filmproduktion. Utförde uppdrag åt företag som EA-sports, Karlstad kommun samt privatpersoner.`,
 		date: '2013 - 2017',
 		iconStyle: {
 			background: 'var(--accent-bg-color)',
@@ -96,7 +99,9 @@ export const TimeLineData = [
 		icon: MdOutlineWorkOutline,
 		title: 'e-Social – Eget företag',
 		subtitle: 'Karlstads kommun',
-		content: `Egna företaget e-Social där vi inriktade oss mot privat- och gruppkurser inom digitala prylar som iPad, iPhone, Win 8, Androidtelefoner osv. `,
+		content: ` Egna företaget e-Social där vi inriktade oss mot privat- och gruppkurser inom digitala prylar som iPad, iPhone, Win 8, Androidtelefoner osv. 
+		
+		Samarbetspartner med Medborgarsskolan där vi hade hand om deras teknikkurser inom digitala prylar.`,
 		date: '2013 - 2017',
 		iconStyle: {
 			background: 'var(--accent-bg-color)',
@@ -108,7 +113,9 @@ export const TimeLineData = [
 		icon: MdOutlineWorkOutline,
 		title: 'Integrationshandledare',
 		subtitle: 'Kils kommun',
-		content: `Ansvar för introduktion av nyanlända ungdomar och stödja dem i deras integration i samhället. \n\nSamarbeta med myndigheter och andra samarbetspartners som kan vara aktuella. `,
+		content: `Ansvar för introduktion av nyanlända ungdomar och stödja dem i deras integration i samhället. 
+		
+		Samarbeta med myndigheter och andra samarbetspartners som kan vara aktuella.`,
 		date: '2016 - 2017',
 		iconStyle: {
 			background: 'var(--accent-bg-color)',
@@ -118,11 +125,12 @@ export const TimeLineData = [
 	{
 		id: '6',
 		icon: MdOutlineWorkOutline,
-		title: 'Integrationshandledare',
+		title: 'Lärarevikarie',
 		subtitle: 'Karlstads kommun',
 		content: `Arbetade som lärarvikarie från årskurs 3 till 9 i grundskolan. Utför den ordinarie lärarens planering och rapporterar.
-		\nVikarierat inom alla skolämnen, från svenska, matematik, syslöjd, till idrott. `,
-		date: '2016 - 2017',
+		
+		Vikarierat inom alla skolämnen, från svenska, matematik, syslöjd, till idrott. `,
+		date: '2013 - 2017',
 		iconStyle: {
 			background: 'var(--accent-bg-color)',
 			color: 'var(--white-text-color)',
@@ -134,10 +142,79 @@ export const TimeLineData = [
 		title: 'Lärarexamen inom idrott & media',
 		subtitle: 'GIH Örebro universitet / Uppsala universitet',
 		content: `Under utbildningen utvecklade jag en stark pedagogisk grund, ämnesdidaktik och kunskap i att planera och genomföra undervisning utifrån läroplanens mål. 
-		\nJag fördjupade mig särskilt i sambandet mellan fysisk aktivitet och lärande, samt hur media kan användas kreativt i undervisning.`,
-		date: '2008 - 2014',
+		
+		Jag fördjupade mig särskilt i sambandet mellan fysisk aktivitet och lärande, samt hur media kan användas kreativt i undervisning.`,
+		date: '2008 - 2013',
 		iconStyle: {
 			background: 'var(--primary-btn-color)',
+			color: 'var(--white-text-color)',
+		},
+	},
+	{
+		id: '8',
+		icon: IoSchoolOutline,
+		title: 'Kandidatexamen Media och kommunikationsvetenskap',
+		subtitle: 'Uppsala universitet',
+		content: `Kandidatexamen i media- och kommunikationsvetenskap med inriktning på strategisk kommunikation, organisationskommunikation, medieanalys och globala samhällsfrågor.`,
+		date: '2010 - 2013',
+		iconStyle: {
+			background: 'var(--primary-btn-color)',
+			color: 'var(--white-text-color)',
+		},
+	},
+	{
+		id: '9',
+		icon: MdOutlineWorkOutline,
+		title: 'Restaurangbiträde',
+		subtitle: 'IKEA',
+		content: `Ansvarade för diskhantering, enklare servering och att hålla arbetsytor rena och organiserade. Bistroansvarig med fokus på kundbemötande, service och att säkerställa att rutiner och hygienstandarder följdes.
+		
+		Swedish Food Market där jag både fyllde på varor, höll ordning i hyllorna och bemannade kassan med fokus på kundbemötande och service.`,
+		date: '2013',
+		iconStyle: {
+			background: 'var(--accent-bg-color)',
+			color: 'var(--white-text-color)',
+		},
+	},
+	{
+		id: '10',
+		icon: MdOutlineWorkOutline,
+		title: 'Kundtjänstmedarbetare',
+		subtitle: 'Tele 2',
+		content: `Tog emot inkommande samtal och hjälpte kunder med fakturafrågor, betalningslösningar och kontoöversikter samt felsökning.
+		
+		Ansvarade för kundtjänstärenden, enklare administration och att erbjuda mervärde genom försäljning av tilläggstjänster – alltid med fokus på god kundupplevelse.`,
+		date: '2007 - 2008',
+		iconStyle: {
+			background: 'var(--accent-bg-color)',
+			color: 'var(--white-text-color)',
+		},
+	},
+	{
+		id: '11',
+		icon: MdOutlineWorkOutline,
+		title: 'Hemtjänst',
+		subtitle: 'Karlskoga',
+		content: `Arbetade inom hemtjänst där jag hjälpte brukare i deras hem med praktiska moment som personlig hygien, städning, matlagning, inköp och påklädning.
+		
+		Genomförde arbetsuppgifter självständigt/i team enligt schema och anpassade insatserna utifrån individens behov och dagsform.`,
+		date: '2006 - 2007',
+		iconStyle: {
+			background: 'var(--accent-bg-color)',
+			color: 'var(--white-text-color)',
+		},
+	},
+	{
+		id: '12',
+		icon: MdOutlineWorkOutline,
+		title: 'Teknisk support',
+		subtitle: 'Viasat',
+		content: `Assisterade kunder via telefon med tekniska frågor kopplade till parabolinstallationer och digitalboxar, samt gav vägledning för att lösa vanliga användarproblem.
+		
+		Arbetet innebar daglig felsökning och teknisk support där jag guidade kunder steg för steg för att identifiera och lösa problem.`,
+		date: '2005 - 2006',
+		iconStyle: {
+			background: 'var(--accent-bg-color)',
 			color: 'var(--white-text-color)',
 		},
 	},
