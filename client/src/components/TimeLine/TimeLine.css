@@ -46,3 +46,9 @@
 .timeline__btn--minimize:hover {
 	background-color: var(--accent-btn-color);
 }
+
+@media screen and (max-width: 600px) {
+	.vertical-timeline__content-box .vertical-timeline-element-title {
+		font-size: 1.3rem;
+	}
+}

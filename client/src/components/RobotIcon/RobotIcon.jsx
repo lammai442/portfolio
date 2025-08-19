@@ -24,7 +24,7 @@ function RobotIcon() {
 					transition={{
 						duration: 1,
 						repeat: Infinity,
-						repeatDelay: 2,
+						repeatDelay: 0.5,
 					}}
 					style={{ originX: 'center', originY: 'bottom' }}
 				/>

@@ -153,7 +153,7 @@ export const TimeLineData = [
 	{
 		id: '8',
 		icon: IoSchoolOutline,
-		title: 'Kandidatexamen Media och kommunikationsvetenskap',
+		title: 'Kandidatexamen Media och kommunikation',
 		subtitle: 'Uppsala universitet',
 		content: `Kandidatexamen i media- och kommunikationsvetenskap med inriktning på strategisk kommunikation, organisationskommunikation, medieanalys och globala samhällsfrågor.`,
 		date: '2010 - 2013',

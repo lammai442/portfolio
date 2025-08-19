@@ -8,12 +8,12 @@ import { TimeLineData } from '../../data/data.js';
 import { useEffect, useState } from 'react';
 
 function TimeLine({ scrollToSection }) {
-	const [visible, setVisible] = useState(3);
+	const [visible, setVisible] = useState(4);
 	const [minimize, setminimize] = useState(false);
 
 	const handleShowMore = () => {
 		if (visible < TimeLineData.length) {
-			setVisible((prev) => prev + 3);
+			setVisible((prev) => prev + 4);
 		} else {
 			setVisible(3);
 			setminimize(false);
