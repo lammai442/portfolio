@@ -54,7 +54,7 @@
 
 	.info__left-box {
 		display: grid;
-		width: 33%;
+		width: 300px;
 		border-radius: 50%;
 		overflow: hidden;
 	}
@@ -162,6 +162,10 @@
 	.info__box {
 		flex-direction: column;
 		gap: -1rem;
+	}
+
+	.info__left-box {
+		width: 250px;
 	}
 
 	.top-scroll-btn__icon {
