@@ -76,6 +76,7 @@
 
 		.info__right-top-txt {
 			font-size: 1.5rem;
+			white-space: pre-line;
 		}
 
 		.info__right-middle-txt {

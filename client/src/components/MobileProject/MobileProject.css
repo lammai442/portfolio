@@ -11,7 +11,6 @@
 	place-content: center;
 }
 
-/* Mobilens skal */
 .mobile__frame {
 	width: 460px;
 	height: 846px;
@@ -21,7 +20,6 @@
 	box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* iframe-innehåll */
 .mobile__iframe {
 	width: 100%;
 	height: 100%;
