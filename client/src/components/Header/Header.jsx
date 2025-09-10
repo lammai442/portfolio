@@ -6,7 +6,7 @@ import { navItems } from '../../data/data.js';
 function Header({ scrollToSection }) {
 	return (
 		<header className='header'>
-			<div className='spacer'></div>
+			{/* <div className='spacer'></div> */}
 			<nav className='nav'>
 				<ul className='nav__list'>
 					{navItems.map((n, index) => {
@@ -21,7 +21,7 @@ function Header({ scrollToSection }) {
 					})}
 				</ul>
 			</nav>
-			<DarkMode className='hej' />
+			<DarkMode />
 			<HamburgerMenu scrollToSection={scrollToSection} />
 		</header>
 	);

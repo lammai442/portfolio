@@ -45,7 +45,7 @@ function MobileProject({ url, title, tech, desc, git }) {
 					<LinkElement
 						text={
 							<>
-								<span className='arrow'>⬅</span> Demo
+								<span className='arrow'>⬅</span> Testa mig
 							</>
 						}
 						linkStyle={'link__url link__url-demo link__url--wiggle'}

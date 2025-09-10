@@ -1,7 +1,7 @@
 .header {
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	padding: 2rem;
 	gap: 1rem;
 }
@@ -13,11 +13,10 @@
 }
 
 @media screen and (max-width: 820px) {
-	.nav {
-		display: none;
+	.header {
+		justify-content: space-between;
 	}
-
-	.spacer {
+	.nav {
 		display: none;
 	}
 }

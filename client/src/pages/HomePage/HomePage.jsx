@@ -71,7 +71,7 @@ function HomePage() {
 					<section className='info__right-box'>
 						<h1 className='info__name-title'>Lam Mai</h1>
 						<p className='info__right-top-txt'>
-							{`En go och glad utvecklare som är utbildad pedagog och kommunikatör men vidgar min kompetens med att att utbilda mig till webbutvecklare.`}
+							{`En driven och lösningsorienterad utvecklare som har bakgrund inom pedagogik samt kommunikation och nu vidareutbildar mig till webbutvecklare.`}
 						</p>
 						<section className='info__right-links-box'>
 							<a
