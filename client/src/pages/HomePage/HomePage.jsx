@@ -72,7 +72,7 @@ function HomePage() {
 						<h1 className='info__name-title'>Lam Mai</h1>
 						<p className='info__right-top-txt'>
 							{`Hej, kul att du ville kika in på mig!
-							Webbutvecklare med fokus på frontend och användarvänlighet.`}
+							Utbildad pedagog och kommunikatör men sadlar om till webbutvecklare.`}
 						</p>
 						<section className='info__right-links-box'>
 							<a
