@@ -52,7 +52,7 @@ function ChatBot() {
 
 		setTimeout(() => {
 			setShowAttentionMsg(true);
-		}, 2000);
+		}, 5000);
 
 		return () => {
 			document.removeEventListener('mousedown', handleClickOutside);
@@ -126,6 +126,7 @@ function ChatBot() {
 			</button>
 
 			<div
+				onClick={() => setShowAttentionMsg(false)}
 				className={`chatbox__icon-attention-msg ${
 					showAttentionMsg
 						? 'chatbox__icon-attention-msg--visible'

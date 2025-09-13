@@ -176,4 +176,8 @@
 	.section__title {
 		font-size: 2rem;
 	}
+
+	.top-scroll-btn__box {
+		/* bottom: 2rem; */
+	}
 }

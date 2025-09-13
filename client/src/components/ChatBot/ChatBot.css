@@ -30,6 +30,7 @@
 	opacity: 0; /* Startvärde */
 	transition: opacity 0.7s ease-in-out; /* Tiden för fade */
 	pointer-events: none;
+	animation: poping-effect 1s ease-in-out 2s;
 }
 
 .chatbox__icon-attention-msg--visible {
@@ -38,9 +39,21 @@
 	cursor: pointer;
 }
 
+@keyframes poping-effect {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
 .chatbox__chaticon {
 	position: absolute;
-	left: -2px;
+	left: -4px;
 	top: 1px;
 	width: 110%;
 	z-index: -1;
