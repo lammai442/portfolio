@@ -19,6 +19,42 @@
 	}
 }
 
+.chatbox__icon-attention-msg {
+	position: fixed;
+	left: 78px;
+	bottom: 78px;
+	width: 72px;
+	height: 72px;
+	display: grid;
+	place-content: center;
+	opacity: 0; /* Startvärde */
+	transition: opacity 0.7s ease-in-out; /* Tiden för fade */
+	pointer-events: none;
+}
+
+.chatbox__icon-attention-msg--visible {
+	opacity: 1;
+	pointer-events: auto;
+	cursor: pointer;
+}
+
+.chatbox__chaticon {
+	position: absolute;
+	left: -2px;
+	top: 1px;
+	width: 110%;
+	z-index: -1;
+}
+
+.chatbox__attention-msg-box {
+	font-size: 0.6rem;
+	text-align: center;
+	color: var(--white-text-color);
+}
+
+.chatbox__chaticon-text {
+	color: var(--white-text-color);
+}
 .chatbox__icon {
 	color: var(--white-text-color);
 	transition: opacity 1.3s ease, transform 0.3s ease;

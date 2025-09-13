@@ -15,7 +15,7 @@ export const mobileProjects = [
 		Projektet har utvecklats av mig från grunden. Jag har lagt fokus på att skapa en användarvänlig upplevelse med tydlig struktur och responsiv design.`,
 		url: 'https://where-it-is-ticket-app.vercel.app/',
 		title: `Where it's @`,
-		tech: ['JavaScript', 'HTML', 'CSS', 'React', 'Figma', 'Git', 'VScode'],
+		tech: ['React', 'JavaScript', 'CSS', 'HTML', 'Figma', 'Git', 'VScode'],
 		git: 'https://github.com/lammai442/where-it-is-ticket-app',
 	},
 	{

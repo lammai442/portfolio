@@ -10,7 +10,7 @@ import { OpenAI } from 'openai/client.js';
 import { RiRobot3Line } from 'react-icons/ri';
 import { FaUser } from 'react-icons/fa';
 import RobotIcon from '../RobotIcon/RobotIcon.jsx';
-
+import chatBubble from '../../assets/icons/comment-solid-full.svg';
 const openai = new OpenAI({
 	apiKey: import.meta.env.VITE_OPENAI_API_KEY,
 	dangerouslyAllowBrowser: true,
@@ -34,6 +34,7 @@ function ChatBot() {
 	const [loadingAiMsg, setLoadingAiMsg] = useState(false);
 	const lastMessageRef = useRef(null);
 	const chatbotRef = useRef(null);
+	const [showAttentionMsg, setShowAttentionMsg] = useState(false);
 
 	const handleKeyDown = (e) => {
 		if (e.key === 'Enter') handleSend();
@@ -48,6 +49,10 @@ function ChatBot() {
 		};
 
 		document.addEventListener('mousedown', handleClickOutside);
+
+		setTimeout(() => {
+			setShowAttentionMsg(true);
+		}, 2000);
 
 		return () => {
 			document.removeEventListener('mousedown', handleClickOutside);
@@ -103,7 +108,10 @@ function ChatBot() {
 	return (
 		<>
 			<button
-				onClick={() => setChatIsOpen((prev) => !prev)}
+				onClick={() => {
+					setChatIsOpen((prev) => !prev);
+					setShowAttentionMsg(false);
+				}}
 				className='chatbox__icon-btn'
 				aria-label='Ai chat button'>
 				{ChatIsOpen ? (
@@ -116,6 +124,21 @@ function ChatBot() {
 					</>
 				)}
 			</button>
+
+			<div
+				className={`chatbox__icon-attention-msg ${
+					showAttentionMsg
+						? 'chatbox__icon-attention-msg--visible'
+						: 'chatbox__icon-attention-msg--none'
+				}`}>
+				<div className='chatbox__attention-msg-box'>
+					<img src={chatBubble} className='chatbox__chaticon' />
+					<p className='chatbox__chaticon-text'>Psst!</p>
+					<p className='chatbox__chaticon-text'>Fråga mig</p>
+					<p className='chatbox__chaticon-text'>om Lam!</p>
+				</div>
+			</div>
+
 			{ChatIsOpen && (
 				<div className='chatbot__wrapper' ref={chatbotRef}>
 					<div className='chatbot__header'>

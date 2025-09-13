@@ -13,7 +13,7 @@
 
 .mobile__frame {
 	width: 460px;
-	height: 846px;
+	min-height: 846px;
 	border: 1rem solid var(--primary-bg-color-frame);
 	border-radius: 1.875rem;
 	overflow: hidden;
