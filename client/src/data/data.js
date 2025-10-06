@@ -10,6 +10,26 @@ import bonzAi from '../assets/webpages/bonz-ai.png';
 import catchingPokemons from '../assets/webpages/catching-pokemon.png';
 export const mobileProjects = [
 	{
+		desc: `Shui Message Board App är en digital anslagstavla byggd med React och AWS Serverless Framework. Applikationen gör det möjligt för användare att enkelt posta, redigera och ta bort meddelanden, vilket skapar en smidig och dynamisk användarupplevelse.
+
+Appen har fullständiga CRUD-funktioner (Create, Read, Update, Delete) som hanterar meddelanden effektivt. Backend är serverless och drivs av AWS Lambda i kombination med API Gateway, vilket ger skalbarhet och hög prestanda. Meddelanden lagras i DynamoDB, vilket garanterar snabb och pålitlig datalagring.
+
+Designen är responsiv för mobila enheter och realtidsuppdateringar gör att användarna alltid ser de senaste meddelandena utan att behöva uppdatera sidan.`,
+		url: 'https://shui-message-board-app.vercel.app/',
+		title: `Shui message board app`,
+		tech: [
+			'React',
+			'AWS',
+			'JavaScript',
+			'CSS',
+			'HTML',
+			'Figma',
+			'Git',
+			'VScode',
+		],
+		git: 'https://shui-message-board-app.vercel.app/',
+	},
+	{
 		desc: `Where it's @ är en frontend-applikation byggd i React där användare kan upptäcka och köpa biljetter till lokala musikevenemang. 
 		
 		Projektet har utvecklats av mig från grunden. Jag har lagt fokus på att skapa en användarvänlig upplevelse med tydlig struktur och responsiv design.`,
