@@ -1,10 +1,12 @@
 import { TbBrandJavascript } from 'react-icons/tb';
 import { FaHtml5, FaCss3Alt, FaFigma, FaGithub, FaReact } from 'react-icons/fa';
-import { FaPeopleLine } from 'react-icons/fa6';
+import { FaPeopleLine, FaAws } from 'react-icons/fa6';
 import { BiLogoVisualStudio } from 'react-icons/bi';
 import { TbApi } from 'react-icons/tb';
 import { MdOutlineWorkOutline } from 'react-icons/md';
 import { IoSchoolOutline } from 'react-icons/io5';
+import { CgServerless } from 'react-icons/cg';
+import { SiAmazondynamodb } from 'react-icons/si';
 import myMovieDatabase from '../assets/webpages/my-movie-database.png';
 import bonzAi from '../assets/webpages/bonz-ai.png';
 import catchingPokemons from '../assets/webpages/catching-pokemon.png';
@@ -12,14 +14,17 @@ export const mobileProjects = [
 	{
 		desc: `Shui Message Board App är en digital anslagstavla byggd med React och AWS Serverless Framework. Applikationen gör det möjligt för användare att enkelt posta, redigera och ta bort meddelanden, vilket skapar en smidig och dynamisk användarupplevelse.
 
-Appen har fullständiga CRUD-funktioner (Create, Read, Update, Delete) som hanterar meddelanden effektivt. Backend är serverless och drivs av AWS Lambda i kombination med API Gateway, vilket ger skalbarhet och hög prestanda. Meddelanden lagras i DynamoDB, vilket garanterar snabb och pålitlig datalagring.
+		Appen har fullständiga CRUD-funktioner (Create, Read, Update, Delete) som hanterar meddelanden effektivt. Backend är serverless och drivs av AWS Lambda i kombination med API Gateway, vilket ger skalbarhet och hög prestanda. Meddelanden lagras i DynamoDB, vilket garanterar snabb och pålitlig datalagring.
 
-Designen är responsiv för mobila enheter och realtidsuppdateringar gör att användarna alltid ser de senaste meddelandena utan att behöva uppdatera sidan.`,
+		Designen är responsiv mobila enheter. Användare kan skapa egna konton eller logga in som gäst. Jag har implementerat säker autentisering med kryptering av lösenord och JWT-tokens för att hantera sessions och säker inloggning.`,
 		url: 'https://shui-message-board-app.vercel.app/',
 		title: `Shui message board app`,
 		tech: [
 			'React',
 			'AWS',
+			'DynamoDB',
+			'Serverless',
+			'API',
 			'JavaScript',
 			'CSS',
 			'HTML',
@@ -254,6 +259,9 @@ export const iconMap = {
 	VScode: BiLogoVisualStudio,
 	React: FaReact,
 	API: TbApi,
+	AWS: FaAws,
+	Serverless: CgServerless,
+	DynamoDB: SiAmazondynamodb,
 };
 
 export const navItems = [
